@@ -124,22 +124,17 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇹🇼_TW_中国台湾->🇫🇮_FI_芬兰",
-        "🇨🇳_CN_中国->🇺🇸_US_美国",
-        "🇨🇦_CA_加拿大",
-        "🇺🇸_US_美国->🇯🇵_JP_日本",
-        "🇮🇪_IE_爱尔兰",
-        "🇨🇳_CN_中国->🇯🇵_JP_日本",
-        "🇺🇸_US_美国->🇯🇵_JP_日本_1",
-        "🇷🇺_RU_俄罗斯->🇩🇪_DE_德国",
+        "🇬🇧_GB_英国",
         "🇷🇺_RU_俄罗斯->🇪🇪_EE_爱沙尼亚",
-        "🇮🇪_IE_爱尔兰_1",
+        "🇯🇵_JP_日本->🇭🇰_HK_中国香港",
+        "🇺🇸_US_美国->🇫🇮_FI_芬兰",
         "🇲🇾_MY_马来西亚",
-        "🇳🇱_NL_荷兰->🇲🇩_MD_摩尔多瓦",
-        "🇺🇸_US_美国->🇯🇵_JP_日本_2",
-        "🇳🇴_NO_挪威",
-        "🇨🇳_CN_中国->🇺🇸_US_美国_1",
-        "🇨🇳_CN_中国_1"
+        "🇷🇺_RU_俄罗斯->🇪🇪_EE_爱沙尼亚_1",
+        "🇺🇸_US_美国",
+        "🇳🇱_NL_荷兰",
+        "🇬🇧_GB_英国_1",
+        "🇬🇧_GB_英国_2",
+        "🇳🇱_NL_荷兰->🇲🇩_MD_摩尔多瓦"
       ]
     },
     {
@@ -345,14 +340,14 @@
       "tag": "HongKong",
       "type": "selector",
       "outbounds": [
-        "Proxy"
+        "🇯🇵_JP_日本->🇭🇰_HK_中国香港"
       ]
     },
     {
       "tag": "TaiWan",
       "type": "selector",
       "outbounds": [
-        "🇹🇼_TW_中国台湾->🇫🇮_FI_芬兰"
+        "Proxy"
       ]
     },
     {
@@ -366,58 +361,46 @@
       "tag": "Japan",
       "type": "selector",
       "outbounds": [
-        "🇺🇸_US_美国->🇯🇵_JP_日本",
-        "🇨🇳_CN_中国->🇯🇵_JP_日本",
-        "🇺🇸_US_美国->🇯🇵_JP_日本_1",
-        "🇺🇸_US_美国->🇯🇵_JP_日本_2"
+        "🇯🇵_JP_日本->🇭🇰_HK_中国香港"
       ]
     },
     {
       "tag": "America",
       "type": "selector",
       "outbounds": [
-        "🇨🇳_CN_中国->🇺🇸_US_美国",
-        "🇺🇸_US_美国->🇯🇵_JP_日本",
-        "🇺🇸_US_美国->🇯🇵_JP_日本_1",
-        "🇺🇸_US_美国->🇯🇵_JP_日本_2",
-        "🇨🇳_CN_中国->🇺🇸_US_美国_1"
+        "🇺🇸_US_美国->🇫🇮_FI_芬兰",
+        "🇺🇸_US_美国"
       ]
     },
     {
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "🇨🇦_CA_加拿大",
-        "🇮🇪_IE_爱尔兰",
-        "🇷🇺_RU_俄罗斯->🇩🇪_DE_德国",
+        "🇬🇧_GB_英国",
         "🇷🇺_RU_俄罗斯->🇪🇪_EE_爱沙尼亚",
-        "🇮🇪_IE_爱尔兰_1",
         "🇲🇾_MY_马来西亚",
-        "🇳🇱_NL_荷兰->🇲🇩_MD_摩尔多瓦",
-        "🇳🇴_NO_挪威",
-        "🇨🇳_CN_中国_1"
+        "🇷🇺_RU_俄罗斯->🇪🇪_EE_爱沙尼亚_1",
+        "🇳🇱_NL_荷兰",
+        "🇬🇧_GB_英国_1",
+        "🇬🇧_GB_英国_2",
+        "🇳🇱_NL_荷兰->🇲🇩_MD_摩尔多瓦"
       ]
     },
     {
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇹🇼_TW_中国台湾->🇫🇮_FI_芬兰",
-        "🇨🇳_CN_中国->🇺🇸_US_美国",
-        "🇨🇦_CA_加拿大",
-        "🇺🇸_US_美国->🇯🇵_JP_日本",
-        "🇮🇪_IE_爱尔兰",
-        "🇨🇳_CN_中国->🇯🇵_JP_日本",
-        "🇺🇸_US_美国->🇯🇵_JP_日本_1",
-        "🇷🇺_RU_俄罗斯->🇩🇪_DE_德国",
+        "🇬🇧_GB_英国",
         "🇷🇺_RU_俄罗斯->🇪🇪_EE_爱沙尼亚",
-        "🇮🇪_IE_爱尔兰_1",
+        "🇯🇵_JP_日本->🇭🇰_HK_中国香港",
+        "🇺🇸_US_美国->🇫🇮_FI_芬兰",
         "🇲🇾_MY_马来西亚",
-        "🇳🇱_NL_荷兰->🇲🇩_MD_摩尔多瓦",
-        "🇺🇸_US_美国->🇯🇵_JP_日本_2",
-        "🇳🇴_NO_挪威",
-        "🇨🇳_CN_中国->🇺🇸_US_美国_1",
-        "🇨🇳_CN_中国_1"
+        "🇷🇺_RU_俄罗斯->🇪🇪_EE_爱沙尼亚_1",
+        "🇺🇸_US_美国",
+        "🇳🇱_NL_荷兰",
+        "🇬🇧_GB_英国_1",
+        "🇬🇧_GB_英国_2",
+        "🇳🇱_NL_荷兰->🇲🇩_MD_摩尔多瓦"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -428,109 +411,12 @@
       "tag": "direct"
     },
     {
-      "tag": "🇹🇼_TW_中国台湾->🇫🇮_FI_芬兰",
-      "type": "vless",
-      "server": "brightharbor.download",
-      "server_port": 443,
-      "uuid": "6429d27e-a7d4-4e04-ae57-e88243fbbfe3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I"
-        },
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇨🇳_CN_中国->🇺🇸_US_美国",
+      "tag": "🇬🇧_GB_英国",
       "type": "shadowsocks",
-      "server": "121.46.230.233",
-      "server_port": 65443,
-      "method": "aes-256-cfb",
-      "password": "7eadc6dbe2ae"
-    },
-    {
-      "tag": "🇨🇦_CA_加拿大",
-      "type": "shadowsocks",
-      "server": "15.223.203.202",
+      "server": "35.178.181.116",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
-    },
-    {
-      "tag": "🇺🇸_US_美国->🇯🇵_JP_日本",
-      "type": "vless",
-      "server": "130.12.102.125",
-      "server_port": 443,
-      "uuid": "6429d27e-a7d4-4e04-ae57-e88243fbbfe3",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I"
-        },
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇮🇪_IE_爱尔兰",
-      "type": "shadowsocks",
-      "server": "54.216.102.222",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "tag": "🇨🇳_CN_中国->🇯🇵_JP_日本",
-      "type": "shadowsocks",
-      "server": "121.46.230.137",
-      "server_port": 65443,
-      "method": "aes-256-cfb",
-      "password": "7eadc6dbe2ae"
-    },
-    {
-      "tag": "🇺🇸_US_美国->🇯🇵_JP_日本_1",
-      "type": "vless",
-      "server": "freshjuniper.download",
-      "server_port": 443,
-      "uuid": "6429d27e-a7d4-4e04-ae57-e88243fbbfe3",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I"
-        },
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "server": "gta.internet-card.sbs",
-      "server_port": 443,
-      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
-      "tls": {
-        "enabled": true,
-        "server_name": "gta.internet-card.sbs",
-        "insecure": true
-      },
-      "tag": "🇷🇺_RU_俄罗斯->🇩🇪_DE_德国"
     },
     {
       "type": "hysteria2",
@@ -545,12 +431,42 @@
       "tag": "🇷🇺_RU_俄罗斯->🇪🇪_EE_爱沙尼亚"
     },
     {
-      "tag": "🇮🇪_IE_爱尔兰_1",
-      "type": "shadowsocks",
-      "server": "54.247.231.139",
+      "tag": "🇯🇵_JP_日本->🇭🇰_HK_中国香港",
+      "type": "trojan",
+      "server": "z-jp2.1card.cc",
+      "server_port": 10011,
+      "password": "ultra@kWZdAzt_IH593eGLRjdxnBZ0",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸_US_美国->🇫🇮_FI_芬兰",
+      "type": "vless",
+      "server": "k2.cloud--vpn.site",
       "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "uuid": "d9eda159-18d6-4457-8983-55523a21658c",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "c12.com"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "insecure": true
+      }
     },
     {
       "tag": "🇲🇾_MY_马来西亚",
@@ -559,6 +475,67 @@
       "server_port": 65443,
       "method": "aes-256-cfb",
       "password": "7eadc6dbe2ae"
+    },
+    {
+      "type": "hysteria2",
+      "server": "31.76.71.63",
+      "server_port": 443,
+      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
+      "tls": {
+        "enabled": true,
+        "server_name": "cabinet.wwwinternetvideo.click",
+        "insecure": true
+      },
+      "tag": "🇷🇺_RU_俄罗斯->🇪🇪_EE_爱沙尼亚_1"
+    },
+    {
+      "tag": "🇺🇸_US_美国",
+      "type": "vmess",
+      "server": "www.shopify.com",
+      "server_port": 443,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "alter_id": 0,
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/hls/cctv5phd.m3u8",
+        "headers": {
+          "Host": "guanwang.awsno.com"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "guanwang.awsno.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "server": "46.229.243.145",
+      "server_port": 8443,
+      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
+      "tls": {
+        "enabled": true,
+        "server_name": "grape-turbo-fr.roxa.org",
+        "insecure": true
+      },
+      "tag": "🇳🇱_NL_荷兰"
+    },
+    {
+      "tag": "🇬🇧_GB_英国_1",
+      "type": "shadowsocks",
+      "server": "35.179.104.218",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "tag": "🇬🇧_GB_英国_2",
+      "type": "shadowsocks",
+      "server": "3.8.209.170",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "tag": "🇳🇱_NL_荷兰->🇲🇩_MD_摩尔多瓦",
@@ -579,69 +556,6 @@
           "public_key": "RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI",
           "short_id": "a1b2c3d4"
         },
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇺🇸_US_美国->🇯🇵_JP_日本_2",
-      "type": "vless",
-      "server": "130.12.102.26",
-      "server_port": 443,
-      "uuid": "6429d27e-a7d4-4e04-ae57-e88243fbbfe3",
-      "tls": {
-        "enabled": true,
-        "server_name": "localhost",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I"
-        },
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇳🇴_NO_挪威",
-      "type": "vless",
-      "server": "151.242.168.207",
-      "server_port": 443,
-      "uuid": "1cbeb6e4-06c0-421b-9baa-8af782d6e6cc",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "kibi-institut.de",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY",
-          "short_id": "fd55b698ee8c3629"
-        },
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇨🇳_CN_中国->🇺🇸_US_美国_1",
-      "type": "shadowsocks",
-      "server": "121.46.230.232",
-      "server_port": 65443,
-      "method": "aes-256-cfb",
-      "password": "7eadc6dbe2ae"
-    },
-    {
-      "tag": "🇨🇳_CN_中国_1",
-      "type": "vmess",
-      "server": "112.132.215.108",
-      "server_port": 50002,
-      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-      "alter_id": 64,
-      "security": "auto",
-      "tls": {
-        "enabled": false,
         "insecure": true
       }
     }
