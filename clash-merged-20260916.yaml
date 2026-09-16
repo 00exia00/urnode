@@ -1,0 +1,664 @@
+# Clash Meta / Mihomo merged config
+# Generated at: 2026-09-16 04:41
+# Date: 2026-09-16
+# Source: public node subscriptions 0-4
+# Loaded sources: 0, 1, 2, 3
+# Skipped sources: 4
+# [0] original 307, added 241, duplicate 66
+# [1] original 245, added 196, duplicate 49
+# [2] original 262, added 36, duplicate 226
+# [3] original 27, added 26, duplicate 1
+# Total proxies: 25
+# Availability tested at: 2026-09-16 12:41 CST
+# Availability test URL: https://cp.cloudflare.com/generate_204
+# Availability result: 25/499 passed (496 testable)
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  listen: 127.0.0.1:1053
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  nameserver:
+  - https://dns.alidns.com/dns-query
+  - https://doh.pub/dns-query
+  proxy-server-nameserver:
+  - https://dns.alidns.com/dns-query
+  - https://doh.pub/dns-query
+  nameserver-policy:
+    geosite:geolocation-!cn:
+    - https://1.1.1.1/dns-query#🚀 节点选择
+    - https://8.8.8.8/dns-query#🚀 节点选择
+proxies:
+- name: 🇭🇰HK香港丨yoyapai.com
+  type: vless
+  server: 91.193.58.243
+  port: 80
+  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: twilight-poetry-2bfe.218-699.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰HK香港丨yoyapai.com_1
+  type: vless
+  server: 91.193.58.246
+  port: 80
+  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: twilight-poetry-2bfe.218-699.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰HK香港丨yoyapai.com_2
+  type: vless
+  server: 91.193.58.209
+  port: 80
+  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: twilight-poetry-2bfe.218-699.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰HK香港丨yoyapai.com_3
+  type: vless
+  server: 91.193.58.197
+  port: 80
+  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: twilight-poetry-2bfe.218-699.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰HK香港丨yoyapai.com_4
+  type: vless
+  server: 91.193.58.179
+  port: 80
+  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: twilight-poetry-2bfe.218-699.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸美國丨yoyapai.com_1
+  type: vless
+  server: 162.159.156.214
+  port: 8880
+  uuid: 12cebf33-2f96-48a3-af37-c2231e5cef75
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: throbbing-moon-a07c.90-ec4.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: 🇩🇪_德国丨yoyapai.com
+  type: vless
+  server: 46.101.253.244
+  port: 2083
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  network: ws
+  servername: edge.yzkvm.top
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: edge.yzkvm.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇨🇦CA加拿大丨yoyapai.com_10
+  type: vless
+  server: 104.21.23.72
+  port: 8880
+  uuid: f4e6476f-40d0-40cb-841f-cc2f6909ff20
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: calm-haze-d105.21-7cd.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: 🇨🇦CA加拿大丨yoyapai.com_11
+  type: vless
+  server: 104.21.23.72
+  port: 8880
+  uuid: 30a88c40-581e-4952-aa4c-8af95686ede0
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: rapid-lab-95ef.173-74c.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: ❓未知丨yoyapai.com_11
+  type: vless
+  server: 104.26.13.40
+  port: 8880
+  uuid: 875d3876-ab9a-4dd6-8a8d-bf57f03403aa
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: square-sea-01d1.339-be3.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: 🇩🇪DE德国丨yoyapai.com_13
+  type: vless
+  server: 169.40.42.229
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  servername: yahoo.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  skip-cert-verify: false
+  udp: true
+- name: 🇦🇺AU澳大利亚丨yoyapai.com
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  network: ws
+  tls: false
+  ws-opts:
+    path: /29c8fed7ca22
+    headers:
+      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
+  skip-cert-verify: false
+  udp: true
+- name: 🇱🇻LV拉脱维亚丨yoyapai.com
+  type: vless
+  server: 193.163.203.170
+  port: 443
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  servername: yandex.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  skip-cert-verify: false
+  udp: true
+- name: US美国(mibei77.com 米贝节点分享)_5
+  type: vless
+  server: 208.103.161.249
+  port: 80
+  uuid: a3c51f71-ffb5-4c80-a136-cee4b36d6e85
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: kAmRaN01-aFgmDQ-1.KaMRan-01.wOrkeRs.DEv
+  skip-cert-verify: true
+  udp: true
+- name: 挪威(mibei77.com 米贝节点分享)
+  type: vless
+  server: aldebaran.yokkastars.com
+  port: 40443
+  uuid: ed91e79c-f6bf-4fba-8cc0-6d45acaec22b
+  servername: deepl.com
+  tls: true
+  client-fingerprint: qq
+  reality-opts:
+    public-key: dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4
+    short-id: '7606'
+  skip-cert-verify: true
+  udp: true
+- name: RU俄罗斯(mibei77.com 米贝节点分享)
+  type: vless
+  server: pr-media.pepro.site
+  port: 14443
+  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
+  network: ws
+  servername: pr-media.pepro.site
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+  skip-cert-verify: true
+  udp: true
+- name: NL荷兰(mibei77.com 米贝节点分享)_10
+  type: ss
+  server: 158.173.221.214
+  port: 11001
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
+  skip-cert-verify: true
+  udp: true
+- name: NL荷兰(mibei77.com 米贝节点分享)_11
+  type: vless
+  server: 13.143.137.164
+  port: 9443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  servername: plaincanvas.videoclothing.xyz
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ
+    short-id: e336c9a786fae301
+  skip-cert-verify: true
+  udp: true
+- name: US美国(mibei77.com 米贝节点分享)_70
+  type: vless
+  server: aldebaran.yokkastars.com
+  port: 40443
+  uuid: ed91e79c-f6bf-4fba-8cc0-6d45acaec22b
+  servername: deepl.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4
+    short-id: '7606'
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇱🇻_LV_拉脱维亚
+  type: vless
+  server: 195.123.213.28
+  port: 443
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  servername: www.cloudflare.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  type: vmess
+  server: v33.hdacd.com
+  port: 30833
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇬🇧_GB_英国
+  type: vmess
+  server: v36.hdacd.com
+  port: 30836
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_2
+  type: vmess
+  server: www.shopify.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: guanwang.awsno.com
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+  udp: true
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - DIRECT
+  - 🇭🇰HK香港丨yoyapai.com
+  - 🇭🇰HK香港丨yoyapai.com_1
+  - 🇭🇰HK香港丨yoyapai.com_2
+  - 🇭🇰HK香港丨yoyapai.com_3
+  - 🇭🇰HK香港丨yoyapai.com_4
+  - 🇺🇸美國丨yoyapai.com_1
+  - 🇩🇪_德国丨yoyapai.com
+  - 🇨🇦CA加拿大丨yoyapai.com_10
+  - 🇨🇦CA加拿大丨yoyapai.com_11
+  - ❓未知丨yoyapai.com_11
+  - 🇩🇪DE德国丨yoyapai.com_13
+  - 🇦🇺AU澳大利亚丨yoyapai.com
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
+  - US美国(mibei77.com 米贝节点分享)_5
+  - 挪威(mibei77.com 米贝节点分享)
+  - RU俄罗斯(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)_10
+  - NL荷兰(mibei77.com 米贝节点分享)_11
+  - US美国(mibei77.com 米贝节点分享)_70
+  - 🇭🇰_HK_中国香港
+  - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+  - 🇱🇻_LV_拉脱维亚
+  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  - 🇭🇰_HK_中国香港->🇬🇧_GB_英国
+  - 🇺🇸_US_美国_2
+- name: ♻️ 自动选择
+  type: url-test
+  proxies:
+  - 🇭🇰HK香港丨yoyapai.com
+  - 🇭🇰HK香港丨yoyapai.com_1
+  - 🇭🇰HK香港丨yoyapai.com_2
+  - 🇭🇰HK香港丨yoyapai.com_3
+  - 🇭🇰HK香港丨yoyapai.com_4
+  - 🇺🇸美國丨yoyapai.com_1
+  - 🇩🇪_德国丨yoyapai.com
+  - 🇨🇦CA加拿大丨yoyapai.com_10
+  - 🇨🇦CA加拿大丨yoyapai.com_11
+  - ❓未知丨yoyapai.com_11
+  - 🇩🇪DE德国丨yoyapai.com_13
+  - 🇦🇺AU澳大利亚丨yoyapai.com
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
+  - US美国(mibei77.com 米贝节点分享)_5
+  - 挪威(mibei77.com 米贝节点分享)
+  - RU俄罗斯(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)_10
+  - NL荷兰(mibei77.com 米贝节点分享)_11
+  - US美国(mibei77.com 米贝节点分享)_70
+  - 🇭🇰_HK_中国香港
+  - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+  - 🇱🇻_LV_拉脱维亚
+  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  - 🇭🇰_HK_中国香港->🇬🇧_GB_英国
+  - 🇺🇸_US_美国_2
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 🌍 国外媒体
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🎯 全球直连
+  - 🇭🇰HK香港丨yoyapai.com
+  - 🇭🇰HK香港丨yoyapai.com_1
+  - 🇭🇰HK香港丨yoyapai.com_2
+  - 🇭🇰HK香港丨yoyapai.com_3
+  - 🇭🇰HK香港丨yoyapai.com_4
+  - 🇺🇸美國丨yoyapai.com_1
+  - 🇩🇪_德国丨yoyapai.com
+  - 🇨🇦CA加拿大丨yoyapai.com_10
+  - 🇨🇦CA加拿大丨yoyapai.com_11
+  - ❓未知丨yoyapai.com_11
+  - 🇩🇪DE德国丨yoyapai.com_13
+  - 🇦🇺AU澳大利亚丨yoyapai.com
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
+  - US美国(mibei77.com 米贝节点分享)_5
+  - 挪威(mibei77.com 米贝节点分享)
+  - RU俄罗斯(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)_10
+  - NL荷兰(mibei77.com 米贝节点分享)_11
+  - US美国(mibei77.com 米贝节点分享)_70
+  - 🇭🇰_HK_中国香港
+  - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+  - 🇱🇻_LV_拉脱维亚
+  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  - 🇭🇰_HK_中国香港->🇬🇧_GB_英国
+  - 🇺🇸_US_美国_2
+- name: 📲 电报信息
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - 🇭🇰HK香港丨yoyapai.com
+  - 🇭🇰HK香港丨yoyapai.com_1
+  - 🇭🇰HK香港丨yoyapai.com_2
+  - 🇭🇰HK香港丨yoyapai.com_3
+  - 🇭🇰HK香港丨yoyapai.com_4
+  - 🇺🇸美國丨yoyapai.com_1
+  - 🇩🇪_德国丨yoyapai.com
+  - 🇨🇦CA加拿大丨yoyapai.com_10
+  - 🇨🇦CA加拿大丨yoyapai.com_11
+  - ❓未知丨yoyapai.com_11
+  - 🇩🇪DE德国丨yoyapai.com_13
+  - 🇦🇺AU澳大利亚丨yoyapai.com
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
+  - US美国(mibei77.com 米贝节点分享)_5
+  - 挪威(mibei77.com 米贝节点分享)
+  - RU俄罗斯(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)_10
+  - NL荷兰(mibei77.com 米贝节点分享)_11
+  - US美国(mibei77.com 米贝节点分享)_70
+  - 🇭🇰_HK_中国香港
+  - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+  - 🇱🇻_LV_拉脱维亚
+  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  - 🇭🇰_HK_中国香港->🇬🇧_GB_英国
+  - 🇺🇸_US_美国_2
+- name: Ⓜ️ 微软服务
+  type: select
+  proxies:
+  - 🎯 全球直连
+  - 🚀 节点选择
+  - 🇭🇰HK香港丨yoyapai.com
+  - 🇭🇰HK香港丨yoyapai.com_1
+  - 🇭🇰HK香港丨yoyapai.com_2
+  - 🇭🇰HK香港丨yoyapai.com_3
+  - 🇭🇰HK香港丨yoyapai.com_4
+  - 🇺🇸美國丨yoyapai.com_1
+  - 🇩🇪_德国丨yoyapai.com
+  - 🇨🇦CA加拿大丨yoyapai.com_10
+  - 🇨🇦CA加拿大丨yoyapai.com_11
+  - ❓未知丨yoyapai.com_11
+  - 🇩🇪DE德国丨yoyapai.com_13
+  - 🇦🇺AU澳大利亚丨yoyapai.com
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
+  - US美国(mibei77.com 米贝节点分享)_5
+  - 挪威(mibei77.com 米贝节点分享)
+  - RU俄罗斯(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)_10
+  - NL荷兰(mibei77.com 米贝节点分享)_11
+  - US美国(mibei77.com 米贝节点分享)_70
+  - 🇭🇰_HK_中国香港
+  - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+  - 🇱🇻_LV_拉脱维亚
+  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  - 🇭🇰_HK_中国香港->🇬🇧_GB_英国
+  - 🇺🇸_US_美国_2
+- name: 🍎 苹果服务
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - 🇭🇰HK香港丨yoyapai.com
+  - 🇭🇰HK香港丨yoyapai.com_1
+  - 🇭🇰HK香港丨yoyapai.com_2
+  - 🇭🇰HK香港丨yoyapai.com_3
+  - 🇭🇰HK香港丨yoyapai.com_4
+  - 🇺🇸美國丨yoyapai.com_1
+  - 🇩🇪_德国丨yoyapai.com
+  - 🇨🇦CA加拿大丨yoyapai.com_10
+  - 🇨🇦CA加拿大丨yoyapai.com_11
+  - ❓未知丨yoyapai.com_11
+  - 🇩🇪DE德国丨yoyapai.com_13
+  - 🇦🇺AU澳大利亚丨yoyapai.com
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
+  - US美国(mibei77.com 米贝节点分享)_5
+  - 挪威(mibei77.com 米贝节点分享)
+  - RU俄罗斯(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)_10
+  - NL荷兰(mibei77.com 米贝节点分享)_11
+  - US美国(mibei77.com 米贝节点分享)_70
+  - 🇭🇰_HK_中国香港
+  - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+  - 🇱🇻_LV_拉脱维亚
+  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  - 🇭🇰_HK_中国香港->🇬🇧_GB_英国
+  - 🇺🇸_US_美国_2
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+- name: 🛑 全球拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🍃 应用净化
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+  - 🇭🇰HK香港丨yoyapai.com
+  - 🇭🇰HK香港丨yoyapai.com_1
+  - 🇭🇰HK香港丨yoyapai.com_2
+  - 🇭🇰HK香港丨yoyapai.com_3
+  - 🇭🇰HK香港丨yoyapai.com_4
+  - 🇺🇸美國丨yoyapai.com_1
+  - 🇩🇪_德国丨yoyapai.com
+  - 🇨🇦CA加拿大丨yoyapai.com_10
+  - 🇨🇦CA加拿大丨yoyapai.com_11
+  - ❓未知丨yoyapai.com_11
+  - 🇩🇪DE德国丨yoyapai.com_13
+  - 🇦🇺AU澳大利亚丨yoyapai.com
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
+  - US美国(mibei77.com 米贝节点分享)_5
+  - 挪威(mibei77.com 米贝节点分享)
+  - RU俄罗斯(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)_10
+  - NL荷兰(mibei77.com 米贝节点分享)_11
+  - US美国(mibei77.com 米贝节点分享)_70
+  - 🇭🇰_HK_中国香港
+  - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+  - 🇱🇻_LV_拉脱维亚
+  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  - 🇭🇰_HK_中国香港->🇬🇧_GB_英国
+  - 🇺🇸_US_美国_2
+rule-providers:
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/LocalAreaNetwork.list
+    path: ./rules/LocalAreaNetwork.yaml
+  BanAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/BanAD.list
+    path: ./rules/BanAD.yaml
+  BanProgramAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/BanProgramAD.list
+    path: ./rules/BanProgramAD.yaml
+  GoogleCN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/GoogleCN.list
+    path: ./rules/GoogleCN.yaml
+  SteamCN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/SteamCN.list
+    path: ./rules/SteamCN.yaml
+  Microsoft:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Microsoft.list
+    path: ./rules/Microsoft.yaml
+  Apple:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Apple.list
+    path: ./rules/Apple.yaml
+  ProxyMedia:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyMedia.list
+    path: ./rules/ProxyMedia.yaml
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Telegram.list
+    path: ./rules/Telegram.yaml
+  ProxyLite:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyLite.list
+    path: ./rules/ProxyLite.yaml
+  ChinaDomain:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaDomain.list
+    path: ./rules/ChinaDomain.yaml
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaCompanyIp.list
+    path: ./rules/ChinaCompanyIp.yaml
+rules:
+- DOMAIN-SUFFIX,nodebuf.com,🚀 节点选择
+- RULE-SET,LocalAreaNetwork,🎯 全球直连
+- RULE-SET,BanAD,🛑 全球拦截
+- RULE-SET,BanProgramAD,🍃 应用净化
+- RULE-SET,GoogleCN,🎯 全球直连
+- RULE-SET,SteamCN,🎯 全球直连
+- RULE-SET,Microsoft,Ⓜ️ 微软服务
+- RULE-SET,Apple,🍎 苹果服务
+- RULE-SET,ProxyMedia,🌍 国外媒体
+- RULE-SET,Telegram,📲 电报信息
+- RULE-SET,ProxyLite,🚀 节点选择
+- RULE-SET,ChinaDomain,🎯 全球直连
+- RULE-SET,ChinaCompanyIp,🎯 全球直连
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼
