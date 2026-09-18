@@ -124,8 +124,15 @@
       "outbounds": [
         "auto",
         "direct",
+        "🇺🇸_US_美国->🇩🇪_DE_德国",
         "🇨🇳_CN_中国",
-        "🇺🇸_US_美国->🇯🇵_JP_日本"
+        "🇯🇵_JP_日本",
+        "🇺🇸_US_美国_3",
+        "🇺🇸_US_美国_4",
+        "🇪🇪_EE_爱沙尼亚",
+        "🇺🇸_US_美国_5",
+        "🇩🇪_DE_德国_2",
+        "🇷🇺_RU_俄罗斯->🇹🇷_TR_土耳其"
       ]
     },
     {
@@ -352,29 +359,42 @@
       "tag": "Japan",
       "type": "selector",
       "outbounds": [
-        "🇺🇸_US_美国->🇯🇵_JP_日本"
+        "🇯🇵_JP_日本"
       ]
     },
     {
       "tag": "America",
       "type": "selector",
       "outbounds": [
-        "🇺🇸_US_美国->🇯🇵_JP_日本"
+        "🇺🇸_US_美国->🇩🇪_DE_德国",
+        "🇺🇸_US_美国_3",
+        "🇺🇸_US_美国_4",
+        "🇺🇸_US_美国_5"
       ]
     },
     {
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "🇨🇳_CN_中国"
+        "🇨🇳_CN_中国",
+        "🇪🇪_EE_爱沙尼亚",
+        "🇩🇪_DE_德国_2",
+        "🇷🇺_RU_俄罗斯->🇹🇷_TR_土耳其"
       ]
     },
     {
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
+        "🇺🇸_US_美国->🇩🇪_DE_德国",
         "🇨🇳_CN_中国",
-        "🇺🇸_US_美国->🇯🇵_JP_日本"
+        "🇯🇵_JP_日本",
+        "🇺🇸_US_美国_3",
+        "🇺🇸_US_美国_4",
+        "🇪🇪_EE_爱沙尼亚",
+        "🇺🇸_US_美国_5",
+        "🇩🇪_DE_德国_2",
+        "🇷🇺_RU_俄罗斯->🇹🇷_TR_土耳其"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -383,6 +403,31 @@
     {
       "type": "direct",
       "tag": "direct"
+    },
+    {
+      "tag": "🇺🇸_US_美国->🇩🇪_DE_德国",
+      "type": "vless",
+      "server": "172.66.47.45",
+      "server_port": 443,
+      "uuid": "e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "ezaccess-project-f62c30.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "EZAcCESS-pROjECt-F62c30.PAGES.dEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "insecure": true
+      }
     },
     {
       "tag": "🇨🇳_CN_中国",
@@ -398,18 +443,147 @@
       }
     },
     {
-      "tag": "🇺🇸_US_美国->🇯🇵_JP_日本",
+      "tag": "🇯🇵_JP_日本",
       "type": "vless",
-      "server": "cf-socks.caoyuwu.eu.org",
+      "server": "45.142.166.211",
       "server_port": 443,
-      "uuid": "9cdcbaf0-d244-4f37-b227-90166e43f5b5",
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "transport": {
         "type": "ws",
+        "path": "/knowledge?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        },
         "early_data_header_name": "Sec-WebSocket-Protocol",
         "max_early_data": 2560
       },
       "tls": {
         "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸_US_美国_3",
+      "type": "vless",
+      "server": "lyra.yokkastars.com",
+      "server_port": 40443,
+      "uuid": "5be7fb02-b6a5-450f-b041-3243b98e8420",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE",
+          "short_id": "ee33"
+        },
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸_US_美国_4",
+      "type": "vless",
+      "server": "72.56.41.33",
+      "server_port": 40443,
+      "uuid": "5be7fb02-b6a5-450f-b041-3243b98e8420",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE",
+          "short_id": "ee33"
+        },
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇪🇪_EE_爱沙尼亚",
+      "type": "vless",
+      "server": "94.183.170.147",
+      "server_port": 8443,
+      "uuid": "5edbcb44-8d04-4fa7-a587-bc5d60c24ca1",
+      "transport": {
+        "type": "grpc",
+        "service_name": "9d30d49278"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg",
+          "short_id": "72ccd4a7563c2953"
+        },
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸_US_美国_5",
+      "type": "vmess",
+      "server": "www.shopify.com",
+      "server_port": 443,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "alter_id": 0,
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/hls/cctv5phd.m3u8",
+        "headers": {
+          "Host": "guanwang.awsno.com"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "guanwang.awsno.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇩🇪_DE_德国_2",
+      "type": "shadowsocks",
+      "server": "3.75.89.244",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "tag": "🇷🇺_RU_俄罗斯->🇹🇷_TR_土耳其",
+      "type": "vless",
+      "server": "13.143.137.164",
+      "server_port": 9443,
+      "uuid": "953358cb-82ba-4296-960d-6d2ec3468f4c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "plaincanvas.videoclothing.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ",
+          "short_id": "e336c9a786fae301"
+        },
         "insecure": true
       }
     }
