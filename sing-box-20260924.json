@@ -125,16 +125,10 @@
         "auto",
         "direct",
         "🇺🇸_US_美国",
-        "🇩🇪_DE_德国",
-        "🇺🇸_US_美国->🇳🇱_NL_荷兰",
-        "🇪🇸_ES_西班牙",
-        "🇦🇲_AM_亚美尼亚",
-        "🇭🇰_HK_中国香港",
-        "🇵🇱_PL_波兰",
-        "🇺🇸_US_美国_2",
-        "🇺🇸_US_美国->🇳🇱_NL_荷兰_1",
-        "🇺🇸_US_美国->🇳🇱_NL_荷兰_2",
-        "🇩🇪_DE_德国->🇳🇱_NL_荷兰"
+        "🇭🇰_HK_中国香港_1",
+        "🇨🇳_CN_中国",
+        "🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡",
+        "🇺🇸_US_美国_1"
       ]
     },
     {
@@ -340,7 +334,7 @@
       "tag": "HongKong",
       "type": "selector",
       "outbounds": [
-        "🇭🇰_HK_中国香港"
+        "🇭🇰_HK_中国香港_1"
       ]
     },
     {
@@ -369,21 +363,15 @@
       "type": "selector",
       "outbounds": [
         "🇺🇸_US_美国",
-        "🇺🇸_US_美国->🇳🇱_NL_荷兰",
-        "🇦🇲_AM_亚美尼亚",
-        "🇺🇸_US_美国_2",
-        "🇺🇸_US_美国->🇳🇱_NL_荷兰_1",
-        "🇺🇸_US_美国->🇳🇱_NL_荷兰_2"
+        "🇺🇸_US_美国_1"
       ]
     },
     {
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "🇩🇪_DE_德国",
-        "🇪🇸_ES_西班牙",
-        "🇵🇱_PL_波兰",
-        "🇩🇪_DE_德国->🇳🇱_NL_荷兰"
+        "🇨🇳_CN_中国",
+        "🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡"
       ]
     },
     {
@@ -391,16 +379,10 @@
       "type": "urltest",
       "outbounds": [
         "🇺🇸_US_美国",
-        "🇩🇪_DE_德国",
-        "🇺🇸_US_美国->🇳🇱_NL_荷兰",
-        "🇪🇸_ES_西班牙",
-        "🇦🇲_AM_亚美尼亚",
-        "🇭🇰_HK_中国香港",
-        "🇵🇱_PL_波兰",
-        "🇺🇸_US_美国_2",
-        "🇺🇸_US_美国->🇳🇱_NL_荷兰_1",
-        "🇺🇸_US_美国->🇳🇱_NL_荷兰_2",
-        "🇩🇪_DE_德国->🇳🇱_NL_荷兰"
+        "🇭🇰_HK_中国香港_1",
+        "🇨🇳_CN_中国",
+        "🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡",
+        "🇺🇸_US_美国_1"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -432,94 +414,7 @@
       }
     },
     {
-      "tag": "🇩🇪_DE_德国",
-      "type": "vless",
-      "server": "de777.lavivas.org",
-      "server_port": 7444,
-      "uuid": "44e1105d-b46e-402f-933b-eaa136fcbb24",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇺🇸_US_美国->🇳🇱_NL_荷兰",
-      "type": "vless",
-      "server": "shuma.ccwu.cc",
-      "server_port": 2053,
-      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shuma.ccwu.cc"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "shuma.ccwu.cc",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇪🇸_ES_西班牙",
-      "type": "vless",
-      "server": "152.114.195.163",
-      "server_port": 8443,
-      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shuma.ccwu.cc"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "shuma.ccwu.cc",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇦🇲_AM_亚美尼亚",
-      "type": "vless",
-      "server": "2.56.204.183",
-      "server_port": 443,
-      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shuma.ccwu.cc"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "shuma.ccwu.cc",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇭🇰_HK_中国香港",
+      "tag": "🇭🇰_HK_中国香港_1",
       "type": "vmess",
       "server": "v10.hdacd.com",
       "server_port": 30807,
@@ -532,32 +427,36 @@
       }
     },
     {
-      "tag": "🇵🇱_PL_波兰",
-      "type": "vless",
-      "server": "103.167.234.26",
-      "server_port": 443,
-      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shuma.ccwu.cc"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
+      "tag": "🇨🇳_CN_中国",
+      "type": "vmess",
+      "server": "112.132.215.108",
+      "server_port": 50002,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "alter_id": 64,
+      "security": "auto",
       "tls": {
-        "enabled": true,
-        "server_name": "shuma.ccwu.cc",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
+        "enabled": false,
         "insecure": true
       }
     },
     {
-      "tag": "🇺🇸_US_美国_2",
+      "tag": "🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡",
+      "type": "vless",
+      "server": "free.sahanwickramasinghe.me",
+      "server_port": 80,
+      "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
+      "transport": {
+        "type": "ws",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      },
+      "tls": {
+        "enabled": false,
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸_US_美国_1",
       "type": "vmess",
       "server": "guanwang.awsno.com",
       "server_port": 443,
@@ -574,81 +473,6 @@
       "tls": {
         "enabled": true,
         "server_name": "guanwang.awsno.com",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇺🇸_US_美国->🇳🇱_NL_荷兰_1",
-      "type": "vless",
-      "server": "shuma.ccwu.cc",
-      "server_port": 443,
-      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shuma.ccwu.cc"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "shuma.ccwu.cc",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇺🇸_US_美国->🇳🇱_NL_荷兰_2",
-      "type": "vless",
-      "server": "shuma.ccwu.cc",
-      "server_port": 8443,
-      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shuma.ccwu.cc"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "shuma.ccwu.cc",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇩🇪_DE_德国->🇳🇱_NL_荷兰",
-      "type": "vless",
-      "server": "109.176.202.20",
-      "server_port": 443,
-      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shuma.ccwu.cc"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "shuma.ccwu.cc",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
         "insecure": true
       }
     }
