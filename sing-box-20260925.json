@@ -125,9 +125,8 @@
         "auto",
         "direct",
         "🇺🇸_US_美国",
-        "🇭🇰_HK_中国香港_1",
+        "🇭🇰_HK_中国香港",
         "🇨🇳_CN_中国",
-        "🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡",
         "🇺🇸_US_美国_1"
       ]
     },
@@ -334,7 +333,7 @@
       "tag": "HongKong",
       "type": "selector",
       "outbounds": [
-        "🇭🇰_HK_中国香港_1"
+        "🇭🇰_HK_中国香港"
       ]
     },
     {
@@ -370,8 +369,7 @@
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "🇨🇳_CN_中国",
-        "🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡"
+        "🇨🇳_CN_中国"
       ]
     },
     {
@@ -379,9 +377,8 @@
       "type": "urltest",
       "outbounds": [
         "🇺🇸_US_美国",
-        "🇭🇰_HK_中国香港_1",
+        "🇭🇰_HK_中国香港",
         "🇨🇳_CN_中国",
-        "🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡",
         "🇺🇸_US_美国_1"
       ],
       "url": "http://www.gstatic.com/generate_204",
@@ -395,7 +392,7 @@
     {
       "tag": "🇺🇸_US_美国",
       "type": "vmess",
-      "server": "www.shopify.com",
+      "server": "guanwang.awsno.com",
       "server_port": 443,
       "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
       "alter_id": 0,
@@ -414,7 +411,7 @@
       }
     },
     {
-      "tag": "🇭🇰_HK_中国香港_1",
+      "tag": "🇭🇰_HK_中国香港",
       "type": "vmess",
       "server": "v10.hdacd.com",
       "server_port": 30807,
@@ -440,25 +437,9 @@
       }
     },
     {
-      "tag": "🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡",
-      "type": "vless",
-      "server": "free.sahanwickramasinghe.me",
-      "server_port": 80,
-      "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
-      "transport": {
-        "type": "ws",
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": false,
-        "insecure": true
-      }
-    },
-    {
       "tag": "🇺🇸_US_美国_1",
       "type": "vmess",
-      "server": "guanwang.awsno.com",
+      "server": "www.shopify.com",
       "server_port": 443,
       "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
       "alter_id": 0,
