@@ -124,10 +124,9 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇺🇸_US_美国",
-        "🇭🇰_HK_中国香港",
         "🇨🇳_CN_中国",
-        "🇺🇸_US_美国_1"
+        "🇺🇸_US_美国_1",
+        "🇺🇸_US_美国_3"
       ]
     },
     {
@@ -333,7 +332,7 @@
       "tag": "HongKong",
       "type": "selector",
       "outbounds": [
-        "🇭🇰_HK_中国香港"
+        "Proxy"
       ]
     },
     {
@@ -361,8 +360,8 @@
       "tag": "America",
       "type": "selector",
       "outbounds": [
-        "🇺🇸_US_美国",
-        "🇺🇸_US_美国_1"
+        "🇺🇸_US_美国_1",
+        "🇺🇸_US_美国_3"
       ]
     },
     {
@@ -376,10 +375,9 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇺🇸_US_美国",
-        "🇭🇰_HK_中国香港",
         "🇨🇳_CN_中国",
-        "🇺🇸_US_美国_1"
+        "🇺🇸_US_美国_1",
+        "🇺🇸_US_美国_3"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -390,7 +388,20 @@
       "tag": "direct"
     },
     {
-      "tag": "🇺🇸_US_美国",
+      "tag": "🇨🇳_CN_中国",
+      "type": "vmess",
+      "server": "112.132.215.108",
+      "server_port": 50002,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "alter_id": 64,
+      "security": "auto",
+      "tls": {
+        "enabled": false,
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸_US_美国_1",
       "type": "vmess",
       "server": "guanwang.awsno.com",
       "server_port": 443,
@@ -411,33 +422,7 @@
       }
     },
     {
-      "tag": "🇭🇰_HK_中国香港",
-      "type": "vmess",
-      "server": "v10.hdacd.com",
-      "server_port": 30807,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-      "alter_id": 2,
-      "security": "auto",
-      "tls": {
-        "enabled": false,
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇨🇳_CN_中国",
-      "type": "vmess",
-      "server": "112.132.215.108",
-      "server_port": 50002,
-      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-      "alter_id": 64,
-      "security": "auto",
-      "tls": {
-        "enabled": false,
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇺🇸_US_美国_1",
+      "tag": "🇺🇸_US_美国_3",
       "type": "vmess",
       "server": "www.shopify.com",
       "server_port": 443,
