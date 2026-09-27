@@ -124,9 +124,8 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇨🇳_CN_中国",
-        "🇺🇸_US_美国_1",
-        "🇺🇸_US_美国_3"
+        "🇺🇸_US_美国",
+        "🇭🇰_HK_中国香港->🇺🇸_US_美国"
       ]
     },
     {
@@ -332,7 +331,7 @@
       "tag": "HongKong",
       "type": "selector",
       "outbounds": [
-        "Proxy"
+        "🇭🇰_HK_中国香港->🇺🇸_US_美国"
       ]
     },
     {
@@ -360,24 +359,23 @@
       "tag": "America",
       "type": "selector",
       "outbounds": [
-        "🇺🇸_US_美国_1",
-        "🇺🇸_US_美国_3"
+        "🇺🇸_US_美国",
+        "🇭🇰_HK_中国香港->🇺🇸_US_美国"
       ]
     },
     {
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "🇨🇳_CN_中国"
+        "Proxy"
       ]
     },
     {
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇨🇳_CN_中国",
-        "🇺🇸_US_美国_1",
-        "🇺🇸_US_美国_3"
+        "🇺🇸_US_美国",
+        "🇭🇰_HK_中国香港->🇺🇸_US_美国"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -388,20 +386,7 @@
       "tag": "direct"
     },
     {
-      "tag": "🇨🇳_CN_中国",
-      "type": "vmess",
-      "server": "112.132.215.108",
-      "server_port": 50002,
-      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-      "alter_id": 64,
-      "security": "auto",
-      "tls": {
-        "enabled": false,
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇺🇸_US_美国_1",
+      "tag": "🇺🇸_US_美国",
       "type": "vmess",
       "server": "guanwang.awsno.com",
       "server_port": 443,
@@ -422,23 +407,15 @@
       }
     },
     {
-      "tag": "🇺🇸_US_美国_3",
+      "tag": "🇭🇰_HK_中国香港->🇺🇸_US_美国",
       "type": "vmess",
-      "server": "www.shopify.com",
-      "server_port": 443,
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
-      "alter_id": 0,
+      "server": "v24.hdacd.com",
+      "server_port": 30824,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "alter_id": 2,
       "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/hls/cctv5phd.m3u8",
-        "headers": {
-          "Host": "guanwang.awsno.com"
-        }
-      },
       "tls": {
-        "enabled": true,
-        "server_name": "guanwang.awsno.com",
+        "enabled": false,
         "insecure": true
       }
     }
