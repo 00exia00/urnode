@@ -124,7 +124,9 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇺🇸_US_美国"
+        "🇸🇬_SG_新加坡->🇱🇰_LK_斯里兰卡",
+        "🇺🇸_US_美国",
+        "🇺🇸_US_美国_1"
       ]
     },
     {
@@ -344,7 +346,7 @@
       "tag": "Singapore",
       "type": "selector",
       "outbounds": [
-        "Proxy"
+        "🇸🇬_SG_新加坡->🇱🇰_LK_斯里兰卡"
       ]
     },
     {
@@ -358,7 +360,8 @@
       "tag": "America",
       "type": "selector",
       "outbounds": [
-        "🇺🇸_US_美国"
+        "🇺🇸_US_美国",
+        "🇺🇸_US_美国_1"
       ]
     },
     {
@@ -372,7 +375,9 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇺🇸_US_美国"
+        "🇸🇬_SG_新加坡->🇱🇰_LK_斯里兰卡",
+        "🇺🇸_US_美国",
+        "🇺🇸_US_美国_1"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -381,6 +386,22 @@
     {
       "type": "direct",
       "tag": "direct"
+    },
+    {
+      "tag": "🇸🇬_SG_新加坡->🇱🇰_LK_斯里兰卡",
+      "type": "vless",
+      "server": "trackydev.site",
+      "server_port": 443,
+      "uuid": "92d67828-4c56-4795-af5a-f387651380dc",
+      "transport": {
+        "type": "ws",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      },
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
     },
     {
       "tag": "🇺🇸_US_美国",
@@ -400,6 +421,27 @@
       "tls": {
         "enabled": true,
         "server_name": "guanwang.awsno.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸_US_美国_1",
+      "type": "vmess",
+      "server": "v2ray1.dozapp.xyz",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "alter_id": 0,
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "172.64.80.1",
         "insecure": true
       }
     }
