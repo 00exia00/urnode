@@ -125,9 +125,10 @@
         "auto",
         "direct",
         "🇭🇰_HK_中国香港",
-        "🇺🇸_US_美国_2",
-        "🇸🇬_SG_新加坡",
-        "🇸🇬_SG_新加坡_1"
+        "🇨🇳_CN_中国",
+        "🇺🇸_US_美国_1",
+        "🇩🇪_DE_德国",
+        "🇨🇳_CN_中国->🇵🇭_PH_菲律宾"
       ]
     },
     {
@@ -347,8 +348,7 @@
       "tag": "Singapore",
       "type": "selector",
       "outbounds": [
-        "🇸🇬_SG_新加坡",
-        "🇸🇬_SG_新加坡_1"
+        "Proxy"
       ]
     },
     {
@@ -362,14 +362,16 @@
       "tag": "America",
       "type": "selector",
       "outbounds": [
-        "🇺🇸_US_美国_2"
+        "🇺🇸_US_美国_1"
       ]
     },
     {
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "Proxy"
+        "🇨🇳_CN_中国",
+        "🇩🇪_DE_德国",
+        "🇨🇳_CN_中国->🇵🇭_PH_菲律宾"
       ]
     },
     {
@@ -377,9 +379,10 @@
       "type": "urltest",
       "outbounds": [
         "🇭🇰_HK_中国香港",
-        "🇺🇸_US_美国_2",
-        "🇸🇬_SG_新加坡",
-        "🇸🇬_SG_新加坡_1"
+        "🇨🇳_CN_中国",
+        "🇺🇸_US_美国_1",
+        "🇩🇪_DE_德国",
+        "🇨🇳_CN_中国->🇵🇭_PH_菲律宾"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -403,7 +406,20 @@
       }
     },
     {
-      "tag": "🇺🇸_US_美国_2",
+      "tag": "🇨🇳_CN_中国",
+      "type": "vmess",
+      "server": "112.132.215.108",
+      "server_port": 50002,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "alter_id": 0,
+      "security": "auto",
+      "tls": {
+        "enabled": false,
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸_US_美国_1",
       "type": "vmess",
       "server": "guanwang.awsno.com",
       "server_port": 443,
@@ -424,49 +440,26 @@
       }
     },
     {
-      "tag": "🇸🇬_SG_新加坡",
+      "tag": "🇩🇪_DE_德国",
       "type": "vless",
-      "server": "asia.csmaster.site",
+      "server": "13.143.172.203",
       "server_port": 443,
-      "uuid": "a853e120-3570-462b-aec1-e8f3d4f92d24",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "asia.csmaster.site"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
+      "uuid": "88aefb0c-cdbf-489f-9e6b-9be5b5fd5a11",
       "tls": {
         "enabled": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
         "insecure": true
       }
     },
     {
-      "tag": "🇸🇬_SG_新加坡_1",
-      "type": "vless",
-      "server": "asia.csmaster.site",
-      "server_port": 8443,
-      "uuid": "799b1006-3255-4e36-8ea0-64fe24d2bfa7",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "asia.csmaster.site"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
+      "tag": "🇨🇳_CN_中国->🇵🇭_PH_菲律宾",
+      "type": "vmess",
+      "server": "silversbgfgov.vip44.wogbcnmnagfwgov.com",
+      "server_port": 11244,
+      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "alter_id": 2,
+      "security": "auto",
       "tls": {
-        "enabled": true,
-        "server_name": "asia.csmaster.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
+        "enabled": false,
         "insecure": true
       }
     }
