@@ -124,11 +124,15 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇭🇰_HK_中国香港",
-        "🇨🇳_CN_中国",
+        "🇭🇰_HK_中国香港_1",
+        "🇺🇸_US_美国",
+        "🇰🇷_KR_韩国",
+        "🇸🇬_SG_新加坡",
+        "🇸🇬_SG_新加坡_1",
         "🇺🇸_US_美国_1",
-        "🇩🇪_DE_德国",
-        "🇨🇳_CN_中国->🇵🇭_PH_菲律宾"
+        "🇺🇸_US_美国_2",
+        "🇭🇰_HK_中国香港->🇮🇪_IE_爱尔兰",
+        "🇸🇬_SG_新加坡_2"
       ]
     },
     {
@@ -334,7 +338,8 @@
       "tag": "HongKong",
       "type": "selector",
       "outbounds": [
-        "🇭🇰_HK_中国香港"
+        "🇭🇰_HK_中国香港_1",
+        "🇭🇰_HK_中国香港->🇮🇪_IE_爱尔兰"
       ]
     },
     {
@@ -348,7 +353,9 @@
       "tag": "Singapore",
       "type": "selector",
       "outbounds": [
-        "Proxy"
+        "🇸🇬_SG_新加坡",
+        "🇸🇬_SG_新加坡_1",
+        "🇸🇬_SG_新加坡_2"
       ]
     },
     {
@@ -362,27 +369,31 @@
       "tag": "America",
       "type": "selector",
       "outbounds": [
-        "🇺🇸_US_美国_1"
+        "🇺🇸_US_美国",
+        "🇺🇸_US_美国_1",
+        "🇺🇸_US_美国_2"
       ]
     },
     {
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "🇨🇳_CN_中国",
-        "🇩🇪_DE_德国",
-        "🇨🇳_CN_中国->🇵🇭_PH_菲律宾"
+        "🇰🇷_KR_韩国"
       ]
     },
     {
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇭🇰_HK_中国香港",
-        "🇨🇳_CN_中国",
+        "🇭🇰_HK_中国香港_1",
+        "🇺🇸_US_美国",
+        "🇰🇷_KR_韩国",
+        "🇸🇬_SG_新加坡",
+        "🇸🇬_SG_新加坡_1",
         "🇺🇸_US_美国_1",
-        "🇩🇪_DE_德国",
-        "🇨🇳_CN_中国->🇵🇭_PH_菲律宾"
+        "🇺🇸_US_美国_2",
+        "🇭🇰_HK_中国香港->🇮🇪_IE_爱尔兰",
+        "🇸🇬_SG_新加坡_2"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -393,7 +404,7 @@
       "tag": "direct"
     },
     {
-      "tag": "🇭🇰_HK_中国香港",
+      "tag": "🇭🇰_HK_中国香港_1",
       "type": "vmess",
       "server": "v10.hdacd.com",
       "server_port": 30807,
@@ -406,20 +417,72 @@
       }
     },
     {
-      "tag": "🇨🇳_CN_中国",
-      "type": "vmess",
-      "server": "112.132.215.108",
-      "server_port": 50002,
-      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-      "alter_id": 0,
-      "security": "auto",
+      "tag": "🇺🇸_US_美国",
+      "type": "trojan",
+      "server": "pro-mako.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "network": "tcp",
       "tls": {
-        "enabled": false,
+        "enabled": true,
+        "server_name": "pro-mako.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇰🇷_KR_韩国",
+      "type": "trojan",
+      "server": "pure-kodiak.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "pure-kodiak.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇸🇬_SG_新加坡",
+      "type": "trojan",
+      "server": "rested-seahorse.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "rested-seahorse.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇸🇬_SG_新加坡_1",
+      "type": "trojan",
+      "server": "musical-mouse.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "musical-mouse.rooster465.autos",
         "insecure": true
       }
     },
     {
       "tag": "🇺🇸_US_美国_1",
+      "type": "trojan",
+      "server": "alert-titmouse.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "alert-titmouse.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸_US_美国_2",
       "type": "vmess",
       "server": "guanwang.awsno.com",
       "server_port": 443,
@@ -440,26 +503,28 @@
       }
     },
     {
-      "tag": "🇩🇪_DE_德国",
-      "type": "vless",
-      "server": "13.143.172.203",
-      "server_port": 443,
-      "uuid": "88aefb0c-cdbf-489f-9e6b-9be5b5fd5a11",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇨🇳_CN_中国->🇵🇭_PH_菲律宾",
+      "tag": "🇭🇰_HK_中国香港->🇮🇪_IE_爱尔兰",
       "type": "vmess",
-      "server": "silversbgfgov.vip44.wogbcnmnagfwgov.com",
-      "server_port": 11244,
-      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "server": "v4.hdacd.com",
+      "server_port": 30804,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
       "alter_id": 2,
       "security": "auto",
       "tls": {
         "enabled": false,
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇸🇬_SG_新加坡_2",
+      "type": "trojan",
+      "server": "ace-liger.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ace-liger.rooster465.autos",
         "insecure": true
       }
     }

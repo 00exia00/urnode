@@ -1,0 +1,23 @@
+{
+  "tested_at": "2026-10-10 13:40 CST",
+  "test_url": "https://cp.cloudflare.com/generate_204",
+  "timeout_ms": 8000,
+  "attempts": 2,
+  "results": {
+    "clash": {
+      "original": 2467,
+      "testable": 2458,
+      "available": 1593
+    },
+    "v2ray": {
+      "original": 2980,
+      "testable": 2888,
+      "available": 1649
+    },
+    "sing_box": {
+      "original": 15,
+      "testable": 15,
+      "available": 9
+    }
+  }
+}
