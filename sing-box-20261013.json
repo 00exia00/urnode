@@ -124,10 +124,7 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇨🇳_CN_中国->🇯🇵_JP_日本",
-        "🇨🇳_CN_中国",
-        "🇨🇳_CN_中国->🇺🇸_US_美国",
-        "🇺🇸_US_美国"
+        "🇺🇸_US_美国_1"
       ]
     },
     {
@@ -354,32 +351,28 @@
       "tag": "Japan",
       "type": "selector",
       "outbounds": [
-        "🇨🇳_CN_中国->🇯🇵_JP_日本"
+        "Proxy"
       ]
     },
     {
       "tag": "America",
       "type": "selector",
       "outbounds": [
-        "🇨🇳_CN_中国->🇺🇸_US_美国",
-        "🇺🇸_US_美国"
+        "🇺🇸_US_美国_1"
       ]
     },
     {
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "🇨🇳_CN_中国"
+        "Proxy"
       ]
     },
     {
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇨🇳_CN_中国->🇯🇵_JP_日本",
-        "🇨🇳_CN_中国",
-        "🇨🇳_CN_中国->🇺🇸_US_美国",
-        "🇺🇸_US_美国"
+        "🇺🇸_US_美国_1"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -390,46 +383,7 @@
       "tag": "direct"
     },
     {
-      "tag": "🇨🇳_CN_中国->🇯🇵_JP_日本",
-      "type": "vmess",
-      "server": "goldcnmltyljgfwgov.vip57.wogcnmnnagfwgov.com",
-      "server_port": 11257,
-      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
-      "alter_id": 2,
-      "security": "auto",
-      "tls": {
-        "enabled": false,
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇨🇳_CN_中国",
-      "type": "vmess",
-      "server": "112.132.215.108",
-      "server_port": 50002,
-      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-      "alter_id": 0,
-      "security": "auto",
-      "tls": {
-        "enabled": false,
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇨🇳_CN_中国->🇺🇸_US_美国",
-      "type": "vmess",
-      "server": "silversbgfgov.vip38.wogbcnmnagfwgov.com",
-      "server_port": 11238,
-      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
-      "alter_id": 2,
-      "security": "auto",
-      "tls": {
-        "enabled": false,
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇺🇸_US_美国",
+      "tag": "🇺🇸_US_美国_1",
       "type": "vmess",
       "server": "guanwang.awsno.com",
       "server_port": 443,
