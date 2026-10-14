@@ -124,7 +124,8 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇺🇸_US_美国_1"
+        "🇺🇸_US_美国",
+        "🇰🇷_KR_韩国"
       ]
     },
     {
@@ -358,21 +359,22 @@
       "tag": "America",
       "type": "selector",
       "outbounds": [
-        "🇺🇸_US_美国_1"
+        "🇺🇸_US_美国"
       ]
     },
     {
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "Proxy"
+        "🇰🇷_KR_韩国"
       ]
     },
     {
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇺🇸_US_美国_1"
+        "🇺🇸_US_美国",
+        "🇰🇷_KR_韩国"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -383,7 +385,7 @@
       "tag": "direct"
     },
     {
-      "tag": "🇺🇸_US_美国_1",
+      "tag": "🇺🇸_US_美国",
       "type": "vmess",
       "server": "guanwang.awsno.com",
       "server_port": 443,
@@ -400,6 +402,22 @@
       "tls": {
         "enabled": true,
         "server_name": "guanwang.awsno.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇰🇷_KR_韩国",
+      "type": "vmess",
+      "server": "43.108.103.167",
+      "server_port": 123,
+      "uuid": "35aa0fda-175a-4aec-c468-0231dee1a121",
+      "alter_id": 0,
+      "security": "auto",
+      "transport": {
+        "type": "http"
+      },
+      "tls": {
+        "enabled": false,
         "insecure": true
       }
     }
