@@ -124,11 +124,8 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇺🇸_US_美国",
-        "🇭🇰_HK_中国香港->🇬🇧_GB_英国",
-        "🇭🇰_HK_中国香港",
-        "🇨🇦_CA_加拿大",
-        "🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡"
+        "🇺🇸_US_美国_1",
+        "🇳🇱_NL_荷兰"
       ]
     },
     {
@@ -334,8 +331,7 @@
       "tag": "HongKong",
       "type": "selector",
       "outbounds": [
-        "🇭🇰_HK_中国香港->🇬🇧_GB_英国",
-        "🇭🇰_HK_中国香港"
+        "Proxy"
       ]
     },
     {
@@ -363,26 +359,22 @@
       "tag": "America",
       "type": "selector",
       "outbounds": [
-        "🇺🇸_US_美国"
+        "🇺🇸_US_美国_1"
       ]
     },
     {
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "🇨🇦_CA_加拿大",
-        "🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡"
+        "🇳🇱_NL_荷兰"
       ]
     },
     {
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇺🇸_US_美国",
-        "🇭🇰_HK_中国香港->🇬🇧_GB_英国",
-        "🇭🇰_HK_中国香港",
-        "🇨🇦_CA_加拿大",
-        "🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡"
+        "🇺🇸_US_美国_1",
+        "🇳🇱_NL_荷兰"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -393,7 +385,7 @@
       "tag": "direct"
     },
     {
-      "tag": "🇺🇸_US_美国",
+      "tag": "🇺🇸_US_美国_1",
       "type": "vmess",
       "server": "guanwang.awsno.com",
       "server_port": 443,
@@ -414,61 +406,27 @@
       }
     },
     {
-      "tag": "🇭🇰_HK_中国香港->🇬🇧_GB_英国",
-      "type": "vmess",
-      "server": "v36.hdacd.com",
-      "server_port": 30836,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-      "alter_id": 2,
-      "security": "auto",
-      "tls": {
-        "enabled": false,
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇭🇰_HK_中国香港",
-      "type": "vmess",
-      "server": "v29.hdacd.com",
-      "server_port": 30829,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-      "alter_id": 2,
-      "security": "auto",
-      "tls": {
-        "enabled": false,
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇨🇦_CA_加拿大",
-      "type": "trojan",
-      "server": "ca.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "network": "tcp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ca.tronsg.com",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡",
+      "tag": "🇳🇱_NL_荷兰",
       "type": "vless",
-      "server": "free.sahanwickramasinghe.me",
-      "server_port": 80,
-      "uuid": "fcdb24e3-5e66-4c45-b89e-ac9441f4dcda",
+      "server": "nl5.hap-plus.ru",
+      "server_port": 8443,
+      "uuid": "05d7a479-a099-40cf-aecf-41aa934767b0",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/api/v1/events",
         "headers": {
-          "Host": "free.sahanwickramasinghe.me"
+          "Host": "nl5.hap-plus.ru"
         },
         "early_data_header_name": "Sec-WebSocket-Protocol",
         "max_early_data": 2560
       },
       "tls": {
-        "enabled": false,
+        "enabled": true,
+        "server_name": "nl5.hap-plus.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
         "insecure": true
       }
     }
