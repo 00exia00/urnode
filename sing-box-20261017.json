@@ -124,8 +124,7 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇺🇸_US_美国_1",
-        "🇳🇱_NL_荷兰"
+        "🇺🇸_US_美国"
       ]
     },
     {
@@ -359,22 +358,21 @@
       "tag": "America",
       "type": "selector",
       "outbounds": [
-        "🇺🇸_US_美国_1"
+        "🇺🇸_US_美国"
       ]
     },
     {
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "🇳🇱_NL_荷兰"
+        "Proxy"
       ]
     },
     {
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇺🇸_US_美国_1",
-        "🇳🇱_NL_荷兰"
+        "🇺🇸_US_美国"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -385,7 +383,7 @@
       "tag": "direct"
     },
     {
-      "tag": "🇺🇸_US_美国_1",
+      "tag": "🇺🇸_US_美国",
       "type": "vmess",
       "server": "guanwang.awsno.com",
       "server_port": 443,
@@ -402,31 +400,6 @@
       "tls": {
         "enabled": true,
         "server_name": "guanwang.awsno.com",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇳🇱_NL_荷兰",
-      "type": "vless",
-      "server": "nl5.hap-plus.ru",
-      "server_port": 8443,
-      "uuid": "05d7a479-a099-40cf-aecf-41aa934767b0",
-      "transport": {
-        "type": "ws",
-        "path": "/api/v1/events",
-        "headers": {
-          "Host": "nl5.hap-plus.ru"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "nl5.hap-plus.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
         "insecure": true
       }
     }
