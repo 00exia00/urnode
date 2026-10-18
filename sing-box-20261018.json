@@ -124,6 +124,7 @@
       "outbounds": [
         "auto",
         "direct",
+        "🇵🇱_PL_波兰",
         "🇺🇸_US_美国"
       ]
     },
@@ -365,13 +366,14 @@
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "Proxy"
+        "🇵🇱_PL_波兰"
       ]
     },
     {
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
+        "🇵🇱_PL_波兰",
         "🇺🇸_US_美国"
       ],
       "url": "http://www.gstatic.com/generate_204",
@@ -381,6 +383,19 @@
     {
       "type": "direct",
       "tag": "direct"
+    },
+    {
+      "tag": "🇵🇱_PL_波兰",
+      "type": "trojan",
+      "server": "78.17.171.62",
+      "server_port": 443,
+      "password": "u93yPGuY2zgIsisJZKS2QzJzg",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "FREETOPLAY-2.TETRIS-GAME.WORLD",
+        "insecure": true
+      }
     },
     {
       "tag": "🇺🇸_US_美国",
