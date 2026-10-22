@@ -124,7 +124,8 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇺🇸_US_美国"
+        "🇺🇸_US_美国",
+        "🇨🇳_CN_中国"
       ]
     },
     {
@@ -365,14 +366,15 @@
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "Proxy"
+        "🇨🇳_CN_中国"
       ]
     },
     {
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇺🇸_US_美国"
+        "🇺🇸_US_美国",
+        "🇨🇳_CN_中国"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -400,6 +402,19 @@
       "tls": {
         "enabled": true,
         "server_name": "guanwang.awsno.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇳_CN_中国",
+      "type": "vmess",
+      "server": "112.132.215.108",
+      "server_port": 50002,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "alter_id": 64,
+      "security": "auto",
+      "tls": {
+        "enabled": false,
         "insecure": true
       }
     }
