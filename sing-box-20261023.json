@@ -124,8 +124,11 @@
       "outbounds": [
         "auto",
         "direct",
+        "🇯🇵_JP_日本",
+        "🇮🇹_IT_意大利",
+        "🇮🇹_IT_意大利_1",
         "🇺🇸_US_美国",
-        "🇨🇳_CN_中国"
+        "🇮🇹_IT_意大利_2"
       ]
     },
     {
@@ -352,7 +355,7 @@
       "tag": "Japan",
       "type": "selector",
       "outbounds": [
-        "Proxy"
+        "🇯🇵_JP_日本"
       ]
     },
     {
@@ -366,15 +369,20 @@
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "🇨🇳_CN_中国"
+        "🇮🇹_IT_意大利",
+        "🇮🇹_IT_意大利_1",
+        "🇮🇹_IT_意大利_2"
       ]
     },
     {
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
+        "🇯🇵_JP_日本",
+        "🇮🇹_IT_意大利",
+        "🇮🇹_IT_意大利_1",
         "🇺🇸_US_美国",
-        "🇨🇳_CN_中国"
+        "🇮🇹_IT_意大利_2"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -383,6 +391,30 @@
     {
       "type": "direct",
       "tag": "direct"
+    },
+    {
+      "tag": "🇯🇵_JP_日本",
+      "type": "shadowsocks",
+      "server": "154.36.158.197",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "BeaUf9c0AEWH40Pu"
+    },
+    {
+      "tag": "🇮🇹_IT_意大利",
+      "type": "shadowsocks",
+      "server": "202.50.253.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "tag": "🇮🇹_IT_意大利_1",
+      "type": "shadowsocks",
+      "server": "202.50.253.99",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "tag": "🇺🇸_US_美国",
@@ -406,17 +438,12 @@
       }
     },
     {
-      "tag": "🇨🇳_CN_中国",
-      "type": "vmess",
-      "server": "112.132.215.108",
-      "server_port": 50002,
-      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-      "alter_id": 64,
-      "security": "auto",
-      "tls": {
-        "enabled": false,
-        "insecure": true
-      }
+      "tag": "🇮🇹_IT_意大利_2",
+      "type": "shadowsocks",
+      "server": "202.50.253.45",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     }
   ],
   "http_clients": [
