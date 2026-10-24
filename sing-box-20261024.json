@@ -124,11 +124,15 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇯🇵_JP_日本",
         "🇮🇹_IT_意大利",
         "🇮🇹_IT_意大利_1",
-        "🇺🇸_US_美国",
-        "🇮🇹_IT_意大利_2"
+        "🇮🇹_IT_意大利_2",
+        "🇯🇵_JP_日本",
+        "🇮🇹_IT_意大利_3",
+        "🇮🇹_IT_意大利_5",
+        "🇮🇹_IT_意大利_6",
+        "🇮🇹_IT_意大利_7",
+        "🇺🇸_US_美国"
       ]
     },
     {
@@ -371,18 +375,26 @@
       "outbounds": [
         "🇮🇹_IT_意大利",
         "🇮🇹_IT_意大利_1",
-        "🇮🇹_IT_意大利_2"
+        "🇮🇹_IT_意大利_2",
+        "🇮🇹_IT_意大利_3",
+        "🇮🇹_IT_意大利_5",
+        "🇮🇹_IT_意大利_6",
+        "🇮🇹_IT_意大利_7"
       ]
     },
     {
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇯🇵_JP_日本",
         "🇮🇹_IT_意大利",
         "🇮🇹_IT_意大利_1",
-        "🇺🇸_US_美国",
-        "🇮🇹_IT_意大利_2"
+        "🇮🇹_IT_意大利_2",
+        "🇯🇵_JP_日本",
+        "🇮🇹_IT_意大利_3",
+        "🇮🇹_IT_意大利_5",
+        "🇮🇹_IT_意大利_6",
+        "🇮🇹_IT_意大利_7",
+        "🇺🇸_US_美国"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -393,6 +405,30 @@
       "tag": "direct"
     },
     {
+      "tag": "🇮🇹_IT_意大利",
+      "type": "shadowsocks",
+      "server": "202.50.253.81",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "tag": "🇮🇹_IT_意大利_1",
+      "type": "shadowsocks",
+      "server": "202.50.253.72",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "tag": "🇮🇹_IT_意大利_2",
+      "type": "shadowsocks",
+      "server": "202.50.253.54",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
       "tag": "🇯🇵_JP_日本",
       "type": "shadowsocks",
       "server": "154.36.158.197",
@@ -401,7 +437,15 @@
       "password": "BeaUf9c0AEWH40Pu"
     },
     {
-      "tag": "🇮🇹_IT_意大利",
+      "tag": "🇮🇹_IT_意大利_3",
+      "type": "shadowsocks",
+      "server": "202.50.253.45",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "tag": "🇮🇹_IT_意大利_5",
       "type": "shadowsocks",
       "server": "202.50.253.18",
       "server_port": 19999,
@@ -409,7 +453,15 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "tag": "🇮🇹_IT_意大利_1",
+      "tag": "🇮🇹_IT_意大利_6",
+      "type": "shadowsocks",
+      "server": "202.50.253.63",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "tag": "🇮🇹_IT_意大利_7",
       "type": "shadowsocks",
       "server": "202.50.253.99",
       "server_port": 19999,
@@ -436,14 +488,6 @@
         "server_name": "guanwang.awsno.com",
         "insecure": true
       }
-    },
-    {
-      "tag": "🇮🇹_IT_意大利_2",
-      "type": "shadowsocks",
-      "server": "202.50.253.45",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     }
   ],
   "http_clients": [
