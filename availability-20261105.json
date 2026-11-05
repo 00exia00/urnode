@@ -1,18 +1,18 @@
 {
-  "tested_at": "2026-11-01 13:50 CST",
+  "tested_at": "2026-11-05 14:29 CST",
   "test_url": "https://cp.cloudflare.com/generate_204",
   "timeout_ms": 8000,
   "attempts": 2,
   "results": {
     "clash": {
-      "original": 1964,
-      "testable": 1953,
-      "available": 1316
+      "original": 2228,
+      "testable": 2215,
+      "available": 1416
     },
     "v2ray": {
-      "original": 2081,
-      "testable": 2050,
-      "available": 1292
+      "original": 2428,
+      "testable": 2388,
+      "available": 1434
     },
     "sing_box": {
       "original": 14,
