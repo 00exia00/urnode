@@ -124,14 +124,10 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇺🇸 美国 | USA #4-47593152_IPV4",
-        "🇷🇺_RU_俄罗斯_IPV4",
-        "🇩🇪_DE_德国_IPV4",
+        "🇺🇸_US_美国_IPV4",
+        "🇺🇸_US_美国_IPV4 (2)",
         "🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4",
-        "🇺🇸_US_美国_IPV4 (4)",
         "🇫🇷_FR_法国_IPV4",
-        "🇩🇪_DE_德国_IPV4 (2)",
-        "🇫🇷_FR_法国_IPV4 (2)",
         "🇮🇹_IT_意大利_IPV4",
         "🇮🇹_IT_意大利_IPV4 (2)",
         "🇮🇹_IT_意大利_IPV4 (3)",
@@ -347,7 +343,7 @@
       "tag": "HongKong",
       "type": "selector",
       "outbounds": [
-        "Proxy"
+        "🇺🇸_US_美国_IPV4"
       ]
     },
     {
@@ -361,34 +357,30 @@
       "tag": "Singapore",
       "type": "selector",
       "outbounds": [
-        "Proxy"
+        "🇺🇸_US_美国_IPV4"
       ]
     },
     {
       "tag": "Japan",
       "type": "selector",
       "outbounds": [
-        "Proxy"
+        "🇺🇸_US_美国_IPV4"
       ]
     },
     {
       "tag": "America",
       "type": "selector",
       "outbounds": [
-        "🇺🇸 美国 | USA #4-47593152_IPV4",
-        "🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4",
-        "🇺🇸_US_美国_IPV4 (4)"
+        "🇺🇸_US_美国_IPV4",
+        "🇺🇸_US_美国_IPV4 (2)",
+        "🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4"
       ]
     },
     {
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "🇷🇺_RU_俄罗斯_IPV4",
-        "🇩🇪_DE_德国_IPV4",
         "🇫🇷_FR_法国_IPV4",
-        "🇩🇪_DE_德国_IPV4 (2)",
-        "🇫🇷_FR_法国_IPV4 (2)",
         "🇮🇹_IT_意大利_IPV4",
         "🇮🇹_IT_意大利_IPV4 (2)",
         "🇮🇹_IT_意大利_IPV4 (3)",
@@ -405,14 +397,10 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇺🇸 美国 | USA #4-47593152_IPV4",
-        "🇷🇺_RU_俄罗斯_IPV4",
-        "🇩🇪_DE_德国_IPV4",
+        "🇺🇸_US_美国_IPV4",
+        "🇺🇸_US_美国_IPV4 (2)",
         "🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4",
-        "🇺🇸_US_美国_IPV4 (4)",
         "🇫🇷_FR_法国_IPV4",
-        "🇩🇪_DE_德国_IPV4 (2)",
-        "🇫🇷_FR_法国_IPV4 (2)",
         "🇮🇹_IT_意大利_IPV4",
         "🇮🇹_IT_意大利_IPV4 (2)",
         "🇮🇹_IT_意大利_IPV4 (3)",
@@ -433,48 +421,38 @@
       "tag": "direct"
     },
     {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 | USA #4-47593152_IPV4",
-      "server": "104.21.7.133",
-      "server_port": 443,
-      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
-      "alter_id": 0,
-      "security": "auto",
+      "type": "hysteria",
+      "tag": "🇺🇸_US_美国_IPV4",
+      "server": "137.175.82.43",
+      "server_port": 20022,
+      "auth_str": "dongtaiwang.com",
       "tls": {
         "enabled": true,
-        "server_name": "vmess.lbw666.dpdns.org"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "vmess.lbw666.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺_RU_俄罗斯_IPV4",
-      "server": "46.17.47.58",
-      "server_port": 18443,
-      "password": "cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa",
-      "method": "aes-256-gcm"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇩🇪_DE_德国_IPV4",
-      "server": "jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net",
-      "server_port": 443,
-      "password": "6cddea99-9b18-4d42-8638-131bd9f5374f",
-      "tls": {
-        "enabled": true,
-        "server_name": "8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net",
+        "server_name": "bing.com",
         "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
+        "alpn": [
+          "h3"
+        ]
+      },
+      "up_mbps": 20,
+      "down_mbps": 20
+    },
+    {
+      "type": "hysteria",
+      "tag": "🇺🇸_US_美国_IPV4 (2)",
+      "server": "137.175.82.44",
+      "server_port": 20022,
+      "auth_str": "dongtaiwang.com",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      },
+      "up_mbps": 11,
+      "down_mbps": 55
     },
     {
       "type": "anytls",
@@ -489,64 +467,10 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇺🇸_US_美国_IPV4 (4)",
-      "server": "172.66.0.1",
-      "server_port": 443,
-      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
-      "alter_id": 0,
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "vmess.lbw666.dpdns.org"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "vmess.lbw666.dpdns.org"
-        }
-      }
-    },
-    {
       "type": "hysteria",
       "tag": "🇫🇷_FR_法国_IPV4",
       "server": "62.210.28.175",
       "server_port": 24667,
-      "auth_str": "dongtaiwang.com",
-      "tls": {
-        "enabled": true,
-        "server_name": "bing.com",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
-      },
-      "up_mbps": 11,
-      "down_mbps": 55
-    },
-    {
-      "type": "hysteria",
-      "tag": "🇩🇪_DE_德国_IPV4 (2)",
-      "server": "5.83.129.90",
-      "server_port": 54177,
-      "auth_str": "dongtaiwang.com",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
-      },
-      "up_mbps": 11,
-      "down_mbps": 55
-    },
-    {
-      "type": "hysteria",
-      "tag": "🇫🇷_FR_法国_IPV4 (2)",
-      "server": "163.172.117.163",
-      "server_port": 36699,
       "auth_str": "dongtaiwang.com",
       "tls": {
         "enabled": true,
