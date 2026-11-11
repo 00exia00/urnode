@@ -126,7 +126,6 @@
         "direct",
         "@DeltaKroneckerGithub_3021_IPV4",
         "🇯🇵_JP_日本_IPV4",
-        "@DeltaKroneckerGithub_1189_IPV4",
         "🇳🇱_NL_荷兰_IPV4",
         "🇭🇰_HK_香港->🇩🇪_DE_德国_IPV4",
         "🇳🇱_NL_荷兰_IPV4 (2)",
@@ -396,7 +395,6 @@
       "type": "selector",
       "outbounds": [
         "@DeltaKroneckerGithub_3021_IPV4",
-        "@DeltaKroneckerGithub_1189_IPV4",
         "🇳🇱_NL_荷兰_IPV4",
         "🇳🇱_NL_荷兰_IPV4 (2)",
         "@DeltaKroneckerGithub_115_IPV4",
@@ -421,7 +419,6 @@
       "outbounds": [
         "@DeltaKroneckerGithub_3021_IPV4",
         "🇯🇵_JP_日本_IPV4",
-        "@DeltaKroneckerGithub_1189_IPV4",
         "🇳🇱_NL_荷兰_IPV4",
         "🇭🇰_HK_香港->🇩🇪_DE_德国_IPV4",
         "🇳🇱_NL_荷兰_IPV4 (2)",
@@ -488,25 +485,6 @@
       "transport": {
         "type": "ws",
         "path": "/api"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "@DeltaKroneckerGithub_1189_IPV4",
-      "server": "172.64.152.234",
-      "server_port": 443,
-      "password": "558e3e91-0ffa-4180-9386-5813fa7c3cb1",
-      "tls": {
-        "enabled": true,
-        "server_name": "pz333.pzmike.dpdns.org",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "pz333.pzmike.dpdns.org"
-        }
       }
     },
     {
