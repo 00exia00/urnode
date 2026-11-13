@@ -127,12 +127,12 @@
         "🇺🇸_US_美国_IPV4",
         "@DeltaKroneckerGithub_3021_IPV4",
         "🇺🇸 机场推荐:dafei.de 美国 15_IPV4",
-        "🇺🇸_US_美国_IPV4 (2)",
         "🇺🇸_US_美国_IPV4 (3)",
+        "🇺🇸_US_美国_IPV4 (4)",
         "🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4",
         "🇫🇷_FR_法国_IPV4",
-        "🇩🇪_DE_德国_IPV4 (2)",
-        "🇺🇸_US_美国_IPV4 (4)",
+        "🇩🇪_DE_德国_IPV4",
+        "🇺🇸_US_美国_IPV4 (5)",
         "🇫🇷_FR_法国_IPV4 (2)",
         "🇮🇹_IT_意大利_IPV4",
         "🇮🇹_IT_意大利_IPV4 (2)",
@@ -142,8 +142,7 @@
         "🇮🇹_IT_意大利_IPV4 (6)",
         "🇮🇹_IT_意大利_IPV4 (7)",
         "🇮🇹_IT_意大利_IPV4 (8)",
-        "🇮🇹_IT_意大利_IPV4 (9)",
-        "🇮🇹_IT_意大利_IPV4 (10)"
+        "🇮🇹_IT_意大利_IPV4 (9)"
       ]
     },
     {
@@ -379,10 +378,10 @@
       "outbounds": [
         "🇺🇸_US_美国_IPV4",
         "🇺🇸 机场推荐:dafei.de 美国 15_IPV4",
-        "🇺🇸_US_美国_IPV4 (2)",
         "🇺🇸_US_美国_IPV4 (3)",
+        "🇺🇸_US_美国_IPV4 (4)",
         "🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4",
-        "🇺🇸_US_美国_IPV4 (4)"
+        "🇺🇸_US_美国_IPV4 (5)"
       ]
     },
     {
@@ -391,7 +390,7 @@
       "outbounds": [
         "@DeltaKroneckerGithub_3021_IPV4",
         "🇫🇷_FR_法国_IPV4",
-        "🇩🇪_DE_德国_IPV4 (2)",
+        "🇩🇪_DE_德国_IPV4",
         "🇫🇷_FR_法国_IPV4 (2)",
         "🇮🇹_IT_意大利_IPV4",
         "🇮🇹_IT_意大利_IPV4 (2)",
@@ -401,8 +400,7 @@
         "🇮🇹_IT_意大利_IPV4 (6)",
         "🇮🇹_IT_意大利_IPV4 (7)",
         "🇮🇹_IT_意大利_IPV4 (8)",
-        "🇮🇹_IT_意大利_IPV4 (9)",
-        "🇮🇹_IT_意大利_IPV4 (10)"
+        "🇮🇹_IT_意大利_IPV4 (9)"
       ]
     },
     {
@@ -412,12 +410,12 @@
         "🇺🇸_US_美国_IPV4",
         "@DeltaKroneckerGithub_3021_IPV4",
         "🇺🇸 机场推荐:dafei.de 美国 15_IPV4",
-        "🇺🇸_US_美国_IPV4 (2)",
         "🇺🇸_US_美国_IPV4 (3)",
+        "🇺🇸_US_美国_IPV4 (4)",
         "🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4",
         "🇫🇷_FR_法国_IPV4",
-        "🇩🇪_DE_德国_IPV4 (2)",
-        "🇺🇸_US_美国_IPV4 (4)",
+        "🇩🇪_DE_德国_IPV4",
+        "🇺🇸_US_美国_IPV4 (5)",
         "🇫🇷_FR_法国_IPV4 (2)",
         "🇮🇹_IT_意大利_IPV4",
         "🇮🇹_IT_意大利_IPV4 (2)",
@@ -427,8 +425,7 @@
         "🇮🇹_IT_意大利_IPV4 (6)",
         "🇮🇹_IT_意大利_IPV4 (7)",
         "🇮🇹_IT_意大利_IPV4 (8)",
-        "🇮🇹_IT_意大利_IPV4 (9)",
-        "🇮🇹_IT_意大利_IPV4 (10)"
+        "🇮🇹_IT_意大利_IPV4 (9)"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -439,15 +436,16 @@
       "tag": "direct"
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇺🇸_US_美国_IPV4",
-      "server": "3.169.9.125",
+      "server": "104.18.42.163",
       "server_port": 443,
-      "uuid": "67cd3349-f789-4cbb-8b91-4b6b1654ce7c",
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "alter_id": 0,
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "d14jyezfrcyf60.cloudfront.net",
-        "insecure": true,
+        "server_name": "guanwang.awsno.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -455,9 +453,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/hls/cctv5phd.m3u8",
         "headers": {
-          "Host": "d14jyezfrcyf60.cloudfront.net"
+          "Host": "guanwang.awsno.com"
         }
       }
     },
@@ -507,7 +505,7 @@
     },
     {
       "type": "hysteria",
-      "tag": "🇺🇸_US_美国_IPV4 (2)",
+      "tag": "🇺🇸_US_美国_IPV4 (3)",
       "server": "137.175.82.43",
       "server_port": 20022,
       "auth_str": "dongtaiwang.com",
@@ -524,7 +522,7 @@
     },
     {
       "type": "hysteria",
-      "tag": "🇺🇸_US_美国_IPV4 (3)",
+      "tag": "🇺🇸_US_美国_IPV4 (4)",
       "server": "137.175.82.44",
       "server_port": 20022,
       "auth_str": "dongtaiwang.com",
@@ -570,7 +568,7 @@
     },
     {
       "type": "hysteria",
-      "tag": "🇩🇪_DE_德国_IPV4 (2)",
+      "tag": "🇩🇪_DE_德国_IPV4",
       "server": "5.83.129.90",
       "server_port": 54177,
       "auth_str": "dongtaiwang.com",
@@ -587,7 +585,7 @@
     },
     {
       "type": "hysteria",
-      "tag": "🇺🇸_US_美国_IPV4 (4)",
+      "tag": "🇺🇸_US_美国_IPV4 (5)",
       "server": "198.200.57.142",
       "server_port": 22335,
       "auth_str": "github.com/Alvin9999-newpac/fanqiang",
@@ -654,14 +652,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹_IT_意大利_IPV4 (5)",
-      "server": "202.50.253.18",
-      "server_port": 19999,
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-      "method": "aes-256-gcm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹_IT_意大利_IPV4 (6)",
       "server": "202.50.253.54",
       "server_port": 19999,
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
@@ -669,7 +659,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹_IT_意大利_IPV4 (7)",
+      "tag": "🇮🇹_IT_意大利_IPV4 (6)",
       "server": "202.50.253.45",
       "server_port": 19999,
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
@@ -677,7 +667,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹_IT_意大利_IPV4 (8)",
+      "tag": "🇮🇹_IT_意大利_IPV4 (7)",
       "server": "202.50.253.99",
       "server_port": 19999,
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
@@ -685,7 +675,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹_IT_意大利_IPV4 (9)",
+      "tag": "🇮🇹_IT_意大利_IPV4 (8)",
       "server": "202.50.253.81",
       "server_port": 19999,
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
@@ -693,7 +683,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹_IT_意大利_IPV4 (10)",
+      "tag": "🇮🇹_IT_意大利_IPV4 (9)",
       "server": "202.50.253.72",
       "server_port": 19999,
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
