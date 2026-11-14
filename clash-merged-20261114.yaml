@@ -1,0 +1,1555 @@
+# Clash Meta / Mihomo merged config
+# Generated at: 2026-11-14 06:06
+# Date: 2026-11-14
+# Source: public node subscriptions 0-4
+# Loaded sources: 0, 1, 2, 3
+# Skipped sources: 4
+# [0] original 526, added 478, duplicate 48
+# [1] original 141, added 84, duplicate 57
+# [2] original 1304, added 1304, duplicate 0
+# [3] original 14, added 14, duplicate 0
+# Total proxies: 74
+# Availability tested at: 2026-11-14 14:06 CST
+# Availability test URL: https://cp.cloudflare.com/generate_204
+# Availability result: 74/1880 passed (1865 testable)
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: warning
+ipv6: true
+dns:
+  enable: true
+  listen: 127.0.0.1:1053
+  ipv6: true
+  prefer-h3: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+  - localhost
+  - +.localhost
+  - +.lan
+  - +.local
+  - +.home.arpa
+  use-hosts: true
+  use-system-hosts: true
+  respect-rules: true
+  default-nameserver:
+  - https://223.5.5.5/dns-query#DIRECT
+  - https://223.6.6.6/dns-query#DIRECT
+  proxy-server-nameserver:
+  - https://223.5.5.5/dns-query#DIRECT
+  - https://223.6.6.6/dns-query#DIRECT
+  direct-nameserver:
+  - https://223.5.5.5/dns-query#DIRECT
+  - https://doh.pub/dns-query#DIRECT
+  direct-nameserver-follow-policy: false
+  nameserver-policy:
+    geosite:cn:
+    - https://223.5.5.5/dns-query#DIRECT
+    - https://doh.pub/dns-query#DIRECT
+  nameserver:
+  - https://1.1.1.1/dns-query
+  - https://1.0.0.1/dns-query
+proxies:
+- name: '[6.35 Mbps] 🇷🇴RO_46|533KB/s [04d8dee969a2]'
+  password: 'null'
+  port: 9002
+  server: 193.176.84.38
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: '[测速失败] 🇫🇷FR_122|3.3MB/s|M003-260806 [11b07cad0671]'
+  client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: 172.64.153.33
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: fs.qicai99.com
+- name: '[7.06 Mbps] 🇷🇴RO_62|1.8MB/s|P002-260618 [1a98c95ea598]'
+  password: None
+  port: 9002
+  server: 193.176.84.38
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[1.86 Mbps] 🇺🇸US_435|202KB/s|Z001-260618 [1b5af584fbfa]'
+  port: 443
+  server: fan.596189.xyz
+  skip-cert-verify: true
+  sub_tag: Z001-260618
+  tls: true
+  type: http
+  udp: true
+  sni: fan.596189.xyz
+- name: '[测速失败] 🇫🇷FR_83|1.8MB/s|M003-260806 [1e43bdd73aef]'
+  client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: yx.l110.us.ci
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: fs.qicai99.com
+- name: '[0.09 Mbps] 🇺🇸US_442|219KB/s|R002-260618 [284ffb0c97a6]'
+  port: 8443
+  server: 45.145.73.240
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[5.80 Mbps] 🇳🇱NL_165|899KB/s|M003-260806 [2d1b60bfc57e]'
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 104.18.151.231
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  ws-opts:
+    headers:
+      Host: delicate-hall-bf16.vpndkah.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36
+    path: /ws
+  xudp: true
+  packet-encoding: xudp
+  servername: delicate-hall-bf16.vpndkah.workers.dev
+- name: '[测速失败] 🇫🇷FR_125|2.8MB/s|M003-260806 [3b4f9c30a843]'
+  client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: 172.64.159.33
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto G (5) Build/NPPS25.137-93-14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: fs.qicai99.com
+- name: '[7.04 Mbps] 🇷🇺RU_8|1.0MB/s|K001-260618 [3ff2055c82e0]'
+  password: 'null'
+  port: 8443
+  server: 87.242.85.187
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: '[3.52 Mbps] 🇺🇸US_212|269KB/s|R002-260618 [4832540fa4bc]'
+  port: 443
+  server: 38.28.193.1
+  skip-cert-verify: true
+  sni: 38.28.193.1
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[测速失败] 🇫🇷FR_126|4.2MB/s|M003-260806 [49f33878ff20]'
+  client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: 172.67.167.207
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: fs.qicai99.com
+- name: '[158.64 Mbps] 🇺🇸US_194|742KB/s|R002-260618 [4a813a8d418a]'
+  port: 8443
+  server: 54.190.176.228
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[6.55 Mbps] 🇷🇴RO_55|1.4MB/s|P002-260618 [4ac2e14c271d]'
+  password: None
+  port: 9002
+  server: 193.176.84.21
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[测速失败] 🇮🇳IN_5|270KB/s|R002-260618 [4c2bac9eb305]'
+  port: 443
+  server: 110.173.188.221
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[测速失败] 🇫🇷FR_116|1.5MB/s|M003-260806 [4fe854595d0c]'
+  client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: 104.18.38.33
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: fs.qicai99.com
+- name: '[6.74 Mbps] 🇳🇱NL_103|335KB/s|R002-260618 [511bc38da784]'
+  port: 443
+  server: 185.140.209.235
+  skip-cert-verify: true
+  sni: 482c8436a1f7c908b48a1757abb5dd79-ce85c45206570905.apache-iv.com
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[测速失败] 🇨🇦CA_7|931KB/s|R002-260618 [52eb327e3668]'
+  port: 9443
+  server: 23.169.224.34
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[3.18 Mbps] 🇺🇸US_251|123KB/s|R002-260618 [535e13772931]'
+  password: 'null'
+  port: 443
+  server: 38.28.193.188
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: '[6.75 Mbps] 🇳🇱NL_204|659KB/s|B007-260618 [569c7ebe9a5f]'
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 104.18.151.231
+  sub_tag: B007-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  ws-opts:
+    headers:
+      Host: shiny-base-4d9a.mifolan4697928.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: shiny-base-4d9a.mifolan4697928.workers.dev
+- name: '[测速失败] 🇫🇷FR_124|3.6MB/s|M003-260806 [58f9322433b5]'
+  client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: 172.64.158.33
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: fs.qicai99.com
+- name: '[6.68 Mbps] 🇷🇺RU_1|1.2MB/s|R002-260618 [5a513b5711bd]'
+  port: 8443
+  server: 87.242.85.187
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[0.30 Mbps] 🇩🇪DE_60|2.5MB/s|R002-260618 [5af8b43bb3c2]'
+  password: 'null'
+  port: 443
+  server: 159.69.94.125
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: '[6.52 Mbps] 🇳🇱NL_164|673KB/s|B007-260618 [5c663575c3de]'
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 104.18.151.231
+  sub_tag: B007-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  ws-opts:
+    headers:
+      Host: jolly-silence-83b2.kidat76098.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36
+    path: /ws
+  xudp: true
+  packet-encoding: xudp
+  servername: jolly-silence-83b2.kidat76098.workers.dev
+- name: '[6.77 Mbps] 🇷🇴RO_42|1.3MB/s|R002-260618 [5dc79f84d447]'
+  port: 9002
+  server: 193.176.84.37
+  skip-cert-verify: true
+  sni: www.bing.com
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[0.30 Mbps] 🇺🇸US_398|227KB/s|R002-260618 [5f8596a8538f]'
+  password: 'null'
+  port: 443
+  server: fan.596189.xyz
+  sni: fan.596189.xyz
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: '[6.79 Mbps] 🇷🇴RO_74|982KB/s [693ea8f5a428]'
+  port: 9002
+  server: 193.176.84.21
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: true
+  type: http
+  udp: true
+- name: '[6.44 Mbps] 🇷🇴RO_18|2.0MB/s [7354ec979027]'
+  port: 9002
+  server: 193.176.84.34
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: true
+  type: http
+  udp: true
+- name: '[28.66 Mbps] ❓Other_45|209KB/s|P002-260618 [8662975011c7]'
+  password: None
+  port: 443
+  server: 129.153.93.183
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[4.67 Mbps] 🇺🇸US_339|474KB/s|R002-260618 [8a36b94ac03d]'
+  password: e4b72b531a2d10900519
+  port: 443
+  server: 107.151.238.27
+  sni: 6b97ee1b.acsnet.co
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: testuser1
+  udp: true
+- name: '[3.81 Mbps] 🇩🇪DE_23|581KB/s|P002-260618 [8cc6d3155b9a]'
+  password: e4b72b531a2d10900519
+  port: 443
+  server: 167.172.172.190
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  username: testuser1
+- name: '[5.55 Mbps] 🇩🇪DE_21|206KB/s|R002-260618 [92abb46579b9]'
+  port: 443
+  server: 159.69.94.125
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[6.60 Mbps] 🇫🇷FR_6|4.7MB/s|K001-260618 [9609525282db]'
+  password: None
+  port: 443
+  server: 82.66.235.221
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  username: ''
+  udp: true
+- name: '[7.03 Mbps] 🇳🇱NL_78|306KB/s|R002-260618 [9e1dd33f8c76]'
+  password: e4b72b531a2d10900519
+  port: 443
+  server: 82.196.9.7
+  sni: 52c40907.acsnet.co
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: testuser1
+  udp: true
+- name: '[6.81 Mbps] ❓Other_13|262KB/s|P002-260618 [a09d024d4dff]'
+  password: None
+  port: 9002
+  server: 193.176.84.37
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[5.55 Mbps] 🇳🇱NL_160|274KB/s|S004-260618 [a25c0bdba032]'
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 104.18.151.231
+  sub_tag: S004-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  ws-opts:
+    headers:
+      Host: muddy-star-d195.aboumansour10313.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36
+    path: /ws
+  xudp: true
+  packet-encoding: xudp
+  servername: muddy-star-d195.aboumansour10313.workers.dev
+- name: '[5.10 Mbps] 🇳🇱NL_163|1.1MB/s|M003-260806 [a26403486d62]'
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 104.18.151.231
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  ws-opts:
+    headers:
+      Host: workers.retaxay188.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /ws
+  xudp: true
+  packet-encoding: xudp
+  servername: workers.retaxay188.workers.dev
+- name: '[6.12 Mbps] 🇩🇪DE_24|1.2MB/s|R002-260618 [a4490dd932b1]'
+  port: 443
+  server: 217.92.132.233
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[测速失败] 🇫🇷FR_120|3.6MB/s|M003-260806 [a722e2ddc9e8]'
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 104.24.197.20
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+      User-Agent: Mozilla/5.0 (Unknown; Linux) AppleWebKit/538.1 (KHTML, like Gecko) Chrome/v1.0.0 Safari/538.1
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: fs.qicai99.com
+- name: '[6.77 Mbps] 🇨🇦CA_16|903KB/s|R002-260618 [a7f30723a1f1]'
+  port: 443
+  server: 142.44.210.129
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[测速失败] 🇫🇷FR_82|1.1MB/s|M003-260806 [aab61571ffee]'
+  client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: 172.67.74.177
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: fs.qicai99.com
+- name: '[18.40 Mbps] 🇺🇸US_197|661KB/s|R002-260618 [ac79b772f5d0]'
+  port: 443
+  server: 96.5.129.85
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[8.86 Mbps] ❓Other_23|474KB/s|R002-260618 [ad7d5a110359]'
+  port: 443
+  server: 18.200.158.139
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[6.92 Mbps] 🇷🇴RO_49|1.9MB/s|P002-260618 [b09b93af75cd]'
+  password: None
+  port: 9002
+  server: 193.176.84.34
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[1.80 Mbps] 🇺🇸US_434|160KB/s|R002-260618 [b293ec7d21de]'
+  port: 443
+  server: fan.596189.xyz
+  skip-cert-verify: true
+  sni: fan.596189.xyz
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[5.68 Mbps] ❓Other_79|1.3MB/s|P002-260618 [b3d4aadd9f8a]'
+  password: 'null'
+  port: 443
+  server: 82.66.235.221
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: '[3.31 Mbps] 🇺🇸US_426|116KB/s|R002-260618 [b4135a5f200b]'
+  port: 443
+  server: 137.175.22.98
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[5.48 Mbps] 🇪🇸ES_5|1.5MB/s|R002-260618 [b8079e529455]'
+  port: 8090
+  server: 80.24.34.107
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[6.34 Mbps] 🇷🇴RO_27|1.9MB/s|R002-260618 [bafa10c25882]'
+  port: 9002
+  server: 193.176.84.34
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[6.75 Mbps] 🇫🇷FR_3|3.8MB/s|R002-260618 [bb26c3f0d560]'
+  port: 443
+  server: 82.66.235.221
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[5.98 Mbps] 🇮🇱IL_1|210KB/s|R002-260618 [bb294b91a05b]'
+  port: 443
+  server: 62.90.77.30
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[5.79 Mbps] 🇳🇱NL_162|928KB/s|S004-260618 [bf035cf5c449]'
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 104.18.151.231
+  sub_tag: S004-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  ws-opts:
+    headers:
+      Host: workers.jijew83195.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
+    path: /ws
+  xudp: true
+  packet-encoding: xudp
+  servername: workers.jijew83195.workers.dev
+- name: '[6.55 Mbps] 🇷🇺RU_3|1.7MB/s|P002-260618 [bf1996a133fe]'
+  password: None
+  port: 8443
+  server: 87.242.85.187
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[2.76 Mbps] 🇺🇸US_252|318KB/s|Z001-260618 [c13379d18cff]'
+  port: 443
+  server: fan.226278.xyz
+  sub_tag: Z001-260618
+  tls: true
+  type: http
+  udp: true
+  sni: fan.226278.xyz
+- name: '[测速失败] 🇫🇷FR_117|2.6MB/s|M003-260806 [cfe4c4dabfc0]'
+  client-fingerprint: chrome
+  network: ws
+  port: 443
+  server: 104.18.39.33
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L22 Build/HUAWEICUN-L22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: fs.qicai99.com
+- name: '[0.98 Mbps] 🇺🇸US_214|151KB/s|R002-260618 [d009de3a35ca]'
+  port: 443
+  server: fan.226278.xyz
+  sni: fan.226278.xyz
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[6.71 Mbps] 🇷🇴RO_14|1.6MB/s|Z001-260618 [d241efdf9146]'
+  port: 9002
+  server: 193.176.84.21
+  skip-cert-verify: true
+  sub_tag: Z001-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[6.59 Mbps] 🇮🇱IL_2|967KB/s|K001-260618 [d3b607996ace]'
+  password: None
+  port: 443
+  server: 62.90.77.30
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  username: ''
+  udp: true
+- name: '[测速失败] 🇫🇷FR_107|5.1MB/s|M003-260806 [d4bab59515ee]'
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 104.21.41.243
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+    path: /
+  xudp: true
+  packet-encoding: xudp
+  servername: fs.qicai99.com
+- name: '[测速失败] 🇫🇷FR_121|3.3MB/s|M003-260806 [d967e826df0b]'
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 172.64.150.28
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36
+    path: /fp=chrome
+  xudp: true
+  packet-encoding: xudp
+  servername: fs.qicai99.com
+- name: '[3.47 Mbps] 🇨🇿CZ_1|1.6MB/s|R002-260618 [dea96bfbdd9e]'
+  port: 443
+  server: 193.35.104.196
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[7.30 Mbps] 🇫🇷FR_21|788KB/s|R002-260618 [df3cefb034a8]'
+  port: 443
+  server: 103.82.101.44
+  skip-cert-verify: true
+  sni: f3a61d8406d537345747f99f8a281007-3f754ed5da1bba09.apache-iv.com
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[6.42 Mbps] 🇷🇴RO_64|206KB/s|P002-260618 [e1e5753e62ce]'
+  password: 'null'
+  port: 9002
+  server: 193.176.84.21
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: '[6.65 Mbps] 🇷🇴RO_60|1.5MB/s|R002-260618 [e24efac8b6e9]'
+  password: 'null'
+  port: 9002
+  server: 193.176.84.38
+  skip-cert-verify: true
+  sni: 193.176.84.38
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: '[6.81 Mbps] 🇳🇱NL_94|1.8MB/s|K001-260618 [e33fb6223bc5]'
+  password: e4b72b531a2d10900519
+  port: 443
+  server: 82.196.9.7
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  username: testuser1
+  udp: true
+- name: '[20.00 Mbps] 🇺🇸US_255|750KB/s|R002-260618 [e49a7cefc91f]'
+  port: 443
+  server: 24.225.10.211
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[7.21 Mbps] 🇫🇷FR_22|2.0MB/s|R002-260618 [e9b65e97ef66]'
+  port: 8090
+  server: 80.124.109.22
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[6.65 Mbps] 🇷🇴RO_5|592KB/s|P002-260618 [eb9a3fe188dc]'
+  port: 9002
+  server: 193.176.84.37
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[9.36 Mbps] ❓Other_31|2.4MB/s|K001-260618 [ebe2b193bdbc]'
+  password: None
+  port: 443
+  server: 18.200.158.139
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  username: ''
+  udp: true
+- name: '[8.32 Mbps] 🇮🇪IE_6|2.1MB/s|P002-260618 [ed53be9b8764]'
+  password: 'null'
+  port: 443
+  server: 18.200.158.139
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: '[30.37 Mbps] 🇺🇸US_159|778KB/s|R002-260618 [f3757137fc03]'
+  port: 443
+  server: 129.153.93.183
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[6.80 Mbps] 🇷🇴RO_69|1.6MB/s|R002-260618 [f88f51fe15ea]'
+  password: 'null'
+  port: 9002
+  server: 193.176.84.37
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: '[11.62 Mbps] 🇲🇽MX_1|452KB/s|R002-260618 [fc7c075ec4e0]'
+  port: 443
+  server: 45.134.9.41
+  skip-cert-verify: true
+  sni: 991cc80f13caf81d3426ddebb2da7f49-240d6105b6ef86f0.apache-iv.com
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[27.74 Mbps] 🇺🇸US_542|812KB/s [fe68ba92b4d7]'
+  password: 'null'
+  port: 443
+  server: 129.153.93.183
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- type: vmess
+  name: '[39.44 Mbps] 🇺🇸 机场推荐:dafei.de 美国 15_IPV4'
+  server: 172.67.190.164
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  cipher: auto
+  alterId: 0
+  tls: true
+  servername: guanwang.awsno.com
+  sni: guanwang.awsno.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - DIRECT
+  - '[6.35 Mbps] 🇷🇴RO_46|533KB/s [04d8dee969a2]'
+  - '[测速失败] 🇫🇷FR_122|3.3MB/s|M003-260806 [11b07cad0671]'
+  - '[7.06 Mbps] 🇷🇴RO_62|1.8MB/s|P002-260618 [1a98c95ea598]'
+  - '[1.86 Mbps] 🇺🇸US_435|202KB/s|Z001-260618 [1b5af584fbfa]'
+  - '[测速失败] 🇫🇷FR_83|1.8MB/s|M003-260806 [1e43bdd73aef]'
+  - '[0.09 Mbps] 🇺🇸US_442|219KB/s|R002-260618 [284ffb0c97a6]'
+  - '[5.80 Mbps] 🇳🇱NL_165|899KB/s|M003-260806 [2d1b60bfc57e]'
+  - '[测速失败] 🇫🇷FR_125|2.8MB/s|M003-260806 [3b4f9c30a843]'
+  - '[7.04 Mbps] 🇷🇺RU_8|1.0MB/s|K001-260618 [3ff2055c82e0]'
+  - '[3.52 Mbps] 🇺🇸US_212|269KB/s|R002-260618 [4832540fa4bc]'
+  - '[测速失败] 🇫🇷FR_126|4.2MB/s|M003-260806 [49f33878ff20]'
+  - '[158.64 Mbps] 🇺🇸US_194|742KB/s|R002-260618 [4a813a8d418a]'
+  - '[6.55 Mbps] 🇷🇴RO_55|1.4MB/s|P002-260618 [4ac2e14c271d]'
+  - '[测速失败] 🇮🇳IN_5|270KB/s|R002-260618 [4c2bac9eb305]'
+  - '[测速失败] 🇫🇷FR_116|1.5MB/s|M003-260806 [4fe854595d0c]'
+  - '[6.74 Mbps] 🇳🇱NL_103|335KB/s|R002-260618 [511bc38da784]'
+  - '[测速失败] 🇨🇦CA_7|931KB/s|R002-260618 [52eb327e3668]'
+  - '[3.18 Mbps] 🇺🇸US_251|123KB/s|R002-260618 [535e13772931]'
+  - '[6.75 Mbps] 🇳🇱NL_204|659KB/s|B007-260618 [569c7ebe9a5f]'
+  - '[测速失败] 🇫🇷FR_124|3.6MB/s|M003-260806 [58f9322433b5]'
+  - '[6.68 Mbps] 🇷🇺RU_1|1.2MB/s|R002-260618 [5a513b5711bd]'
+  - '[0.30 Mbps] 🇩🇪DE_60|2.5MB/s|R002-260618 [5af8b43bb3c2]'
+  - '[6.52 Mbps] 🇳🇱NL_164|673KB/s|B007-260618 [5c663575c3de]'
+  - '[6.77 Mbps] 🇷🇴RO_42|1.3MB/s|R002-260618 [5dc79f84d447]'
+  - '[0.30 Mbps] 🇺🇸US_398|227KB/s|R002-260618 [5f8596a8538f]'
+  - '[6.79 Mbps] 🇷🇴RO_74|982KB/s [693ea8f5a428]'
+  - '[6.44 Mbps] 🇷🇴RO_18|2.0MB/s [7354ec979027]'
+  - '[28.66 Mbps] ❓Other_45|209KB/s|P002-260618 [8662975011c7]'
+  - '[4.67 Mbps] 🇺🇸US_339|474KB/s|R002-260618 [8a36b94ac03d]'
+  - '[3.81 Mbps] 🇩🇪DE_23|581KB/s|P002-260618 [8cc6d3155b9a]'
+  - '[5.55 Mbps] 🇩🇪DE_21|206KB/s|R002-260618 [92abb46579b9]'
+  - '[6.60 Mbps] 🇫🇷FR_6|4.7MB/s|K001-260618 [9609525282db]'
+  - '[7.03 Mbps] 🇳🇱NL_78|306KB/s|R002-260618 [9e1dd33f8c76]'
+  - '[6.81 Mbps] ❓Other_13|262KB/s|P002-260618 [a09d024d4dff]'
+  - '[5.55 Mbps] 🇳🇱NL_160|274KB/s|S004-260618 [a25c0bdba032]'
+  - '[5.10 Mbps] 🇳🇱NL_163|1.1MB/s|M003-260806 [a26403486d62]'
+  - '[6.12 Mbps] 🇩🇪DE_24|1.2MB/s|R002-260618 [a4490dd932b1]'
+  - '[测速失败] 🇫🇷FR_120|3.6MB/s|M003-260806 [a722e2ddc9e8]'
+  - '[6.77 Mbps] 🇨🇦CA_16|903KB/s|R002-260618 [a7f30723a1f1]'
+  - '[测速失败] 🇫🇷FR_82|1.1MB/s|M003-260806 [aab61571ffee]'
+  - '[18.40 Mbps] 🇺🇸US_197|661KB/s|R002-260618 [ac79b772f5d0]'
+  - '[8.86 Mbps] ❓Other_23|474KB/s|R002-260618 [ad7d5a110359]'
+  - '[6.92 Mbps] 🇷🇴RO_49|1.9MB/s|P002-260618 [b09b93af75cd]'
+  - '[1.80 Mbps] 🇺🇸US_434|160KB/s|R002-260618 [b293ec7d21de]'
+  - '[5.68 Mbps] ❓Other_79|1.3MB/s|P002-260618 [b3d4aadd9f8a]'
+  - '[3.31 Mbps] 🇺🇸US_426|116KB/s|R002-260618 [b4135a5f200b]'
+  - '[5.48 Mbps] 🇪🇸ES_5|1.5MB/s|R002-260618 [b8079e529455]'
+  - '[6.34 Mbps] 🇷🇴RO_27|1.9MB/s|R002-260618 [bafa10c25882]'
+  - '[6.75 Mbps] 🇫🇷FR_3|3.8MB/s|R002-260618 [bb26c3f0d560]'
+  - '[5.98 Mbps] 🇮🇱IL_1|210KB/s|R002-260618 [bb294b91a05b]'
+  - '[5.79 Mbps] 🇳🇱NL_162|928KB/s|S004-260618 [bf035cf5c449]'
+  - '[6.55 Mbps] 🇷🇺RU_3|1.7MB/s|P002-260618 [bf1996a133fe]'
+  - '[2.76 Mbps] 🇺🇸US_252|318KB/s|Z001-260618 [c13379d18cff]'
+  - '[测速失败] 🇫🇷FR_117|2.6MB/s|M003-260806 [cfe4c4dabfc0]'
+  - '[0.98 Mbps] 🇺🇸US_214|151KB/s|R002-260618 [d009de3a35ca]'
+  - '[6.71 Mbps] 🇷🇴RO_14|1.6MB/s|Z001-260618 [d241efdf9146]'
+  - '[6.59 Mbps] 🇮🇱IL_2|967KB/s|K001-260618 [d3b607996ace]'
+  - '[测速失败] 🇫🇷FR_107|5.1MB/s|M003-260806 [d4bab59515ee]'
+  - '[测速失败] 🇫🇷FR_121|3.3MB/s|M003-260806 [d967e826df0b]'
+  - '[3.47 Mbps] 🇨🇿CZ_1|1.6MB/s|R002-260618 [dea96bfbdd9e]'
+  - '[7.30 Mbps] 🇫🇷FR_21|788KB/s|R002-260618 [df3cefb034a8]'
+  - '[6.42 Mbps] 🇷🇴RO_64|206KB/s|P002-260618 [e1e5753e62ce]'
+  - '[6.65 Mbps] 🇷🇴RO_60|1.5MB/s|R002-260618 [e24efac8b6e9]'
+  - '[6.81 Mbps] 🇳🇱NL_94|1.8MB/s|K001-260618 [e33fb6223bc5]'
+  - '[20.00 Mbps] 🇺🇸US_255|750KB/s|R002-260618 [e49a7cefc91f]'
+  - '[7.21 Mbps] 🇫🇷FR_22|2.0MB/s|R002-260618 [e9b65e97ef66]'
+  - '[6.65 Mbps] 🇷🇴RO_5|592KB/s|P002-260618 [eb9a3fe188dc]'
+  - '[9.36 Mbps] ❓Other_31|2.4MB/s|K001-260618 [ebe2b193bdbc]'
+  - '[8.32 Mbps] 🇮🇪IE_6|2.1MB/s|P002-260618 [ed53be9b8764]'
+  - '[30.37 Mbps] 🇺🇸US_159|778KB/s|R002-260618 [f3757137fc03]'
+  - '[6.80 Mbps] 🇷🇴RO_69|1.6MB/s|R002-260618 [f88f51fe15ea]'
+  - '[11.62 Mbps] 🇲🇽MX_1|452KB/s|R002-260618 [fc7c075ec4e0]'
+  - '[27.74 Mbps] 🇺🇸US_542|812KB/s [fe68ba92b4d7]'
+  - '[39.44 Mbps] 🇺🇸 机场推荐:dafei.de 美国 15_IPV4'
+- name: ♻️ 自动选择
+  type: url-test
+  proxies:
+  - '[6.35 Mbps] 🇷🇴RO_46|533KB/s [04d8dee969a2]'
+  - '[测速失败] 🇫🇷FR_122|3.3MB/s|M003-260806 [11b07cad0671]'
+  - '[7.06 Mbps] 🇷🇴RO_62|1.8MB/s|P002-260618 [1a98c95ea598]'
+  - '[1.86 Mbps] 🇺🇸US_435|202KB/s|Z001-260618 [1b5af584fbfa]'
+  - '[测速失败] 🇫🇷FR_83|1.8MB/s|M003-260806 [1e43bdd73aef]'
+  - '[0.09 Mbps] 🇺🇸US_442|219KB/s|R002-260618 [284ffb0c97a6]'
+  - '[5.80 Mbps] 🇳🇱NL_165|899KB/s|M003-260806 [2d1b60bfc57e]'
+  - '[测速失败] 🇫🇷FR_125|2.8MB/s|M003-260806 [3b4f9c30a843]'
+  - '[7.04 Mbps] 🇷🇺RU_8|1.0MB/s|K001-260618 [3ff2055c82e0]'
+  - '[3.52 Mbps] 🇺🇸US_212|269KB/s|R002-260618 [4832540fa4bc]'
+  - '[测速失败] 🇫🇷FR_126|4.2MB/s|M003-260806 [49f33878ff20]'
+  - '[158.64 Mbps] 🇺🇸US_194|742KB/s|R002-260618 [4a813a8d418a]'
+  - '[6.55 Mbps] 🇷🇴RO_55|1.4MB/s|P002-260618 [4ac2e14c271d]'
+  - '[测速失败] 🇮🇳IN_5|270KB/s|R002-260618 [4c2bac9eb305]'
+  - '[测速失败] 🇫🇷FR_116|1.5MB/s|M003-260806 [4fe854595d0c]'
+  - '[6.74 Mbps] 🇳🇱NL_103|335KB/s|R002-260618 [511bc38da784]'
+  - '[测速失败] 🇨🇦CA_7|931KB/s|R002-260618 [52eb327e3668]'
+  - '[3.18 Mbps] 🇺🇸US_251|123KB/s|R002-260618 [535e13772931]'
+  - '[6.75 Mbps] 🇳🇱NL_204|659KB/s|B007-260618 [569c7ebe9a5f]'
+  - '[测速失败] 🇫🇷FR_124|3.6MB/s|M003-260806 [58f9322433b5]'
+  - '[6.68 Mbps] 🇷🇺RU_1|1.2MB/s|R002-260618 [5a513b5711bd]'
+  - '[0.30 Mbps] 🇩🇪DE_60|2.5MB/s|R002-260618 [5af8b43bb3c2]'
+  - '[6.52 Mbps] 🇳🇱NL_164|673KB/s|B007-260618 [5c663575c3de]'
+  - '[6.77 Mbps] 🇷🇴RO_42|1.3MB/s|R002-260618 [5dc79f84d447]'
+  - '[0.30 Mbps] 🇺🇸US_398|227KB/s|R002-260618 [5f8596a8538f]'
+  - '[6.79 Mbps] 🇷🇴RO_74|982KB/s [693ea8f5a428]'
+  - '[6.44 Mbps] 🇷🇴RO_18|2.0MB/s [7354ec979027]'
+  - '[28.66 Mbps] ❓Other_45|209KB/s|P002-260618 [8662975011c7]'
+  - '[4.67 Mbps] 🇺🇸US_339|474KB/s|R002-260618 [8a36b94ac03d]'
+  - '[3.81 Mbps] 🇩🇪DE_23|581KB/s|P002-260618 [8cc6d3155b9a]'
+  - '[5.55 Mbps] 🇩🇪DE_21|206KB/s|R002-260618 [92abb46579b9]'
+  - '[6.60 Mbps] 🇫🇷FR_6|4.7MB/s|K001-260618 [9609525282db]'
+  - '[7.03 Mbps] 🇳🇱NL_78|306KB/s|R002-260618 [9e1dd33f8c76]'
+  - '[6.81 Mbps] ❓Other_13|262KB/s|P002-260618 [a09d024d4dff]'
+  - '[5.55 Mbps] 🇳🇱NL_160|274KB/s|S004-260618 [a25c0bdba032]'
+  - '[5.10 Mbps] 🇳🇱NL_163|1.1MB/s|M003-260806 [a26403486d62]'
+  - '[6.12 Mbps] 🇩🇪DE_24|1.2MB/s|R002-260618 [a4490dd932b1]'
+  - '[测速失败] 🇫🇷FR_120|3.6MB/s|M003-260806 [a722e2ddc9e8]'
+  - '[6.77 Mbps] 🇨🇦CA_16|903KB/s|R002-260618 [a7f30723a1f1]'
+  - '[测速失败] 🇫🇷FR_82|1.1MB/s|M003-260806 [aab61571ffee]'
+  - '[18.40 Mbps] 🇺🇸US_197|661KB/s|R002-260618 [ac79b772f5d0]'
+  - '[8.86 Mbps] ❓Other_23|474KB/s|R002-260618 [ad7d5a110359]'
+  - '[6.92 Mbps] 🇷🇴RO_49|1.9MB/s|P002-260618 [b09b93af75cd]'
+  - '[1.80 Mbps] 🇺🇸US_434|160KB/s|R002-260618 [b293ec7d21de]'
+  - '[5.68 Mbps] ❓Other_79|1.3MB/s|P002-260618 [b3d4aadd9f8a]'
+  - '[3.31 Mbps] 🇺🇸US_426|116KB/s|R002-260618 [b4135a5f200b]'
+  - '[5.48 Mbps] 🇪🇸ES_5|1.5MB/s|R002-260618 [b8079e529455]'
+  - '[6.34 Mbps] 🇷🇴RO_27|1.9MB/s|R002-260618 [bafa10c25882]'
+  - '[6.75 Mbps] 🇫🇷FR_3|3.8MB/s|R002-260618 [bb26c3f0d560]'
+  - '[5.98 Mbps] 🇮🇱IL_1|210KB/s|R002-260618 [bb294b91a05b]'
+  - '[5.79 Mbps] 🇳🇱NL_162|928KB/s|S004-260618 [bf035cf5c449]'
+  - '[6.55 Mbps] 🇷🇺RU_3|1.7MB/s|P002-260618 [bf1996a133fe]'
+  - '[2.76 Mbps] 🇺🇸US_252|318KB/s|Z001-260618 [c13379d18cff]'
+  - '[测速失败] 🇫🇷FR_117|2.6MB/s|M003-260806 [cfe4c4dabfc0]'
+  - '[0.98 Mbps] 🇺🇸US_214|151KB/s|R002-260618 [d009de3a35ca]'
+  - '[6.71 Mbps] 🇷🇴RO_14|1.6MB/s|Z001-260618 [d241efdf9146]'
+  - '[6.59 Mbps] 🇮🇱IL_2|967KB/s|K001-260618 [d3b607996ace]'
+  - '[测速失败] 🇫🇷FR_107|5.1MB/s|M003-260806 [d4bab59515ee]'
+  - '[测速失败] 🇫🇷FR_121|3.3MB/s|M003-260806 [d967e826df0b]'
+  - '[3.47 Mbps] 🇨🇿CZ_1|1.6MB/s|R002-260618 [dea96bfbdd9e]'
+  - '[7.30 Mbps] 🇫🇷FR_21|788KB/s|R002-260618 [df3cefb034a8]'
+  - '[6.42 Mbps] 🇷🇴RO_64|206KB/s|P002-260618 [e1e5753e62ce]'
+  - '[6.65 Mbps] 🇷🇴RO_60|1.5MB/s|R002-260618 [e24efac8b6e9]'
+  - '[6.81 Mbps] 🇳🇱NL_94|1.8MB/s|K001-260618 [e33fb6223bc5]'
+  - '[20.00 Mbps] 🇺🇸US_255|750KB/s|R002-260618 [e49a7cefc91f]'
+  - '[7.21 Mbps] 🇫🇷FR_22|2.0MB/s|R002-260618 [e9b65e97ef66]'
+  - '[6.65 Mbps] 🇷🇴RO_5|592KB/s|P002-260618 [eb9a3fe188dc]'
+  - '[9.36 Mbps] ❓Other_31|2.4MB/s|K001-260618 [ebe2b193bdbc]'
+  - '[8.32 Mbps] 🇮🇪IE_6|2.1MB/s|P002-260618 [ed53be9b8764]'
+  - '[30.37 Mbps] 🇺🇸US_159|778KB/s|R002-260618 [f3757137fc03]'
+  - '[6.80 Mbps] 🇷🇴RO_69|1.6MB/s|R002-260618 [f88f51fe15ea]'
+  - '[11.62 Mbps] 🇲🇽MX_1|452KB/s|R002-260618 [fc7c075ec4e0]'
+  - '[27.74 Mbps] 🇺🇸US_542|812KB/s [fe68ba92b4d7]'
+  - '[39.44 Mbps] 🇺🇸 机场推荐:dafei.de 美国 15_IPV4'
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 🌍 国外媒体
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🎯 全球直连
+  - '[6.35 Mbps] 🇷🇴RO_46|533KB/s [04d8dee969a2]'
+  - '[测速失败] 🇫🇷FR_122|3.3MB/s|M003-260806 [11b07cad0671]'
+  - '[7.06 Mbps] 🇷🇴RO_62|1.8MB/s|P002-260618 [1a98c95ea598]'
+  - '[1.86 Mbps] 🇺🇸US_435|202KB/s|Z001-260618 [1b5af584fbfa]'
+  - '[测速失败] 🇫🇷FR_83|1.8MB/s|M003-260806 [1e43bdd73aef]'
+  - '[0.09 Mbps] 🇺🇸US_442|219KB/s|R002-260618 [284ffb0c97a6]'
+  - '[5.80 Mbps] 🇳🇱NL_165|899KB/s|M003-260806 [2d1b60bfc57e]'
+  - '[测速失败] 🇫🇷FR_125|2.8MB/s|M003-260806 [3b4f9c30a843]'
+  - '[7.04 Mbps] 🇷🇺RU_8|1.0MB/s|K001-260618 [3ff2055c82e0]'
+  - '[3.52 Mbps] 🇺🇸US_212|269KB/s|R002-260618 [4832540fa4bc]'
+  - '[测速失败] 🇫🇷FR_126|4.2MB/s|M003-260806 [49f33878ff20]'
+  - '[158.64 Mbps] 🇺🇸US_194|742KB/s|R002-260618 [4a813a8d418a]'
+  - '[6.55 Mbps] 🇷🇴RO_55|1.4MB/s|P002-260618 [4ac2e14c271d]'
+  - '[测速失败] 🇮🇳IN_5|270KB/s|R002-260618 [4c2bac9eb305]'
+  - '[测速失败] 🇫🇷FR_116|1.5MB/s|M003-260806 [4fe854595d0c]'
+  - '[6.74 Mbps] 🇳🇱NL_103|335KB/s|R002-260618 [511bc38da784]'
+  - '[测速失败] 🇨🇦CA_7|931KB/s|R002-260618 [52eb327e3668]'
+  - '[3.18 Mbps] 🇺🇸US_251|123KB/s|R002-260618 [535e13772931]'
+  - '[6.75 Mbps] 🇳🇱NL_204|659KB/s|B007-260618 [569c7ebe9a5f]'
+  - '[测速失败] 🇫🇷FR_124|3.6MB/s|M003-260806 [58f9322433b5]'
+  - '[6.68 Mbps] 🇷🇺RU_1|1.2MB/s|R002-260618 [5a513b5711bd]'
+  - '[0.30 Mbps] 🇩🇪DE_60|2.5MB/s|R002-260618 [5af8b43bb3c2]'
+  - '[6.52 Mbps] 🇳🇱NL_164|673KB/s|B007-260618 [5c663575c3de]'
+  - '[6.77 Mbps] 🇷🇴RO_42|1.3MB/s|R002-260618 [5dc79f84d447]'
+  - '[0.30 Mbps] 🇺🇸US_398|227KB/s|R002-260618 [5f8596a8538f]'
+  - '[6.79 Mbps] 🇷🇴RO_74|982KB/s [693ea8f5a428]'
+  - '[6.44 Mbps] 🇷🇴RO_18|2.0MB/s [7354ec979027]'
+  - '[28.66 Mbps] ❓Other_45|209KB/s|P002-260618 [8662975011c7]'
+  - '[4.67 Mbps] 🇺🇸US_339|474KB/s|R002-260618 [8a36b94ac03d]'
+  - '[3.81 Mbps] 🇩🇪DE_23|581KB/s|P002-260618 [8cc6d3155b9a]'
+  - '[5.55 Mbps] 🇩🇪DE_21|206KB/s|R002-260618 [92abb46579b9]'
+  - '[6.60 Mbps] 🇫🇷FR_6|4.7MB/s|K001-260618 [9609525282db]'
+  - '[7.03 Mbps] 🇳🇱NL_78|306KB/s|R002-260618 [9e1dd33f8c76]'
+  - '[6.81 Mbps] ❓Other_13|262KB/s|P002-260618 [a09d024d4dff]'
+  - '[5.55 Mbps] 🇳🇱NL_160|274KB/s|S004-260618 [a25c0bdba032]'
+  - '[5.10 Mbps] 🇳🇱NL_163|1.1MB/s|M003-260806 [a26403486d62]'
+  - '[6.12 Mbps] 🇩🇪DE_24|1.2MB/s|R002-260618 [a4490dd932b1]'
+  - '[测速失败] 🇫🇷FR_120|3.6MB/s|M003-260806 [a722e2ddc9e8]'
+  - '[6.77 Mbps] 🇨🇦CA_16|903KB/s|R002-260618 [a7f30723a1f1]'
+  - '[测速失败] 🇫🇷FR_82|1.1MB/s|M003-260806 [aab61571ffee]'
+  - '[18.40 Mbps] 🇺🇸US_197|661KB/s|R002-260618 [ac79b772f5d0]'
+  - '[8.86 Mbps] ❓Other_23|474KB/s|R002-260618 [ad7d5a110359]'
+  - '[6.92 Mbps] 🇷🇴RO_49|1.9MB/s|P002-260618 [b09b93af75cd]'
+  - '[1.80 Mbps] 🇺🇸US_434|160KB/s|R002-260618 [b293ec7d21de]'
+  - '[5.68 Mbps] ❓Other_79|1.3MB/s|P002-260618 [b3d4aadd9f8a]'
+  - '[3.31 Mbps] 🇺🇸US_426|116KB/s|R002-260618 [b4135a5f200b]'
+  - '[5.48 Mbps] 🇪🇸ES_5|1.5MB/s|R002-260618 [b8079e529455]'
+  - '[6.34 Mbps] 🇷🇴RO_27|1.9MB/s|R002-260618 [bafa10c25882]'
+  - '[6.75 Mbps] 🇫🇷FR_3|3.8MB/s|R002-260618 [bb26c3f0d560]'
+  - '[5.98 Mbps] 🇮🇱IL_1|210KB/s|R002-260618 [bb294b91a05b]'
+  - '[5.79 Mbps] 🇳🇱NL_162|928KB/s|S004-260618 [bf035cf5c449]'
+  - '[6.55 Mbps] 🇷🇺RU_3|1.7MB/s|P002-260618 [bf1996a133fe]'
+  - '[2.76 Mbps] 🇺🇸US_252|318KB/s|Z001-260618 [c13379d18cff]'
+  - '[测速失败] 🇫🇷FR_117|2.6MB/s|M003-260806 [cfe4c4dabfc0]'
+  - '[0.98 Mbps] 🇺🇸US_214|151KB/s|R002-260618 [d009de3a35ca]'
+  - '[6.71 Mbps] 🇷🇴RO_14|1.6MB/s|Z001-260618 [d241efdf9146]'
+  - '[6.59 Mbps] 🇮🇱IL_2|967KB/s|K001-260618 [d3b607996ace]'
+  - '[测速失败] 🇫🇷FR_107|5.1MB/s|M003-260806 [d4bab59515ee]'
+  - '[测速失败] 🇫🇷FR_121|3.3MB/s|M003-260806 [d967e826df0b]'
+  - '[3.47 Mbps] 🇨🇿CZ_1|1.6MB/s|R002-260618 [dea96bfbdd9e]'
+  - '[7.30 Mbps] 🇫🇷FR_21|788KB/s|R002-260618 [df3cefb034a8]'
+  - '[6.42 Mbps] 🇷🇴RO_64|206KB/s|P002-260618 [e1e5753e62ce]'
+  - '[6.65 Mbps] 🇷🇴RO_60|1.5MB/s|R002-260618 [e24efac8b6e9]'
+  - '[6.81 Mbps] 🇳🇱NL_94|1.8MB/s|K001-260618 [e33fb6223bc5]'
+  - '[20.00 Mbps] 🇺🇸US_255|750KB/s|R002-260618 [e49a7cefc91f]'
+  - '[7.21 Mbps] 🇫🇷FR_22|2.0MB/s|R002-260618 [e9b65e97ef66]'
+  - '[6.65 Mbps] 🇷🇴RO_5|592KB/s|P002-260618 [eb9a3fe188dc]'
+  - '[9.36 Mbps] ❓Other_31|2.4MB/s|K001-260618 [ebe2b193bdbc]'
+  - '[8.32 Mbps] 🇮🇪IE_6|2.1MB/s|P002-260618 [ed53be9b8764]'
+  - '[30.37 Mbps] 🇺🇸US_159|778KB/s|R002-260618 [f3757137fc03]'
+  - '[6.80 Mbps] 🇷🇴RO_69|1.6MB/s|R002-260618 [f88f51fe15ea]'
+  - '[11.62 Mbps] 🇲🇽MX_1|452KB/s|R002-260618 [fc7c075ec4e0]'
+  - '[27.74 Mbps] 🇺🇸US_542|812KB/s [fe68ba92b4d7]'
+  - '[39.44 Mbps] 🇺🇸 机场推荐:dafei.de 美国 15_IPV4'
+- name: 📲 电报信息
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - '[6.35 Mbps] 🇷🇴RO_46|533KB/s [04d8dee969a2]'
+  - '[测速失败] 🇫🇷FR_122|3.3MB/s|M003-260806 [11b07cad0671]'
+  - '[7.06 Mbps] 🇷🇴RO_62|1.8MB/s|P002-260618 [1a98c95ea598]'
+  - '[1.86 Mbps] 🇺🇸US_435|202KB/s|Z001-260618 [1b5af584fbfa]'
+  - '[测速失败] 🇫🇷FR_83|1.8MB/s|M003-260806 [1e43bdd73aef]'
+  - '[0.09 Mbps] 🇺🇸US_442|219KB/s|R002-260618 [284ffb0c97a6]'
+  - '[5.80 Mbps] 🇳🇱NL_165|899KB/s|M003-260806 [2d1b60bfc57e]'
+  - '[测速失败] 🇫🇷FR_125|2.8MB/s|M003-260806 [3b4f9c30a843]'
+  - '[7.04 Mbps] 🇷🇺RU_8|1.0MB/s|K001-260618 [3ff2055c82e0]'
+  - '[3.52 Mbps] 🇺🇸US_212|269KB/s|R002-260618 [4832540fa4bc]'
+  - '[测速失败] 🇫🇷FR_126|4.2MB/s|M003-260806 [49f33878ff20]'
+  - '[158.64 Mbps] 🇺🇸US_194|742KB/s|R002-260618 [4a813a8d418a]'
+  - '[6.55 Mbps] 🇷🇴RO_55|1.4MB/s|P002-260618 [4ac2e14c271d]'
+  - '[测速失败] 🇮🇳IN_5|270KB/s|R002-260618 [4c2bac9eb305]'
+  - '[测速失败] 🇫🇷FR_116|1.5MB/s|M003-260806 [4fe854595d0c]'
+  - '[6.74 Mbps] 🇳🇱NL_103|335KB/s|R002-260618 [511bc38da784]'
+  - '[测速失败] 🇨🇦CA_7|931KB/s|R002-260618 [52eb327e3668]'
+  - '[3.18 Mbps] 🇺🇸US_251|123KB/s|R002-260618 [535e13772931]'
+  - '[6.75 Mbps] 🇳🇱NL_204|659KB/s|B007-260618 [569c7ebe9a5f]'
+  - '[测速失败] 🇫🇷FR_124|3.6MB/s|M003-260806 [58f9322433b5]'
+  - '[6.68 Mbps] 🇷🇺RU_1|1.2MB/s|R002-260618 [5a513b5711bd]'
+  - '[0.30 Mbps] 🇩🇪DE_60|2.5MB/s|R002-260618 [5af8b43bb3c2]'
+  - '[6.52 Mbps] 🇳🇱NL_164|673KB/s|B007-260618 [5c663575c3de]'
+  - '[6.77 Mbps] 🇷🇴RO_42|1.3MB/s|R002-260618 [5dc79f84d447]'
+  - '[0.30 Mbps] 🇺🇸US_398|227KB/s|R002-260618 [5f8596a8538f]'
+  - '[6.79 Mbps] 🇷🇴RO_74|982KB/s [693ea8f5a428]'
+  - '[6.44 Mbps] 🇷🇴RO_18|2.0MB/s [7354ec979027]'
+  - '[28.66 Mbps] ❓Other_45|209KB/s|P002-260618 [8662975011c7]'
+  - '[4.67 Mbps] 🇺🇸US_339|474KB/s|R002-260618 [8a36b94ac03d]'
+  - '[3.81 Mbps] 🇩🇪DE_23|581KB/s|P002-260618 [8cc6d3155b9a]'
+  - '[5.55 Mbps] 🇩🇪DE_21|206KB/s|R002-260618 [92abb46579b9]'
+  - '[6.60 Mbps] 🇫🇷FR_6|4.7MB/s|K001-260618 [9609525282db]'
+  - '[7.03 Mbps] 🇳🇱NL_78|306KB/s|R002-260618 [9e1dd33f8c76]'
+  - '[6.81 Mbps] ❓Other_13|262KB/s|P002-260618 [a09d024d4dff]'
+  - '[5.55 Mbps] 🇳🇱NL_160|274KB/s|S004-260618 [a25c0bdba032]'
+  - '[5.10 Mbps] 🇳🇱NL_163|1.1MB/s|M003-260806 [a26403486d62]'
+  - '[6.12 Mbps] 🇩🇪DE_24|1.2MB/s|R002-260618 [a4490dd932b1]'
+  - '[测速失败] 🇫🇷FR_120|3.6MB/s|M003-260806 [a722e2ddc9e8]'
+  - '[6.77 Mbps] 🇨🇦CA_16|903KB/s|R002-260618 [a7f30723a1f1]'
+  - '[测速失败] 🇫🇷FR_82|1.1MB/s|M003-260806 [aab61571ffee]'
+  - '[18.40 Mbps] 🇺🇸US_197|661KB/s|R002-260618 [ac79b772f5d0]'
+  - '[8.86 Mbps] ❓Other_23|474KB/s|R002-260618 [ad7d5a110359]'
+  - '[6.92 Mbps] 🇷🇴RO_49|1.9MB/s|P002-260618 [b09b93af75cd]'
+  - '[1.80 Mbps] 🇺🇸US_434|160KB/s|R002-260618 [b293ec7d21de]'
+  - '[5.68 Mbps] ❓Other_79|1.3MB/s|P002-260618 [b3d4aadd9f8a]'
+  - '[3.31 Mbps] 🇺🇸US_426|116KB/s|R002-260618 [b4135a5f200b]'
+  - '[5.48 Mbps] 🇪🇸ES_5|1.5MB/s|R002-260618 [b8079e529455]'
+  - '[6.34 Mbps] 🇷🇴RO_27|1.9MB/s|R002-260618 [bafa10c25882]'
+  - '[6.75 Mbps] 🇫🇷FR_3|3.8MB/s|R002-260618 [bb26c3f0d560]'
+  - '[5.98 Mbps] 🇮🇱IL_1|210KB/s|R002-260618 [bb294b91a05b]'
+  - '[5.79 Mbps] 🇳🇱NL_162|928KB/s|S004-260618 [bf035cf5c449]'
+  - '[6.55 Mbps] 🇷🇺RU_3|1.7MB/s|P002-260618 [bf1996a133fe]'
+  - '[2.76 Mbps] 🇺🇸US_252|318KB/s|Z001-260618 [c13379d18cff]'
+  - '[测速失败] 🇫🇷FR_117|2.6MB/s|M003-260806 [cfe4c4dabfc0]'
+  - '[0.98 Mbps] 🇺🇸US_214|151KB/s|R002-260618 [d009de3a35ca]'
+  - '[6.71 Mbps] 🇷🇴RO_14|1.6MB/s|Z001-260618 [d241efdf9146]'
+  - '[6.59 Mbps] 🇮🇱IL_2|967KB/s|K001-260618 [d3b607996ace]'
+  - '[测速失败] 🇫🇷FR_107|5.1MB/s|M003-260806 [d4bab59515ee]'
+  - '[测速失败] 🇫🇷FR_121|3.3MB/s|M003-260806 [d967e826df0b]'
+  - '[3.47 Mbps] 🇨🇿CZ_1|1.6MB/s|R002-260618 [dea96bfbdd9e]'
+  - '[7.30 Mbps] 🇫🇷FR_21|788KB/s|R002-260618 [df3cefb034a8]'
+  - '[6.42 Mbps] 🇷🇴RO_64|206KB/s|P002-260618 [e1e5753e62ce]'
+  - '[6.65 Mbps] 🇷🇴RO_60|1.5MB/s|R002-260618 [e24efac8b6e9]'
+  - '[6.81 Mbps] 🇳🇱NL_94|1.8MB/s|K001-260618 [e33fb6223bc5]'
+  - '[20.00 Mbps] 🇺🇸US_255|750KB/s|R002-260618 [e49a7cefc91f]'
+  - '[7.21 Mbps] 🇫🇷FR_22|2.0MB/s|R002-260618 [e9b65e97ef66]'
+  - '[6.65 Mbps] 🇷🇴RO_5|592KB/s|P002-260618 [eb9a3fe188dc]'
+  - '[9.36 Mbps] ❓Other_31|2.4MB/s|K001-260618 [ebe2b193bdbc]'
+  - '[8.32 Mbps] 🇮🇪IE_6|2.1MB/s|P002-260618 [ed53be9b8764]'
+  - '[30.37 Mbps] 🇺🇸US_159|778KB/s|R002-260618 [f3757137fc03]'
+  - '[6.80 Mbps] 🇷🇴RO_69|1.6MB/s|R002-260618 [f88f51fe15ea]'
+  - '[11.62 Mbps] 🇲🇽MX_1|452KB/s|R002-260618 [fc7c075ec4e0]'
+  - '[27.74 Mbps] 🇺🇸US_542|812KB/s [fe68ba92b4d7]'
+  - '[39.44 Mbps] 🇺🇸 机场推荐:dafei.de 美国 15_IPV4'
+- name: Ⓜ️ 微软服务
+  type: select
+  proxies:
+  - 🎯 全球直连
+  - 🚀 节点选择
+  - '[6.35 Mbps] 🇷🇴RO_46|533KB/s [04d8dee969a2]'
+  - '[测速失败] 🇫🇷FR_122|3.3MB/s|M003-260806 [11b07cad0671]'
+  - '[7.06 Mbps] 🇷🇴RO_62|1.8MB/s|P002-260618 [1a98c95ea598]'
+  - '[1.86 Mbps] 🇺🇸US_435|202KB/s|Z001-260618 [1b5af584fbfa]'
+  - '[测速失败] 🇫🇷FR_83|1.8MB/s|M003-260806 [1e43bdd73aef]'
+  - '[0.09 Mbps] 🇺🇸US_442|219KB/s|R002-260618 [284ffb0c97a6]'
+  - '[5.80 Mbps] 🇳🇱NL_165|899KB/s|M003-260806 [2d1b60bfc57e]'
+  - '[测速失败] 🇫🇷FR_125|2.8MB/s|M003-260806 [3b4f9c30a843]'
+  - '[7.04 Mbps] 🇷🇺RU_8|1.0MB/s|K001-260618 [3ff2055c82e0]'
+  - '[3.52 Mbps] 🇺🇸US_212|269KB/s|R002-260618 [4832540fa4bc]'
+  - '[测速失败] 🇫🇷FR_126|4.2MB/s|M003-260806 [49f33878ff20]'
+  - '[158.64 Mbps] 🇺🇸US_194|742KB/s|R002-260618 [4a813a8d418a]'
+  - '[6.55 Mbps] 🇷🇴RO_55|1.4MB/s|P002-260618 [4ac2e14c271d]'
+  - '[测速失败] 🇮🇳IN_5|270KB/s|R002-260618 [4c2bac9eb305]'
+  - '[测速失败] 🇫🇷FR_116|1.5MB/s|M003-260806 [4fe854595d0c]'
+  - '[6.74 Mbps] 🇳🇱NL_103|335KB/s|R002-260618 [511bc38da784]'
+  - '[测速失败] 🇨🇦CA_7|931KB/s|R002-260618 [52eb327e3668]'
+  - '[3.18 Mbps] 🇺🇸US_251|123KB/s|R002-260618 [535e13772931]'
+  - '[6.75 Mbps] 🇳🇱NL_204|659KB/s|B007-260618 [569c7ebe9a5f]'
+  - '[测速失败] 🇫🇷FR_124|3.6MB/s|M003-260806 [58f9322433b5]'
+  - '[6.68 Mbps] 🇷🇺RU_1|1.2MB/s|R002-260618 [5a513b5711bd]'
+  - '[0.30 Mbps] 🇩🇪DE_60|2.5MB/s|R002-260618 [5af8b43bb3c2]'
+  - '[6.52 Mbps] 🇳🇱NL_164|673KB/s|B007-260618 [5c663575c3de]'
+  - '[6.77 Mbps] 🇷🇴RO_42|1.3MB/s|R002-260618 [5dc79f84d447]'
+  - '[0.30 Mbps] 🇺🇸US_398|227KB/s|R002-260618 [5f8596a8538f]'
+  - '[6.79 Mbps] 🇷🇴RO_74|982KB/s [693ea8f5a428]'
+  - '[6.44 Mbps] 🇷🇴RO_18|2.0MB/s [7354ec979027]'
+  - '[28.66 Mbps] ❓Other_45|209KB/s|P002-260618 [8662975011c7]'
+  - '[4.67 Mbps] 🇺🇸US_339|474KB/s|R002-260618 [8a36b94ac03d]'
+  - '[3.81 Mbps] 🇩🇪DE_23|581KB/s|P002-260618 [8cc6d3155b9a]'
+  - '[5.55 Mbps] 🇩🇪DE_21|206KB/s|R002-260618 [92abb46579b9]'
+  - '[6.60 Mbps] 🇫🇷FR_6|4.7MB/s|K001-260618 [9609525282db]'
+  - '[7.03 Mbps] 🇳🇱NL_78|306KB/s|R002-260618 [9e1dd33f8c76]'
+  - '[6.81 Mbps] ❓Other_13|262KB/s|P002-260618 [a09d024d4dff]'
+  - '[5.55 Mbps] 🇳🇱NL_160|274KB/s|S004-260618 [a25c0bdba032]'
+  - '[5.10 Mbps] 🇳🇱NL_163|1.1MB/s|M003-260806 [a26403486d62]'
+  - '[6.12 Mbps] 🇩🇪DE_24|1.2MB/s|R002-260618 [a4490dd932b1]'
+  - '[测速失败] 🇫🇷FR_120|3.6MB/s|M003-260806 [a722e2ddc9e8]'
+  - '[6.77 Mbps] 🇨🇦CA_16|903KB/s|R002-260618 [a7f30723a1f1]'
+  - '[测速失败] 🇫🇷FR_82|1.1MB/s|M003-260806 [aab61571ffee]'
+  - '[18.40 Mbps] 🇺🇸US_197|661KB/s|R002-260618 [ac79b772f5d0]'
+  - '[8.86 Mbps] ❓Other_23|474KB/s|R002-260618 [ad7d5a110359]'
+  - '[6.92 Mbps] 🇷🇴RO_49|1.9MB/s|P002-260618 [b09b93af75cd]'
+  - '[1.80 Mbps] 🇺🇸US_434|160KB/s|R002-260618 [b293ec7d21de]'
+  - '[5.68 Mbps] ❓Other_79|1.3MB/s|P002-260618 [b3d4aadd9f8a]'
+  - '[3.31 Mbps] 🇺🇸US_426|116KB/s|R002-260618 [b4135a5f200b]'
+  - '[5.48 Mbps] 🇪🇸ES_5|1.5MB/s|R002-260618 [b8079e529455]'
+  - '[6.34 Mbps] 🇷🇴RO_27|1.9MB/s|R002-260618 [bafa10c25882]'
+  - '[6.75 Mbps] 🇫🇷FR_3|3.8MB/s|R002-260618 [bb26c3f0d560]'
+  - '[5.98 Mbps] 🇮🇱IL_1|210KB/s|R002-260618 [bb294b91a05b]'
+  - '[5.79 Mbps] 🇳🇱NL_162|928KB/s|S004-260618 [bf035cf5c449]'
+  - '[6.55 Mbps] 🇷🇺RU_3|1.7MB/s|P002-260618 [bf1996a133fe]'
+  - '[2.76 Mbps] 🇺🇸US_252|318KB/s|Z001-260618 [c13379d18cff]'
+  - '[测速失败] 🇫🇷FR_117|2.6MB/s|M003-260806 [cfe4c4dabfc0]'
+  - '[0.98 Mbps] 🇺🇸US_214|151KB/s|R002-260618 [d009de3a35ca]'
+  - '[6.71 Mbps] 🇷🇴RO_14|1.6MB/s|Z001-260618 [d241efdf9146]'
+  - '[6.59 Mbps] 🇮🇱IL_2|967KB/s|K001-260618 [d3b607996ace]'
+  - '[测速失败] 🇫🇷FR_107|5.1MB/s|M003-260806 [d4bab59515ee]'
+  - '[测速失败] 🇫🇷FR_121|3.3MB/s|M003-260806 [d967e826df0b]'
+  - '[3.47 Mbps] 🇨🇿CZ_1|1.6MB/s|R002-260618 [dea96bfbdd9e]'
+  - '[7.30 Mbps] 🇫🇷FR_21|788KB/s|R002-260618 [df3cefb034a8]'
+  - '[6.42 Mbps] 🇷🇴RO_64|206KB/s|P002-260618 [e1e5753e62ce]'
+  - '[6.65 Mbps] 🇷🇴RO_60|1.5MB/s|R002-260618 [e24efac8b6e9]'
+  - '[6.81 Mbps] 🇳🇱NL_94|1.8MB/s|K001-260618 [e33fb6223bc5]'
+  - '[20.00 Mbps] 🇺🇸US_255|750KB/s|R002-260618 [e49a7cefc91f]'
+  - '[7.21 Mbps] 🇫🇷FR_22|2.0MB/s|R002-260618 [e9b65e97ef66]'
+  - '[6.65 Mbps] 🇷🇴RO_5|592KB/s|P002-260618 [eb9a3fe188dc]'
+  - '[9.36 Mbps] ❓Other_31|2.4MB/s|K001-260618 [ebe2b193bdbc]'
+  - '[8.32 Mbps] 🇮🇪IE_6|2.1MB/s|P002-260618 [ed53be9b8764]'
+  - '[30.37 Mbps] 🇺🇸US_159|778KB/s|R002-260618 [f3757137fc03]'
+  - '[6.80 Mbps] 🇷🇴RO_69|1.6MB/s|R002-260618 [f88f51fe15ea]'
+  - '[11.62 Mbps] 🇲🇽MX_1|452KB/s|R002-260618 [fc7c075ec4e0]'
+  - '[27.74 Mbps] 🇺🇸US_542|812KB/s [fe68ba92b4d7]'
+  - '[39.44 Mbps] 🇺🇸 机场推荐:dafei.de 美国 15_IPV4'
+- name: 🍎 苹果服务
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - '[6.35 Mbps] 🇷🇴RO_46|533KB/s [04d8dee969a2]'
+  - '[测速失败] 🇫🇷FR_122|3.3MB/s|M003-260806 [11b07cad0671]'
+  - '[7.06 Mbps] 🇷🇴RO_62|1.8MB/s|P002-260618 [1a98c95ea598]'
+  - '[1.86 Mbps] 🇺🇸US_435|202KB/s|Z001-260618 [1b5af584fbfa]'
+  - '[测速失败] 🇫🇷FR_83|1.8MB/s|M003-260806 [1e43bdd73aef]'
+  - '[0.09 Mbps] 🇺🇸US_442|219KB/s|R002-260618 [284ffb0c97a6]'
+  - '[5.80 Mbps] 🇳🇱NL_165|899KB/s|M003-260806 [2d1b60bfc57e]'
+  - '[测速失败] 🇫🇷FR_125|2.8MB/s|M003-260806 [3b4f9c30a843]'
+  - '[7.04 Mbps] 🇷🇺RU_8|1.0MB/s|K001-260618 [3ff2055c82e0]'
+  - '[3.52 Mbps] 🇺🇸US_212|269KB/s|R002-260618 [4832540fa4bc]'
+  - '[测速失败] 🇫🇷FR_126|4.2MB/s|M003-260806 [49f33878ff20]'
+  - '[158.64 Mbps] 🇺🇸US_194|742KB/s|R002-260618 [4a813a8d418a]'
+  - '[6.55 Mbps] 🇷🇴RO_55|1.4MB/s|P002-260618 [4ac2e14c271d]'
+  - '[测速失败] 🇮🇳IN_5|270KB/s|R002-260618 [4c2bac9eb305]'
+  - '[测速失败] 🇫🇷FR_116|1.5MB/s|M003-260806 [4fe854595d0c]'
+  - '[6.74 Mbps] 🇳🇱NL_103|335KB/s|R002-260618 [511bc38da784]'
+  - '[测速失败] 🇨🇦CA_7|931KB/s|R002-260618 [52eb327e3668]'
+  - '[3.18 Mbps] 🇺🇸US_251|123KB/s|R002-260618 [535e13772931]'
+  - '[6.75 Mbps] 🇳🇱NL_204|659KB/s|B007-260618 [569c7ebe9a5f]'
+  - '[测速失败] 🇫🇷FR_124|3.6MB/s|M003-260806 [58f9322433b5]'
+  - '[6.68 Mbps] 🇷🇺RU_1|1.2MB/s|R002-260618 [5a513b5711bd]'
+  - '[0.30 Mbps] 🇩🇪DE_60|2.5MB/s|R002-260618 [5af8b43bb3c2]'
+  - '[6.52 Mbps] 🇳🇱NL_164|673KB/s|B007-260618 [5c663575c3de]'
+  - '[6.77 Mbps] 🇷🇴RO_42|1.3MB/s|R002-260618 [5dc79f84d447]'
+  - '[0.30 Mbps] 🇺🇸US_398|227KB/s|R002-260618 [5f8596a8538f]'
+  - '[6.79 Mbps] 🇷🇴RO_74|982KB/s [693ea8f5a428]'
+  - '[6.44 Mbps] 🇷🇴RO_18|2.0MB/s [7354ec979027]'
+  - '[28.66 Mbps] ❓Other_45|209KB/s|P002-260618 [8662975011c7]'
+  - '[4.67 Mbps] 🇺🇸US_339|474KB/s|R002-260618 [8a36b94ac03d]'
+  - '[3.81 Mbps] 🇩🇪DE_23|581KB/s|P002-260618 [8cc6d3155b9a]'
+  - '[5.55 Mbps] 🇩🇪DE_21|206KB/s|R002-260618 [92abb46579b9]'
+  - '[6.60 Mbps] 🇫🇷FR_6|4.7MB/s|K001-260618 [9609525282db]'
+  - '[7.03 Mbps] 🇳🇱NL_78|306KB/s|R002-260618 [9e1dd33f8c76]'
+  - '[6.81 Mbps] ❓Other_13|262KB/s|P002-260618 [a09d024d4dff]'
+  - '[5.55 Mbps] 🇳🇱NL_160|274KB/s|S004-260618 [a25c0bdba032]'
+  - '[5.10 Mbps] 🇳🇱NL_163|1.1MB/s|M003-260806 [a26403486d62]'
+  - '[6.12 Mbps] 🇩🇪DE_24|1.2MB/s|R002-260618 [a4490dd932b1]'
+  - '[测速失败] 🇫🇷FR_120|3.6MB/s|M003-260806 [a722e2ddc9e8]'
+  - '[6.77 Mbps] 🇨🇦CA_16|903KB/s|R002-260618 [a7f30723a1f1]'
+  - '[测速失败] 🇫🇷FR_82|1.1MB/s|M003-260806 [aab61571ffee]'
+  - '[18.40 Mbps] 🇺🇸US_197|661KB/s|R002-260618 [ac79b772f5d0]'
+  - '[8.86 Mbps] ❓Other_23|474KB/s|R002-260618 [ad7d5a110359]'
+  - '[6.92 Mbps] 🇷🇴RO_49|1.9MB/s|P002-260618 [b09b93af75cd]'
+  - '[1.80 Mbps] 🇺🇸US_434|160KB/s|R002-260618 [b293ec7d21de]'
+  - '[5.68 Mbps] ❓Other_79|1.3MB/s|P002-260618 [b3d4aadd9f8a]'
+  - '[3.31 Mbps] 🇺🇸US_426|116KB/s|R002-260618 [b4135a5f200b]'
+  - '[5.48 Mbps] 🇪🇸ES_5|1.5MB/s|R002-260618 [b8079e529455]'
+  - '[6.34 Mbps] 🇷🇴RO_27|1.9MB/s|R002-260618 [bafa10c25882]'
+  - '[6.75 Mbps] 🇫🇷FR_3|3.8MB/s|R002-260618 [bb26c3f0d560]'
+  - '[5.98 Mbps] 🇮🇱IL_1|210KB/s|R002-260618 [bb294b91a05b]'
+  - '[5.79 Mbps] 🇳🇱NL_162|928KB/s|S004-260618 [bf035cf5c449]'
+  - '[6.55 Mbps] 🇷🇺RU_3|1.7MB/s|P002-260618 [bf1996a133fe]'
+  - '[2.76 Mbps] 🇺🇸US_252|318KB/s|Z001-260618 [c13379d18cff]'
+  - '[测速失败] 🇫🇷FR_117|2.6MB/s|M003-260806 [cfe4c4dabfc0]'
+  - '[0.98 Mbps] 🇺🇸US_214|151KB/s|R002-260618 [d009de3a35ca]'
+  - '[6.71 Mbps] 🇷🇴RO_14|1.6MB/s|Z001-260618 [d241efdf9146]'
+  - '[6.59 Mbps] 🇮🇱IL_2|967KB/s|K001-260618 [d3b607996ace]'
+  - '[测速失败] 🇫🇷FR_107|5.1MB/s|M003-260806 [d4bab59515ee]'
+  - '[测速失败] 🇫🇷FR_121|3.3MB/s|M003-260806 [d967e826df0b]'
+  - '[3.47 Mbps] 🇨🇿CZ_1|1.6MB/s|R002-260618 [dea96bfbdd9e]'
+  - '[7.30 Mbps] 🇫🇷FR_21|788KB/s|R002-260618 [df3cefb034a8]'
+  - '[6.42 Mbps] 🇷🇴RO_64|206KB/s|P002-260618 [e1e5753e62ce]'
+  - '[6.65 Mbps] 🇷🇴RO_60|1.5MB/s|R002-260618 [e24efac8b6e9]'
+  - '[6.81 Mbps] 🇳🇱NL_94|1.8MB/s|K001-260618 [e33fb6223bc5]'
+  - '[20.00 Mbps] 🇺🇸US_255|750KB/s|R002-260618 [e49a7cefc91f]'
+  - '[7.21 Mbps] 🇫🇷FR_22|2.0MB/s|R002-260618 [e9b65e97ef66]'
+  - '[6.65 Mbps] 🇷🇴RO_5|592KB/s|P002-260618 [eb9a3fe188dc]'
+  - '[9.36 Mbps] ❓Other_31|2.4MB/s|K001-260618 [ebe2b193bdbc]'
+  - '[8.32 Mbps] 🇮🇪IE_6|2.1MB/s|P002-260618 [ed53be9b8764]'
+  - '[30.37 Mbps] 🇺🇸US_159|778KB/s|R002-260618 [f3757137fc03]'
+  - '[6.80 Mbps] 🇷🇴RO_69|1.6MB/s|R002-260618 [f88f51fe15ea]'
+  - '[11.62 Mbps] 🇲🇽MX_1|452KB/s|R002-260618 [fc7c075ec4e0]'
+  - '[27.74 Mbps] 🇺🇸US_542|812KB/s [fe68ba92b4d7]'
+  - '[39.44 Mbps] 🇺🇸 机场推荐:dafei.de 美国 15_IPV4'
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+- name: 🛑 全球拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🍃 应用净化
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+  - '[6.35 Mbps] 🇷🇴RO_46|533KB/s [04d8dee969a2]'
+  - '[测速失败] 🇫🇷FR_122|3.3MB/s|M003-260806 [11b07cad0671]'
+  - '[7.06 Mbps] 🇷🇴RO_62|1.8MB/s|P002-260618 [1a98c95ea598]'
+  - '[1.86 Mbps] 🇺🇸US_435|202KB/s|Z001-260618 [1b5af584fbfa]'
+  - '[测速失败] 🇫🇷FR_83|1.8MB/s|M003-260806 [1e43bdd73aef]'
+  - '[0.09 Mbps] 🇺🇸US_442|219KB/s|R002-260618 [284ffb0c97a6]'
+  - '[5.80 Mbps] 🇳🇱NL_165|899KB/s|M003-260806 [2d1b60bfc57e]'
+  - '[测速失败] 🇫🇷FR_125|2.8MB/s|M003-260806 [3b4f9c30a843]'
+  - '[7.04 Mbps] 🇷🇺RU_8|1.0MB/s|K001-260618 [3ff2055c82e0]'
+  - '[3.52 Mbps] 🇺🇸US_212|269KB/s|R002-260618 [4832540fa4bc]'
+  - '[测速失败] 🇫🇷FR_126|4.2MB/s|M003-260806 [49f33878ff20]'
+  - '[158.64 Mbps] 🇺🇸US_194|742KB/s|R002-260618 [4a813a8d418a]'
+  - '[6.55 Mbps] 🇷🇴RO_55|1.4MB/s|P002-260618 [4ac2e14c271d]'
+  - '[测速失败] 🇮🇳IN_5|270KB/s|R002-260618 [4c2bac9eb305]'
+  - '[测速失败] 🇫🇷FR_116|1.5MB/s|M003-260806 [4fe854595d0c]'
+  - '[6.74 Mbps] 🇳🇱NL_103|335KB/s|R002-260618 [511bc38da784]'
+  - '[测速失败] 🇨🇦CA_7|931KB/s|R002-260618 [52eb327e3668]'
+  - '[3.18 Mbps] 🇺🇸US_251|123KB/s|R002-260618 [535e13772931]'
+  - '[6.75 Mbps] 🇳🇱NL_204|659KB/s|B007-260618 [569c7ebe9a5f]'
+  - '[测速失败] 🇫🇷FR_124|3.6MB/s|M003-260806 [58f9322433b5]'
+  - '[6.68 Mbps] 🇷🇺RU_1|1.2MB/s|R002-260618 [5a513b5711bd]'
+  - '[0.30 Mbps] 🇩🇪DE_60|2.5MB/s|R002-260618 [5af8b43bb3c2]'
+  - '[6.52 Mbps] 🇳🇱NL_164|673KB/s|B007-260618 [5c663575c3de]'
+  - '[6.77 Mbps] 🇷🇴RO_42|1.3MB/s|R002-260618 [5dc79f84d447]'
+  - '[0.30 Mbps] 🇺🇸US_398|227KB/s|R002-260618 [5f8596a8538f]'
+  - '[6.79 Mbps] 🇷🇴RO_74|982KB/s [693ea8f5a428]'
+  - '[6.44 Mbps] 🇷🇴RO_18|2.0MB/s [7354ec979027]'
+  - '[28.66 Mbps] ❓Other_45|209KB/s|P002-260618 [8662975011c7]'
+  - '[4.67 Mbps] 🇺🇸US_339|474KB/s|R002-260618 [8a36b94ac03d]'
+  - '[3.81 Mbps] 🇩🇪DE_23|581KB/s|P002-260618 [8cc6d3155b9a]'
+  - '[5.55 Mbps] 🇩🇪DE_21|206KB/s|R002-260618 [92abb46579b9]'
+  - '[6.60 Mbps] 🇫🇷FR_6|4.7MB/s|K001-260618 [9609525282db]'
+  - '[7.03 Mbps] 🇳🇱NL_78|306KB/s|R002-260618 [9e1dd33f8c76]'
+  - '[6.81 Mbps] ❓Other_13|262KB/s|P002-260618 [a09d024d4dff]'
+  - '[5.55 Mbps] 🇳🇱NL_160|274KB/s|S004-260618 [a25c0bdba032]'
+  - '[5.10 Mbps] 🇳🇱NL_163|1.1MB/s|M003-260806 [a26403486d62]'
+  - '[6.12 Mbps] 🇩🇪DE_24|1.2MB/s|R002-260618 [a4490dd932b1]'
+  - '[测速失败] 🇫🇷FR_120|3.6MB/s|M003-260806 [a722e2ddc9e8]'
+  - '[6.77 Mbps] 🇨🇦CA_16|903KB/s|R002-260618 [a7f30723a1f1]'
+  - '[测速失败] 🇫🇷FR_82|1.1MB/s|M003-260806 [aab61571ffee]'
+  - '[18.40 Mbps] 🇺🇸US_197|661KB/s|R002-260618 [ac79b772f5d0]'
+  - '[8.86 Mbps] ❓Other_23|474KB/s|R002-260618 [ad7d5a110359]'
+  - '[6.92 Mbps] 🇷🇴RO_49|1.9MB/s|P002-260618 [b09b93af75cd]'
+  - '[1.80 Mbps] 🇺🇸US_434|160KB/s|R002-260618 [b293ec7d21de]'
+  - '[5.68 Mbps] ❓Other_79|1.3MB/s|P002-260618 [b3d4aadd9f8a]'
+  - '[3.31 Mbps] 🇺🇸US_426|116KB/s|R002-260618 [b4135a5f200b]'
+  - '[5.48 Mbps] 🇪🇸ES_5|1.5MB/s|R002-260618 [b8079e529455]'
+  - '[6.34 Mbps] 🇷🇴RO_27|1.9MB/s|R002-260618 [bafa10c25882]'
+  - '[6.75 Mbps] 🇫🇷FR_3|3.8MB/s|R002-260618 [bb26c3f0d560]'
+  - '[5.98 Mbps] 🇮🇱IL_1|210KB/s|R002-260618 [bb294b91a05b]'
+  - '[5.79 Mbps] 🇳🇱NL_162|928KB/s|S004-260618 [bf035cf5c449]'
+  - '[6.55 Mbps] 🇷🇺RU_3|1.7MB/s|P002-260618 [bf1996a133fe]'
+  - '[2.76 Mbps] 🇺🇸US_252|318KB/s|Z001-260618 [c13379d18cff]'
+  - '[测速失败] 🇫🇷FR_117|2.6MB/s|M003-260806 [cfe4c4dabfc0]'
+  - '[0.98 Mbps] 🇺🇸US_214|151KB/s|R002-260618 [d009de3a35ca]'
+  - '[6.71 Mbps] 🇷🇴RO_14|1.6MB/s|Z001-260618 [d241efdf9146]'
+  - '[6.59 Mbps] 🇮🇱IL_2|967KB/s|K001-260618 [d3b607996ace]'
+  - '[测速失败] 🇫🇷FR_107|5.1MB/s|M003-260806 [d4bab59515ee]'
+  - '[测速失败] 🇫🇷FR_121|3.3MB/s|M003-260806 [d967e826df0b]'
+  - '[3.47 Mbps] 🇨🇿CZ_1|1.6MB/s|R002-260618 [dea96bfbdd9e]'
+  - '[7.30 Mbps] 🇫🇷FR_21|788KB/s|R002-260618 [df3cefb034a8]'
+  - '[6.42 Mbps] 🇷🇴RO_64|206KB/s|P002-260618 [e1e5753e62ce]'
+  - '[6.65 Mbps] 🇷🇴RO_60|1.5MB/s|R002-260618 [e24efac8b6e9]'
+  - '[6.81 Mbps] 🇳🇱NL_94|1.8MB/s|K001-260618 [e33fb6223bc5]'
+  - '[20.00 Mbps] 🇺🇸US_255|750KB/s|R002-260618 [e49a7cefc91f]'
+  - '[7.21 Mbps] 🇫🇷FR_22|2.0MB/s|R002-260618 [e9b65e97ef66]'
+  - '[6.65 Mbps] 🇷🇴RO_5|592KB/s|P002-260618 [eb9a3fe188dc]'
+  - '[9.36 Mbps] ❓Other_31|2.4MB/s|K001-260618 [ebe2b193bdbc]'
+  - '[8.32 Mbps] 🇮🇪IE_6|2.1MB/s|P002-260618 [ed53be9b8764]'
+  - '[30.37 Mbps] 🇺🇸US_159|778KB/s|R002-260618 [f3757137fc03]'
+  - '[6.80 Mbps] 🇷🇴RO_69|1.6MB/s|R002-260618 [f88f51fe15ea]'
+  - '[11.62 Mbps] 🇲🇽MX_1|452KB/s|R002-260618 [fc7c075ec4e0]'
+  - '[27.74 Mbps] 🇺🇸US_542|812KB/s [fe68ba92b4d7]'
+  - '[39.44 Mbps] 🇺🇸 机场推荐:dafei.de 美国 15_IPV4'
+rule-providers:
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+    path: ./rules/LocalAreaNetwork.list
+    interval: 86400
+  BanAD:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+    path: ./rules/BanAD.list
+    interval: 86400
+  BanProgramAD:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+    path: ./rules/BanProgramAD.list
+    interval: 86400
+  GoogleCN:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+    path: ./rules/GoogleCN.list
+    interval: 86400
+  SteamCN:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+    path: ./rules/SteamCN.list
+    interval: 86400
+  Microsoft:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+    path: ./rules/Microsoft.list
+    interval: 86400
+  Apple:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+    path: ./rules/Apple.list
+    interval: 86400
+  ProxyMedia:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+    path: ./rules/ProxyMedia.list
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+    path: ./rules/Telegram.list
+    interval: 86400
+  ProxyLite:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
+    path: ./rules/ProxyLite.list
+    interval: 86400
+  ChinaDomain:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+    path: ./rules/ChinaDomain.list
+    interval: 86400
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+    path: ./rules/ChinaCompanyIp.list
+    interval: 86400
+rules:
+- DOMAIN-SUFFIX,nodebuf.com,🚀 节点选择
+- RULE-SET,LocalAreaNetwork,🎯 全球直连
+- RULE-SET,BanAD,🛑 全球拦截
+- RULE-SET,BanProgramAD,🍃 应用净化
+- RULE-SET,GoogleCN,🎯 全球直连
+- RULE-SET,SteamCN,🎯 全球直连
+- RULE-SET,Microsoft,Ⓜ️ 微软服务
+- RULE-SET,Apple,🍎 苹果服务
+- RULE-SET,ProxyMedia,🌍 国外媒体
+- RULE-SET,Telegram,📲 电报信息
+- RULE-SET,ProxyLite,🚀 节点选择
+- RULE-SET,ChinaDomain,🎯 全球直连
+- RULE-SET,ChinaCompanyIp,🎯 全球直连
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼
