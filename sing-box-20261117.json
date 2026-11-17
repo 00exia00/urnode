@@ -124,11 +124,19 @@
       "outbounds": [
         "auto",
         "direct",
+        "🇩🇪_DE_德国_IPV4",
+        "🇳🇱_NL_荷兰_IPV4",
+        "🇩🇪_DE_德国->🇳🇱_NL_荷兰_IPV4",
+        "🇯🇵_JP_日本_IPV4",
+        "🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4",
+        "🇺🇸 机场推荐:dafei.de 美国 89_IPV4",
+        "🇺🇸_US_美国_IPV4",
         "@DeltaKroneckerGithub_3021_IPV4",
         "🇺🇸 机场推荐:dafei.de 美国 15_IPV4",
+        "🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4",
         "🇫🇷_FR_法国_IPV4",
         "🇩🇪_DE_德国_IPV4 (2)",
-        "🇺🇸_US_美国_IPV4 (4)",
+        "🇺🇸_US_美国_IPV4 (2)",
         "🇫🇷_FR_法国_IPV4 (2)",
         "🇮🇹_IT_意大利_IPV4",
         "🇮🇹_IT_意大利_IPV4 (2)",
@@ -345,42 +353,49 @@
       "tag": "HongKong",
       "type": "selector",
       "outbounds": [
-        "@DeltaKroneckerGithub_3021_IPV4"
+        "🇩🇪_DE_德国_IPV4"
       ]
     },
     {
       "tag": "TaiWan",
       "type": "selector",
       "outbounds": [
-        "@DeltaKroneckerGithub_3021_IPV4"
+        "🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4"
       ]
     },
     {
       "tag": "Singapore",
       "type": "selector",
       "outbounds": [
-        "@DeltaKroneckerGithub_3021_IPV4"
+        "🇩🇪_DE_德国_IPV4"
       ]
     },
     {
       "tag": "Japan",
       "type": "selector",
       "outbounds": [
-        "@DeltaKroneckerGithub_3021_IPV4"
+        "🇯🇵_JP_日本_IPV4"
       ]
     },
     {
       "tag": "America",
       "type": "selector",
       "outbounds": [
+        "🇺🇸 机场推荐:dafei.de 美国 89_IPV4",
+        "🇺🇸_US_美国_IPV4",
         "🇺🇸 机场推荐:dafei.de 美国 15_IPV4",
-        "🇺🇸_US_美国_IPV4 (4)"
+        "🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4",
+        "🇺🇸_US_美国_IPV4 (2)"
       ]
     },
     {
       "tag": "Others",
       "type": "selector",
       "outbounds": [
+        "🇩🇪_DE_德国_IPV4",
+        "🇳🇱_NL_荷兰_IPV4",
+        "🇩🇪_DE_德国->🇳🇱_NL_荷兰_IPV4",
+        "🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4",
         "@DeltaKroneckerGithub_3021_IPV4",
         "🇫🇷_FR_法国_IPV4",
         "🇩🇪_DE_德国_IPV4 (2)",
@@ -401,11 +416,19 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
+        "🇩🇪_DE_德国_IPV4",
+        "🇳🇱_NL_荷兰_IPV4",
+        "🇩🇪_DE_德国->🇳🇱_NL_荷兰_IPV4",
+        "🇯🇵_JP_日本_IPV4",
+        "🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4",
+        "🇺🇸 机场推荐:dafei.de 美国 89_IPV4",
+        "🇺🇸_US_美国_IPV4",
         "@DeltaKroneckerGithub_3021_IPV4",
         "🇺🇸 机场推荐:dafei.de 美国 15_IPV4",
+        "🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4",
         "🇫🇷_FR_法国_IPV4",
         "🇩🇪_DE_德国_IPV4 (2)",
-        "🇺🇸_US_美国_IPV4 (4)",
+        "🇺🇸_US_美国_IPV4 (2)",
         "🇫🇷_FR_法国_IPV4 (2)",
         "🇮🇹_IT_意大利_IPV4",
         "🇮🇹_IT_意大利_IPV4 (2)",
@@ -425,6 +448,150 @@
     {
       "type": "direct",
       "tag": "direct"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪_DE_德国_IPV4",
+      "server": "47.254.175.2",
+      "server_port": 443,
+      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=",
+      "method": "2022-blake3-chacha20-poly1305"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱_NL_荷兰_IPV4",
+      "server": "79.182.39.131",
+      "server_port": 443,
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+      "tls": {
+        "enabled": true,
+        "server_name": "717252g.nl8.h1clayd.click",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU",
+          "short_id": "d3bd772514c87d28"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "204adda7e3da"
+      }
+    },
+    {
+      "type": "hysteria",
+      "tag": "🇩🇪_DE_德国->🇳🇱_NL_荷兰_IPV4",
+      "server": "5.83.129.143",
+      "server_port": 26691,
+      "auth_str": "dongtaiwang.com",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      },
+      "up_mbps": 11,
+      "down_mbps": 55
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵_JP_日本_IPV4",
+      "server": "zfapi.zalolink.com",
+      "server_port": 43149,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "psstatic.cdn.bcebos.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE",
+          "short_id": "15aa0ad4"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4",
+      "server": "196.196.148.63",
+      "server_port": 443,
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+      "tls": {
+        "enabled": true,
+        "server_name": "717252g.nl8.h1clayd.click",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU",
+          "short_id": "d3bd772514c87d28"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "204adda7e3da"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 机场推荐:dafei.de 美国 89_IPV4",
+      "server": "188.114.99.137",
+      "server_port": 443,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "alter_id": 0,
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "guanwang.awsno.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hls/cctv5phd.m3u8",
+        "headers": {
+          "Host": "guanwang.awsno.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸_US_美国_IPV4",
+      "server": "104.18.42.163",
+      "server_port": 443,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "alter_id": 0,
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "guanwang.awsno.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hls/cctv5phd.m3u8",
+        "headers": {
+          "Host": "guanwang.awsno.com"
+        }
+      }
     },
     {
       "type": "vmess",
@@ -471,6 +638,18 @@
       }
     },
     {
+      "type": "anytls",
+      "tag": "🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4",
+      "server": "sdf65h46wr.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "images.ctfassets.net",
+        "insecure": true
+      }
+    },
+    {
       "type": "hysteria",
       "tag": "🇫🇷_FR_法国_IPV4",
       "server": "62.210.28.175",
@@ -506,7 +685,7 @@
     },
     {
       "type": "hysteria",
-      "tag": "🇺🇸_US_美国_IPV4 (4)",
+      "tag": "🇺🇸_US_美国_IPV4 (2)",
       "server": "198.200.57.142",
       "server_port": 22335,
       "auth_str": "github.com/Alvin9999-newpac/fanqiang",
