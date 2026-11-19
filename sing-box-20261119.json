@@ -149,8 +149,7 @@
         "🇺🇸_US_美国_IPV4 (17)",
         "🇩🇪_DE_德国_IPV4",
         "🇳🇱_NL_荷兰_IPV4",
-        "🇩🇪_DE_德国->🇳🇱_NL_荷兰_IPV4",
-        "🇯🇵_JP_日本_IPV4 (4)"
+        "🇩🇪_DE_德国->🇳🇱_NL_荷兰_IPV4"
       ]
     },
     {
@@ -381,8 +380,7 @@
       "type": "selector",
       "outbounds": [
         "🇯🇵_JP_日本_IPV4",
-        "🇯🇵_JP_日本_IPV4 (3)",
-        "🇯🇵_JP_日本_IPV4 (4)"
+        "🇯🇵_JP_日本_IPV4 (3)"
       ]
     },
     {
@@ -446,8 +444,7 @@
         "🇺🇸_US_美国_IPV4 (17)",
         "🇩🇪_DE_德国_IPV4",
         "🇳🇱_NL_荷兰_IPV4",
-        "🇩🇪_DE_德国->🇳🇱_NL_荷兰_IPV4",
-        "🇯🇵_JP_日本_IPV4 (4)"
+        "🇩🇪_DE_德国->🇳🇱_NL_荷兰_IPV4"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -1149,28 +1146,6 @@
       },
       "up_mbps": 11,
       "down_mbps": 55
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵_JP_日本_IPV4 (4)",
-      "server": "zfapi.zalolink.com",
-      "server_port": 43149,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "psstatic.cdn.bcebos.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE",
-          "short_id": "15aa0ad4"
-        }
-      }
     }
   ],
   "http_clients": [
