@@ -1,0 +1,412 @@
+# Clash Meta / Mihomo merged config
+# Generated at: 2026-11-20 07:00
+# Date: 2026-11-20
+# Source: public node subscriptions 0-4
+# Loaded sources: 0, 1, 2, 3
+# Skipped sources: 4
+# [0] original 193, added 141, duplicate 52
+# [1] original 137, added 99, duplicate 38
+# [2] original 358, added 358, duplicate 0
+# [3] original 14, added 14, duplicate 0
+# Total proxies: 11
+# Availability tested at: 2026-11-20 15:00 CST
+# Availability test URL: https://cp.cloudflare.com/generate_204
+# Availability result: 11/612 passed (603 testable)
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: warning
+ipv6: true
+dns:
+  enable: true
+  listen: 127.0.0.1:1053
+  ipv6: true
+  prefer-h3: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+  - localhost
+  - +.localhost
+  - +.lan
+  - +.local
+  - +.home.arpa
+  use-hosts: true
+  use-system-hosts: true
+  respect-rules: true
+  default-nameserver:
+  - https://223.5.5.5/dns-query#DIRECT
+  - https://223.6.6.6/dns-query#DIRECT
+  proxy-server-nameserver:
+  - https://223.5.5.5/dns-query#DIRECT
+  - https://223.6.6.6/dns-query#DIRECT
+  direct-nameserver:
+  - https://223.5.5.5/dns-query#DIRECT
+  - https://doh.pub/dns-query#DIRECT
+  direct-nameserver-follow-policy: false
+  nameserver-policy:
+    geosite:cn:
+    - https://223.5.5.5/dns-query#DIRECT
+    - https://doh.pub/dns-query#DIRECT
+  nameserver:
+  - https://1.1.1.1/dns-query
+  - https://1.0.0.1/dns-query
+proxies:
+- type: vless
+  name: '[0.81 Mbps] TW台湾(mibei77.com 米贝节点分享) (4)'
+  server: free.fugui.lol
+  port: 51283
+  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: swdist.apple.com
+  sni: swdist.apple.com
+  skip-cert-verify: false
+  client-fingerprint: ios
+  reality-opts:
+    public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
+    short-id: fa514b83
+- type: vless
+  name: '[0.54 Mbps] TW台湾(mibei77.com 米贝节点分享) (5)'
+  server: free.fugui.lol
+  port: 51283
+  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: swdist.apple.com
+  sni: swdist.apple.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
+    short-id: fa514b83
+- name: '[37.32 Mbps] 🇺🇸US_93|306KB/s|R002-260618 [00dad65c0bb7]'
+  password: 75bPoRcB
+  port: 62000
+  server: 216.132.114.27
+  sub_tag: R002-260618
+  type: socks5
+  username: JzufiJ62
+  udp: true
+- name: '[13.44 Mbps] ❓Other_101|240KB/s|R002-260618 [70e55aa5a678]'
+  password: lcFa8dTH
+  port: 62000
+  server: 94.194.165.96
+  sub_tag: R002-260618
+  type: socks5
+  username: QyVdo5ks
+  udp: true
+- name: '[11.70 Mbps] 🇫🇷FR_12|1.8MB/s|R002-260618 [804be636e16d]'
+  port: 4443
+  server: 83.172.143.53
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[13.54 Mbps] 🇩🇪DE_2|348KB/s|R002-260618 [92abb46579b9]'
+  port: 443
+  server: 159.69.94.125
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '[17.51 Mbps] 🇺🇸US_92|814KB/s|R002-260618 [a3342904b8ad]'
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: usgp1-cdn-route.couldflare-cdn.com
+  sni: usgp1-cdn-route.couldflare-cdn.com
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  x-toolall-mihomo: true
+- name: '[12.34 Mbps] 🇫🇷FR_6|209KB/s|K001-260618 [af44a4a293e5]'
+  password: None
+  port: 8081
+  server: 31.32.19.111
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  username: ''
+  udp: true
+- name: '[0.62 Mbps] 🇩🇪DE_35|215KB/s|M003-260806 [f1a6be24c19f]'
+  alpn:
+  - h2
+  client-fingerprint: firefox
+  network: xhttp
+  port: 443
+  server: 104.18.138.67
+  sub_tag: M003-260806
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0280c276-641b-49af-b699-4931c30ac137
+  xhttp-opts:
+    host: norway.xn--nlqaa425dbaab446bbabd698meae.online
+    path: /api
+  xudp: true
+  packet-encoding: xudp
+  servername: norway.xn--nlqaa425dbaab446bbabd698meae.online.
+- name: '[测速失败] 🇳🇱NL_15|446KB/s|R002-260618 [fa57876993ca]'
+  port: 9090
+  server: 185.53.129.141
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- type: vmess
+  name: '[15.85 Mbps] 🇺🇸 机场推荐:dafei.de 美国 15_IPV4'
+  server: 172.67.190.164
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  cipher: auto
+  alterId: 0
+  tls: true
+  servername: guanwang.awsno.com
+  sni: guanwang.awsno.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - DIRECT
+  - '[0.81 Mbps] TW台湾(mibei77.com 米贝节点分享) (4)'
+  - '[0.54 Mbps] TW台湾(mibei77.com 米贝节点分享) (5)'
+  - '[37.32 Mbps] 🇺🇸US_93|306KB/s|R002-260618 [00dad65c0bb7]'
+  - '[13.44 Mbps] ❓Other_101|240KB/s|R002-260618 [70e55aa5a678]'
+  - '[11.70 Mbps] 🇫🇷FR_12|1.8MB/s|R002-260618 [804be636e16d]'
+  - '[13.54 Mbps] 🇩🇪DE_2|348KB/s|R002-260618 [92abb46579b9]'
+  - '[17.51 Mbps] 🇺🇸US_92|814KB/s|R002-260618 [a3342904b8ad]'
+  - '[12.34 Mbps] 🇫🇷FR_6|209KB/s|K001-260618 [af44a4a293e5]'
+  - '[0.62 Mbps] 🇩🇪DE_35|215KB/s|M003-260806 [f1a6be24c19f]'
+  - '[测速失败] 🇳🇱NL_15|446KB/s|R002-260618 [fa57876993ca]'
+  - '[15.85 Mbps] 🇺🇸 机场推荐:dafei.de 美国 15_IPV4'
+- name: ♻️ 自动选择
+  type: url-test
+  proxies:
+  - '[0.81 Mbps] TW台湾(mibei77.com 米贝节点分享) (4)'
+  - '[0.54 Mbps] TW台湾(mibei77.com 米贝节点分享) (5)'
+  - '[37.32 Mbps] 🇺🇸US_93|306KB/s|R002-260618 [00dad65c0bb7]'
+  - '[13.44 Mbps] ❓Other_101|240KB/s|R002-260618 [70e55aa5a678]'
+  - '[11.70 Mbps] 🇫🇷FR_12|1.8MB/s|R002-260618 [804be636e16d]'
+  - '[13.54 Mbps] 🇩🇪DE_2|348KB/s|R002-260618 [92abb46579b9]'
+  - '[17.51 Mbps] 🇺🇸US_92|814KB/s|R002-260618 [a3342904b8ad]'
+  - '[12.34 Mbps] 🇫🇷FR_6|209KB/s|K001-260618 [af44a4a293e5]'
+  - '[0.62 Mbps] 🇩🇪DE_35|215KB/s|M003-260806 [f1a6be24c19f]'
+  - '[测速失败] 🇳🇱NL_15|446KB/s|R002-260618 [fa57876993ca]'
+  - '[15.85 Mbps] 🇺🇸 机场推荐:dafei.de 美国 15_IPV4'
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 🌍 国外媒体
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🎯 全球直连
+  - '[0.81 Mbps] TW台湾(mibei77.com 米贝节点分享) (4)'
+  - '[0.54 Mbps] TW台湾(mibei77.com 米贝节点分享) (5)'
+  - '[37.32 Mbps] 🇺🇸US_93|306KB/s|R002-260618 [00dad65c0bb7]'
+  - '[13.44 Mbps] ❓Other_101|240KB/s|R002-260618 [70e55aa5a678]'
+  - '[11.70 Mbps] 🇫🇷FR_12|1.8MB/s|R002-260618 [804be636e16d]'
+  - '[13.54 Mbps] 🇩🇪DE_2|348KB/s|R002-260618 [92abb46579b9]'
+  - '[17.51 Mbps] 🇺🇸US_92|814KB/s|R002-260618 [a3342904b8ad]'
+  - '[12.34 Mbps] 🇫🇷FR_6|209KB/s|K001-260618 [af44a4a293e5]'
+  - '[0.62 Mbps] 🇩🇪DE_35|215KB/s|M003-260806 [f1a6be24c19f]'
+  - '[测速失败] 🇳🇱NL_15|446KB/s|R002-260618 [fa57876993ca]'
+  - '[15.85 Mbps] 🇺🇸 机场推荐:dafei.de 美国 15_IPV4'
+- name: 📲 电报信息
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - '[0.81 Mbps] TW台湾(mibei77.com 米贝节点分享) (4)'
+  - '[0.54 Mbps] TW台湾(mibei77.com 米贝节点分享) (5)'
+  - '[37.32 Mbps] 🇺🇸US_93|306KB/s|R002-260618 [00dad65c0bb7]'
+  - '[13.44 Mbps] ❓Other_101|240KB/s|R002-260618 [70e55aa5a678]'
+  - '[11.70 Mbps] 🇫🇷FR_12|1.8MB/s|R002-260618 [804be636e16d]'
+  - '[13.54 Mbps] 🇩🇪DE_2|348KB/s|R002-260618 [92abb46579b9]'
+  - '[17.51 Mbps] 🇺🇸US_92|814KB/s|R002-260618 [a3342904b8ad]'
+  - '[12.34 Mbps] 🇫🇷FR_6|209KB/s|K001-260618 [af44a4a293e5]'
+  - '[0.62 Mbps] 🇩🇪DE_35|215KB/s|M003-260806 [f1a6be24c19f]'
+  - '[测速失败] 🇳🇱NL_15|446KB/s|R002-260618 [fa57876993ca]'
+  - '[15.85 Mbps] 🇺🇸 机场推荐:dafei.de 美国 15_IPV4'
+- name: Ⓜ️ 微软服务
+  type: select
+  proxies:
+  - 🎯 全球直连
+  - 🚀 节点选择
+  - '[0.81 Mbps] TW台湾(mibei77.com 米贝节点分享) (4)'
+  - '[0.54 Mbps] TW台湾(mibei77.com 米贝节点分享) (5)'
+  - '[37.32 Mbps] 🇺🇸US_93|306KB/s|R002-260618 [00dad65c0bb7]'
+  - '[13.44 Mbps] ❓Other_101|240KB/s|R002-260618 [70e55aa5a678]'
+  - '[11.70 Mbps] 🇫🇷FR_12|1.8MB/s|R002-260618 [804be636e16d]'
+  - '[13.54 Mbps] 🇩🇪DE_2|348KB/s|R002-260618 [92abb46579b9]'
+  - '[17.51 Mbps] 🇺🇸US_92|814KB/s|R002-260618 [a3342904b8ad]'
+  - '[12.34 Mbps] 🇫🇷FR_6|209KB/s|K001-260618 [af44a4a293e5]'
+  - '[0.62 Mbps] 🇩🇪DE_35|215KB/s|M003-260806 [f1a6be24c19f]'
+  - '[测速失败] 🇳🇱NL_15|446KB/s|R002-260618 [fa57876993ca]'
+  - '[15.85 Mbps] 🇺🇸 机场推荐:dafei.de 美国 15_IPV4'
+- name: 🍎 苹果服务
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - '[0.81 Mbps] TW台湾(mibei77.com 米贝节点分享) (4)'
+  - '[0.54 Mbps] TW台湾(mibei77.com 米贝节点分享) (5)'
+  - '[37.32 Mbps] 🇺🇸US_93|306KB/s|R002-260618 [00dad65c0bb7]'
+  - '[13.44 Mbps] ❓Other_101|240KB/s|R002-260618 [70e55aa5a678]'
+  - '[11.70 Mbps] 🇫🇷FR_12|1.8MB/s|R002-260618 [804be636e16d]'
+  - '[13.54 Mbps] 🇩🇪DE_2|348KB/s|R002-260618 [92abb46579b9]'
+  - '[17.51 Mbps] 🇺🇸US_92|814KB/s|R002-260618 [a3342904b8ad]'
+  - '[12.34 Mbps] 🇫🇷FR_6|209KB/s|K001-260618 [af44a4a293e5]'
+  - '[0.62 Mbps] 🇩🇪DE_35|215KB/s|M003-260806 [f1a6be24c19f]'
+  - '[测速失败] 🇳🇱NL_15|446KB/s|R002-260618 [fa57876993ca]'
+  - '[15.85 Mbps] 🇺🇸 机场推荐:dafei.de 美国 15_IPV4'
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+- name: 🛑 全球拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🍃 应用净化
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+  - '[0.81 Mbps] TW台湾(mibei77.com 米贝节点分享) (4)'
+  - '[0.54 Mbps] TW台湾(mibei77.com 米贝节点分享) (5)'
+  - '[37.32 Mbps] 🇺🇸US_93|306KB/s|R002-260618 [00dad65c0bb7]'
+  - '[13.44 Mbps] ❓Other_101|240KB/s|R002-260618 [70e55aa5a678]'
+  - '[11.70 Mbps] 🇫🇷FR_12|1.8MB/s|R002-260618 [804be636e16d]'
+  - '[13.54 Mbps] 🇩🇪DE_2|348KB/s|R002-260618 [92abb46579b9]'
+  - '[17.51 Mbps] 🇺🇸US_92|814KB/s|R002-260618 [a3342904b8ad]'
+  - '[12.34 Mbps] 🇫🇷FR_6|209KB/s|K001-260618 [af44a4a293e5]'
+  - '[0.62 Mbps] 🇩🇪DE_35|215KB/s|M003-260806 [f1a6be24c19f]'
+  - '[测速失败] 🇳🇱NL_15|446KB/s|R002-260618 [fa57876993ca]'
+  - '[15.85 Mbps] 🇺🇸 机场推荐:dafei.de 美国 15_IPV4'
+rule-providers:
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+    path: ./rules/LocalAreaNetwork.list
+    interval: 86400
+  BanAD:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+    path: ./rules/BanAD.list
+    interval: 86400
+  BanProgramAD:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+    path: ./rules/BanProgramAD.list
+    interval: 86400
+  GoogleCN:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+    path: ./rules/GoogleCN.list
+    interval: 86400
+  SteamCN:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+    path: ./rules/SteamCN.list
+    interval: 86400
+  Microsoft:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+    path: ./rules/Microsoft.list
+    interval: 86400
+  Apple:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+    path: ./rules/Apple.list
+    interval: 86400
+  ProxyMedia:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+    path: ./rules/ProxyMedia.list
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+    path: ./rules/Telegram.list
+    interval: 86400
+  ProxyLite:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
+    path: ./rules/ProxyLite.list
+    interval: 86400
+  ChinaDomain:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+    path: ./rules/ChinaDomain.list
+    interval: 86400
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+    path: ./rules/ChinaCompanyIp.list
+    interval: 86400
+rules:
+- DOMAIN-SUFFIX,nodebuf.com,🚀 节点选择
+- RULE-SET,LocalAreaNetwork,🎯 全球直连
+- RULE-SET,BanAD,🛑 全球拦截
+- RULE-SET,BanProgramAD,🍃 应用净化
+- RULE-SET,GoogleCN,🎯 全球直连
+- RULE-SET,SteamCN,🎯 全球直连
+- RULE-SET,Microsoft,Ⓜ️ 微软服务
+- RULE-SET,Apple,🍎 苹果服务
+- RULE-SET,ProxyMedia,🌍 国外媒体
+- RULE-SET,Telegram,📲 电报信息
+- RULE-SET,ProxyLite,🚀 节点选择
+- RULE-SET,ChinaDomain,🎯 全球直连
+- RULE-SET,ChinaCompanyIp,🎯 全球直连
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼

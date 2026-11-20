@@ -1,23 +1,23 @@
 {
-  "tested_at": "2026-11-19 15:12 CST",
+  "tested_at": "2026-11-20 15:00 CST",
   "test_url": "https://cp.cloudflare.com/generate_204",
   "timeout_ms": 8000,
   "attempts": 2,
   "results": {
     "clash": {
-      "original": 571,
-      "testable": 559,
-      "available": 10
+      "original": 612,
+      "testable": 603,
+      "available": 11
     },
     "v2ray": {
-      "original": 588,
-      "testable": 571,
-      "available": 321
+      "original": 643,
+      "testable": 622,
+      "available": 315
     },
     "sing_box": {
       "original": 30,
       "testable": 30,
-      "available": 26
+      "available": 27
     }
   },
   "tcp_screening": {
@@ -42,16 +42,16 @@
       "pingsx_scope": "Port check (check_port_tcp), all tasks assigned by ping.sx",
       "itdog_scope": "public TCPing once, all assigned domestic and overseas probes"
     },
-    "proxy_connected_nodes": 339,
+    "proxy_connected_nodes": 363,
     "endpoint_counts": {
-      "rejected": 292,
-      "passed": 9
-    },
-    "node_counts": {
-      "rejected": 329,
+      "rejected": 307,
       "passed": 10
     },
-    "report_file": "tcp-screening-20261119.json"
+    "node_counts": {
+      "rejected": 352,
+      "passed": 11
+    },
+    "report_file": "tcp-screening-20261120.json"
   },
   "speed_test": {
     "enabled": true,
@@ -69,81 +69,89 @@
         {
           "node_index": 1,
           "status": "partial",
-          "downloaded_bytes": 318691,
-          "elapsed_seconds": 5.00107,
-          "mbps": 0.51,
+          "downloaded_bytes": 507895,
+          "elapsed_seconds": 5.000178,
+          "mbps": 0.813,
           "error": null
         },
         {
           "node_index": 2,
-          "status": "completed",
-          "downloaded_bytes": 2097152,
-          "elapsed_seconds": 1.616506,
-          "mbps": 10.379,
+          "status": "partial",
+          "downloaded_bytes": 335076,
+          "elapsed_seconds": 5.001131,
+          "mbps": 0.536,
           "error": null
         },
         {
           "node_index": 3,
           "status": "completed",
           "downloaded_bytes": 2097152,
-          "elapsed_seconds": 2.260109,
-          "mbps": 7.423,
+          "elapsed_seconds": 0.449535,
+          "mbps": 37.321,
           "error": null
         },
         {
           "node_index": 4,
           "status": "completed",
           "downloaded_bytes": 2097152,
-          "elapsed_seconds": 3.987046,
-          "mbps": 4.208,
+          "elapsed_seconds": 1.248288,
+          "mbps": 13.44,
           "error": null
         },
         {
           "node_index": 5,
-          "status": "failed",
-          "downloaded_bytes": 0,
-          "elapsed_seconds": 5.002125,
-          "mbps": null,
-          "error": "curl_exit_28_http_000"
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.434085,
+          "mbps": 11.699,
+          "error": null
         },
         {
           "node_index": 6,
           "status": "completed",
           "downloaded_bytes": 2097152,
-          "elapsed_seconds": 1.351051,
-          "mbps": 12.418,
+          "elapsed_seconds": 1.239398,
+          "mbps": 13.537,
           "error": null
         },
         {
           "node_index": 7,
-          "status": "partial",
-          "downloaded_bytes": 185251,
-          "elapsed_seconds": 5.00167,
-          "mbps": 0.296,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 0.958362,
+          "mbps": 17.506,
           "error": null
         },
         {
           "node_index": 8,
-          "status": "failed",
-          "downloaded_bytes": 0,
-          "elapsed_seconds": 5.001202,
-          "mbps": null,
-          "error": "curl_exit_28_http_000"
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.359611,
+          "mbps": 12.34,
+          "error": null
         },
         {
           "node_index": 9,
-          "status": "completed",
-          "downloaded_bytes": 2097152,
-          "elapsed_seconds": 2.461364,
-          "mbps": 6.816,
+          "status": "partial",
+          "downloaded_bytes": 385015,
+          "elapsed_seconds": 5.000292,
+          "mbps": 0.616,
           "error": null
         },
         {
           "node_index": 10,
+          "status": "failed",
+          "downloaded_bytes": 0,
+          "elapsed_seconds": 5.001464,
+          "mbps": null,
+          "error": "curl_exit_28_http_000"
+        },
+        {
+          "node_index": 11,
           "status": "completed",
           "downloaded_bytes": 2097152,
-          "elapsed_seconds": 0.750535,
-          "mbps": 22.354,
+          "elapsed_seconds": 1.058775,
+          "mbps": 15.846,
           "error": null
         }
       ],
