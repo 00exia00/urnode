@@ -1,0 +1,794 @@
+{
+  "tested_at": "2026-11-22 14:31 CST",
+  "test_url": "https://cp.cloudflare.com/generate_204",
+  "timeout_ms": 8000,
+  "attempts": 2,
+  "results": {
+    "clash": {
+      "original": 1755,
+      "testable": 1743,
+      "available": 90
+    },
+    "v2ray": {
+      "original": 1663,
+      "testable": 1630,
+      "available": 1163
+    },
+    "sing_box": {
+      "original": 30,
+      "testable": 30,
+      "available": 21
+    }
+  },
+  "tcp_screening": {
+    "stage": "after_proxy_connectivity_before_download_speed",
+    "policy": {
+      "assignment": "round_robin",
+      "workers_per_provider": 5,
+      "concurrency": 10,
+      "providers": [
+        "pingpe",
+        "aliyun",
+        "boce",
+        "pingsx",
+        "itdog"
+      ],
+      "reject_when": "first explicit TCP probe failure, even if results are incomplete",
+      "unknown_fallback": "each_remaining_provider_once, only if no explicit TCP failure",
+      "latency_used_for_filtering_or_ranking": false,
+      "aliyun_scope": "seven domestic regions, available IPv4 PC probes",
+      "pingpe_scope": "all probes listed by tcp.ping.pe",
+      "boce_scope": "public TCPing, China Telecom/Mobile/Unicom, free quota only",
+      "pingsx_scope": "Port check (check_port_tcp), all tasks assigned by ping.sx",
+      "itdog_scope": "public TCPing once, all assigned domestic and overseas probes"
+    },
+    "proxy_connected_nodes": 1398,
+    "endpoint_counts": {
+      "rejected": 823,
+      "passed": 48
+    },
+    "node_counts": {
+      "rejected": 1308,
+      "passed": 90
+    },
+    "report_file": "tcp-screening-20261122.json"
+  },
+  "speed_test": {
+    "enabled": true,
+    "formats": [
+      "clash"
+    ],
+    "settings": {
+      "url": "https://speed.cloudflare.com/__down?bytes=2097152",
+      "max_bytes": 2097152,
+      "timeout_seconds": 5.0,
+      "concurrency": 8
+    },
+    "results": {
+      "clash": [
+        {
+          "node_index": 1,
+          "status": "partial",
+          "downloaded_bytes": 1760613,
+          "elapsed_seconds": 5.001086,
+          "mbps": 2.816,
+          "error": null
+        },
+        {
+          "node_index": 2,
+          "status": "failed",
+          "downloaded_bytes": 0,
+          "elapsed_seconds": 5.001764,
+          "mbps": null,
+          "error": "curl_exit_28_http_000"
+        },
+        {
+          "node_index": 3,
+          "status": "partial",
+          "downloaded_bytes": 21882,
+          "elapsed_seconds": 5.000379,
+          "mbps": 0.035,
+          "error": null
+        },
+        {
+          "node_index": 4,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 2.211699,
+          "mbps": 7.586,
+          "error": null
+        },
+        {
+          "node_index": 5,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.345521,
+          "mbps": 12.469,
+          "error": null
+        },
+        {
+          "node_index": 6,
+          "status": "failed",
+          "downloaded_bytes": 0,
+          "elapsed_seconds": 1.870219,
+          "mbps": null,
+          "error": "curl_exit_35_http_000"
+        },
+        {
+          "node_index": 7,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.963224,
+          "mbps": 8.546,
+          "error": null
+        },
+        {
+          "node_index": 8,
+          "status": "failed",
+          "downloaded_bytes": 0,
+          "elapsed_seconds": 5.002564,
+          "mbps": null,
+          "error": "curl_exit_28_http_000"
+        },
+        {
+          "node_index": 9,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 0.136011,
+          "mbps": 123.352,
+          "error": null
+        },
+        {
+          "node_index": 10,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.724866,
+          "mbps": 9.727,
+          "error": null
+        },
+        {
+          "node_index": 11,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.094576,
+          "mbps": 15.328,
+          "error": null
+        },
+        {
+          "node_index": 12,
+          "status": "partial",
+          "downloaded_bytes": 851968,
+          "elapsed_seconds": 5.000613,
+          "mbps": 1.363,
+          "error": null
+        },
+        {
+          "node_index": 13,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.846337,
+          "mbps": 9.087,
+          "error": null
+        },
+        {
+          "node_index": 14,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 3.206205,
+          "mbps": 5.233,
+          "error": null
+        },
+        {
+          "node_index": 15,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.26504,
+          "mbps": 13.262,
+          "error": null
+        },
+        {
+          "node_index": 16,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.45582,
+          "mbps": 11.524,
+          "error": null
+        },
+        {
+          "node_index": 17,
+          "status": "failed",
+          "downloaded_bytes": 0,
+          "elapsed_seconds": 5.002763,
+          "mbps": null,
+          "error": "curl_exit_28_http_000"
+        },
+        {
+          "node_index": 18,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 0.135212,
+          "mbps": 124.081,
+          "error": null
+        },
+        {
+          "node_index": 19,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 2.118091,
+          "mbps": 7.921,
+          "error": null
+        },
+        {
+          "node_index": 20,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 2.964036,
+          "mbps": 5.66,
+          "error": null
+        },
+        {
+          "node_index": 21,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 2.716846,
+          "mbps": 6.175,
+          "error": null
+        },
+        {
+          "node_index": 22,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.726863,
+          "mbps": 9.715,
+          "error": null
+        },
+        {
+          "node_index": 23,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 0.148988,
+          "mbps": 112.608,
+          "error": null
+        },
+        {
+          "node_index": 24,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 4.63453,
+          "mbps": 3.62,
+          "error": null
+        },
+        {
+          "node_index": 25,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.986317,
+          "mbps": 8.446,
+          "error": null
+        },
+        {
+          "node_index": 26,
+          "status": "failed",
+          "downloaded_bytes": 0,
+          "elapsed_seconds": 0.066273,
+          "mbps": null,
+          "error": "curl_exit_35_http_000"
+        },
+        {
+          "node_index": 27,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.397922,
+          "mbps": 12.002,
+          "error": null
+        },
+        {
+          "node_index": 28,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.453945,
+          "mbps": 11.539,
+          "error": null
+        },
+        {
+          "node_index": 29,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.883063,
+          "mbps": 8.91,
+          "error": null
+        },
+        {
+          "node_index": 30,
+          "status": "partial",
+          "downloaded_bytes": 2068736,
+          "elapsed_seconds": 5.000603,
+          "mbps": 3.31,
+          "error": null
+        },
+        {
+          "node_index": 31,
+          "status": "failed",
+          "downloaded_bytes": 0,
+          "elapsed_seconds": 0.049728,
+          "mbps": null,
+          "error": "curl_exit_35_http_000"
+        },
+        {
+          "node_index": 32,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.363572,
+          "mbps": 12.304,
+          "error": null
+        },
+        {
+          "node_index": 33,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.780684,
+          "mbps": 9.422,
+          "error": null
+        },
+        {
+          "node_index": 34,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.819472,
+          "mbps": 9.221,
+          "error": null
+        },
+        {
+          "node_index": 35,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.950092,
+          "mbps": 8.603,
+          "error": null
+        },
+        {
+          "node_index": 36,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 0.738183,
+          "mbps": 22.728,
+          "error": null
+        },
+        {
+          "node_index": 37,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.393548,
+          "mbps": 12.039,
+          "error": null
+        },
+        {
+          "node_index": 38,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 3.628445,
+          "mbps": 4.624,
+          "error": null
+        },
+        {
+          "node_index": 39,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 0.151217,
+          "mbps": 110.948,
+          "error": null
+        },
+        {
+          "node_index": 40,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 2.848694,
+          "mbps": 5.889,
+          "error": null
+        },
+        {
+          "node_index": 41,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.75379,
+          "mbps": 9.566,
+          "error": null
+        },
+        {
+          "node_index": 42,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.76216,
+          "mbps": 9.521,
+          "error": null
+        },
+        {
+          "node_index": 43,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 2.489925,
+          "mbps": 6.738,
+          "error": null
+        },
+        {
+          "node_index": 44,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 0.378501,
+          "mbps": 44.325,
+          "error": null
+        },
+        {
+          "node_index": 45,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.36999,
+          "mbps": 12.246,
+          "error": null
+        },
+        {
+          "node_index": 46,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.336609,
+          "mbps": 12.552,
+          "error": null
+        },
+        {
+          "node_index": 47,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 0.626788,
+          "mbps": 26.767,
+          "error": null
+        },
+        {
+          "node_index": 48,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.637913,
+          "mbps": 10.243,
+          "error": null
+        },
+        {
+          "node_index": 49,
+          "status": "failed",
+          "downloaded_bytes": 0,
+          "elapsed_seconds": 0.052968,
+          "mbps": null,
+          "error": "curl_exit_35_http_000"
+        },
+        {
+          "node_index": 50,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 2.87095,
+          "mbps": 5.844,
+          "error": null
+        },
+        {
+          "node_index": 51,
+          "status": "failed",
+          "downloaded_bytes": 0,
+          "elapsed_seconds": 0.059617,
+          "mbps": null,
+          "error": "curl_exit_35_http_000"
+        },
+        {
+          "node_index": 52,
+          "status": "partial",
+          "downloaded_bytes": 202965,
+          "elapsed_seconds": 5.000503,
+          "mbps": 0.325,
+          "error": null
+        },
+        {
+          "node_index": 53,
+          "status": "failed",
+          "downloaded_bytes": 0,
+          "elapsed_seconds": 0.065587,
+          "mbps": null,
+          "error": "curl_exit_35_http_000"
+        },
+        {
+          "node_index": 54,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.545843,
+          "mbps": 10.853,
+          "error": null
+        },
+        {
+          "node_index": 55,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 0.604177,
+          "mbps": 27.769,
+          "error": null
+        },
+        {
+          "node_index": 56,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.815612,
+          "mbps": 9.241,
+          "error": null
+        },
+        {
+          "node_index": 57,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.406372,
+          "mbps": 11.929,
+          "error": null
+        },
+        {
+          "node_index": 58,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 2.200474,
+          "mbps": 7.624,
+          "error": null
+        },
+        {
+          "node_index": 59,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.782905,
+          "mbps": 9.41,
+          "error": null
+        },
+        {
+          "node_index": 60,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 2.894584,
+          "mbps": 5.796,
+          "error": null
+        },
+        {
+          "node_index": 61,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.798966,
+          "mbps": 9.326,
+          "error": null
+        },
+        {
+          "node_index": 62,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 2.251727,
+          "mbps": 7.451,
+          "error": null
+        },
+        {
+          "node_index": 63,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.757071,
+          "mbps": 9.548,
+          "error": null
+        },
+        {
+          "node_index": 64,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.404196,
+          "mbps": 11.948,
+          "error": null
+        },
+        {
+          "node_index": 65,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.548417,
+          "mbps": 10.835,
+          "error": null
+        },
+        {
+          "node_index": 66,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 3.202288,
+          "mbps": 5.239,
+          "error": null
+        },
+        {
+          "node_index": 67,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.554806,
+          "mbps": 10.791,
+          "error": null
+        },
+        {
+          "node_index": 68,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.866536,
+          "mbps": 8.988,
+          "error": null
+        },
+        {
+          "node_index": 69,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.781725,
+          "mbps": 9.416,
+          "error": null
+        },
+        {
+          "node_index": 70,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.59741,
+          "mbps": 10.503,
+          "error": null
+        },
+        {
+          "node_index": 71,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.308143,
+          "mbps": 12.825,
+          "error": null
+        },
+        {
+          "node_index": 72,
+          "status": "partial",
+          "downloaded_bytes": 1527470,
+          "elapsed_seconds": 5.000328,
+          "mbps": 2.444,
+          "error": null
+        },
+        {
+          "node_index": 73,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.904198,
+          "mbps": 8.811,
+          "error": null
+        },
+        {
+          "node_index": 74,
+          "status": "failed",
+          "downloaded_bytes": 0,
+          "elapsed_seconds": 0.086326,
+          "mbps": null,
+          "error": "curl_exit_35_http_000"
+        },
+        {
+          "node_index": 75,
+          "status": "partial",
+          "downloaded_bytes": 1564672,
+          "elapsed_seconds": 5.000871,
+          "mbps": 2.503,
+          "error": null
+        },
+        {
+          "node_index": 76,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.810226,
+          "mbps": 9.268,
+          "error": null
+        },
+        {
+          "node_index": 77,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.386559,
+          "mbps": 12.1,
+          "error": null
+        },
+        {
+          "node_index": 78,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.577407,
+          "mbps": 10.636,
+          "error": null
+        },
+        {
+          "node_index": 79,
+          "status": "failed",
+          "downloaded_bytes": 0,
+          "elapsed_seconds": 0.047182,
+          "mbps": null,
+          "error": "curl_exit_35_http_000"
+        },
+        {
+          "node_index": 80,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 2.640945,
+          "mbps": 6.353,
+          "error": null
+        },
+        {
+          "node_index": 81,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 2.237508,
+          "mbps": 7.498,
+          "error": null
+        },
+        {
+          "node_index": 82,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.386259,
+          "mbps": 12.103,
+          "error": null
+        },
+        {
+          "node_index": 83,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.509815,
+          "mbps": 11.112,
+          "error": null
+        },
+        {
+          "node_index": 84,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.348292,
+          "mbps": 12.443,
+          "error": null
+        },
+        {
+          "node_index": 85,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 0.484309,
+          "mbps": 34.642,
+          "error": null
+        },
+        {
+          "node_index": 86,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 2.869441,
+          "mbps": 5.847,
+          "error": null
+        },
+        {
+          "node_index": 87,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 0.844669,
+          "mbps": 19.862,
+          "error": null
+        },
+        {
+          "node_index": 88,
+          "status": "failed",
+          "downloaded_bytes": 115754,
+          "elapsed_seconds": 1.805529,
+          "mbps": null,
+          "error": "curl_exit_56_http_200"
+        },
+        {
+          "node_index": 89,
+          "status": "completed",
+          "downloaded_bytes": 2097152,
+          "elapsed_seconds": 1.90297,
+          "mbps": 8.816,
+          "error": null
+        },
+        {
+          "node_index": 90,
+          "status": "failed",
+          "downloaded_bytes": 0,
+          "elapsed_seconds": 0.049857,
+          "mbps": null,
+          "error": "curl_exit_35_http_000"
+        }
+      ],
+      "v2ray": [],
+      "sing_box": []
+    }
+  }
+}
