@@ -124,25 +124,18 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇹🇼_TW_台湾_IPV4",
-        "🇩🇪_DE_德国->🇫🇷_FR_法国_IPV4",
         "🇺🇸_US_美国_IPV4",
         "🇫🇷_FR_法国_IPV4",
         "🇸🇬_SG_新加坡_IPV4 (2)",
-        "🇺🇸_US_美国_IPV4 (3)",
         "🇸🇬_SG_新加坡_IPV4 (3)",
         "🇯🇵_JP_日本_IPV4 (2)",
         "🇯🇵_JP_日本_IPV4 (3)",
         "🇺🇸_US_美国_IPV4 (4)",
         "🇺🇸_US_美国_IPV4 (5)",
         "🇸🇬_SG_新加坡_IPV4 (4)",
-        "🇯🇵_JP_日本_IPV4 (4)",
         "🇺🇸_US_美国_IPV4 (6)",
         "🇺🇸_US_美国_IPV4 (8)",
-        "🇺🇸_US_美国_IPV4 (9)",
         "🇺🇸_US_美国_IPV4 (12)",
-        "🇨🇳_CN_中国_IPV4",
-        "🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4",
         "🇺🇸 机场推荐:dafei.de 美国 89_IPV4",
         "🇺🇸_US_美国_IPV4 (13)"
       ]
@@ -350,14 +343,14 @@
       "tag": "HongKong",
       "type": "selector",
       "outbounds": [
-        "🇹🇼_TW_台湾_IPV4"
+        "🇺🇸_US_美国_IPV4"
       ]
     },
     {
       "tag": "TaiWan",
       "type": "selector",
       "outbounds": [
-        "🇹🇼_TW_台湾_IPV4"
+        "🇺🇸_US_美国_IPV4"
       ]
     },
     {
@@ -374,8 +367,7 @@
       "type": "selector",
       "outbounds": [
         "🇯🇵_JP_日本_IPV4 (2)",
-        "🇯🇵_JP_日本_IPV4 (3)",
-        "🇯🇵_JP_日本_IPV4 (4)"
+        "🇯🇵_JP_日本_IPV4 (3)"
       ]
     },
     {
@@ -383,12 +375,10 @@
       "type": "selector",
       "outbounds": [
         "🇺🇸_US_美国_IPV4",
-        "🇺🇸_US_美国_IPV4 (3)",
         "🇺🇸_US_美国_IPV4 (4)",
         "🇺🇸_US_美国_IPV4 (5)",
         "🇺🇸_US_美国_IPV4 (6)",
         "🇺🇸_US_美国_IPV4 (8)",
-        "🇺🇸_US_美国_IPV4 (9)",
         "🇺🇸_US_美国_IPV4 (12)",
         "🇺🇸 机场推荐:dafei.de 美国 89_IPV4",
         "🇺🇸_US_美国_IPV4 (13)"
@@ -398,35 +388,25 @@
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "🇩🇪_DE_德国->🇫🇷_FR_法国_IPV4",
-        "🇫🇷_FR_法国_IPV4",
-        "🇨🇳_CN_中国_IPV4",
-        "🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4"
+        "🇫🇷_FR_法国_IPV4"
       ]
     },
     {
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇹🇼_TW_台湾_IPV4",
-        "🇩🇪_DE_德国->🇫🇷_FR_法国_IPV4",
         "🇺🇸_US_美国_IPV4",
         "🇫🇷_FR_法国_IPV4",
         "🇸🇬_SG_新加坡_IPV4 (2)",
-        "🇺🇸_US_美国_IPV4 (3)",
         "🇸🇬_SG_新加坡_IPV4 (3)",
         "🇯🇵_JP_日本_IPV4 (2)",
         "🇯🇵_JP_日本_IPV4 (3)",
         "🇺🇸_US_美国_IPV4 (4)",
         "🇺🇸_US_美国_IPV4 (5)",
         "🇸🇬_SG_新加坡_IPV4 (4)",
-        "🇯🇵_JP_日本_IPV4 (4)",
         "🇺🇸_US_美国_IPV4 (6)",
         "🇺🇸_US_美国_IPV4 (8)",
-        "🇺🇸_US_美国_IPV4 (9)",
         "🇺🇸_US_美国_IPV4 (12)",
-        "🇨🇳_CN_中国_IPV4",
-        "🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4",
         "🇺🇸 机场推荐:dafei.de 美国 89_IPV4",
         "🇺🇸_US_美国_IPV4 (13)"
       ],
@@ -437,49 +417,6 @@
     {
       "type": "direct",
       "tag": "direct"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼_TW_台湾_IPV4",
-      "server": "free.fugui.lol",
-      "server_port": 47396,
-      "uuid": "ead3595f-4020-4e76-a3ec-c248e1a2f2f7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "swdist.apple.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
-          "short_id": "fa514b83"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪_DE_德国->🇫🇷_FR_法国_IPV4",
-      "server": "163.245.42.87",
-      "server_port": 443,
-      "uuid": "b9bfa54d-bc44-4592-a6d6-89a9665d286f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "mother-earth.fyi",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-        }
-      }
     },
     {
       "type": "hysteria",
@@ -533,34 +470,6 @@
           "enabled": true,
           "public_key": "fG1u2AZj5pgSNWO3MBmkoY6K61xBwnuYX3_z1fSeR0o",
           "short_id": "640c807d"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸_US_美国_IPV4 (3)",
-      "server": "45.32.70.42",
-      "server_port": 443,
-      "uuid": "8c392beb-524d-4d0a-a3a6-4d542d54a1ff",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cQZ-dTY4QSQteDYpngP2PavOsn9yY9lIP-OscwzwAio",
-          "short_id": "4dda4608"
         }
       },
       "transport": {
@@ -741,34 +650,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵_JP_日本_IPV4 (4)",
-      "server": "45.76.222.108",
-      "server_port": 443,
-      "uuid": "bd95a04e-e3e1-460e-b89d-e9a693d393e0",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE",
-          "short_id": "b5c85d2d"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇺🇸_US_美国_IPV4 (6)",
       "server": "172.236.241.130",
       "server_port": 443,
@@ -825,34 +706,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸_US_美国_IPV4 (9)",
-      "server": "107.191.58.86",
-      "server_port": 443,
-      "uuid": "4444e77e-3d2a-4dc9-bf31-936f038f5570",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZZwZGoX0Us8t6nLvckDWskC1c25F9rL0_nUXmd8BFxQ",
-          "short_id": "8dd324c1"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇺🇸_US_美国_IPV4 (12)",
       "server": "172.233.129.172",
       "server_port": 443,
@@ -877,43 +730,6 @@
         "headers": {
           "Host": "itunes.apple.com"
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇨🇳_CN_中国_IPV4",
-      "server": "sclass-01.catcat321.com",
-      "server_port": 20103,
-      "password": "d7563108-615c-4338-a7bd-77f359869a4a",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk.catxstar.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4",
-      "server": "196.196.148.63",
-      "server_port": 443,
-      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
-      "tls": {
-        "enabled": true,
-        "server_name": "717252g.nl8.h1clayd.click",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU",
-          "short_id": "d3bd772514c87d28"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "204adda7e3da"
       }
     },
     {
